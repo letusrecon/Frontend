@@ -1,9 +1,16 @@
-
+import Navbar from "@/Components/Navbar"
+import Hero from "@/Components/Hero"
+import Services from "@/Components/Services"
+import Testimonial from "@/Components/Testimonials/Testimonial"
 
 const index = () => {
   return (
    <div>
-    <h1>hello letusrecon</h1>
+    <Navbar/>
+    <Hero/>
+    <Services/>
+    <Testimonial/>
+
    </div>
   )
 }

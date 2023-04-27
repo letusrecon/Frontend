@@ -1,0 +1,50 @@
+/* :root{
+    --btn_background:#ce4aa9;
+} */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 6%;
+  align-items: center;
+}
+
+.link {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: var(--title-font);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.link:hover {
+  color: #ce4aa9;
+}
+
+.action_btn {
+  border: 1px solid #ce4aa9;
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: var(--text-font);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.action_btn:hover {
+  background-color: #ce4aa9;
+}
+
+/* Mobile */
+@media screen and (max-width: 900px) {
+  .link {
+    display: none;
+  }
+
+  .action_btn {
+    display: none;
+  }
+}

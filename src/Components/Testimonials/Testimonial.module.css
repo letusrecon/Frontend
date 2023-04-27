@@ -1,0 +1,23 @@
+.testimonial_main_wrap{
+    padding: 10% 5%;
+    text-align: center;
+    background-color: #141d1e;
+}
+.testimonial_heading{
+    color: whitesmoke;
+    margin-bottom: 5%;
+    font-family: var(--title-font);
+}
+.testimonial_ul_wrap{
+    display: flex;
+    justify-content:center ;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 900px) {
+    .testimonial_ul_wrap{
+        flex-direction: column;
+    }
+    
+}

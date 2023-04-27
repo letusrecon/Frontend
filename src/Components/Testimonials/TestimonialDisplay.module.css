@@ -1,0 +1,30 @@
+.testimoniual_li_wrap{
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.testimonial_message{
+    color: whitesmoke;
+    font-family: var(--text-font);
+    margin-bottom: 10px;
+}
+
+.testimonial_name{
+    margin-bottom: 10px;
+      color: #ce4aa9;
+      font-family: var(--text-font);
+
+    
+}
+
+.testimonial_location{
+      color: whitesmoke;
+      font-size: var(--text-font);
+
+}
+
+@media screen and (max-width: 900px) {
+   .testimoniual_li_wrap{
+    margin-bottom: 10%;
+   }
+}
