@@ -33,7 +33,7 @@ export default function Services() {
 
         <div className={styles.service_inner_box_1}>
           <h4 className={styles.service_inner_box_1_title}>
-            Comprehensive Dashboard & User Interface
+         Automated Vulnerbilties Reporting
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
@@ -43,7 +43,7 @@ export default function Services() {
         </div>
         <div className={styles.service_inner_box_1}>
           <h4 className={styles.service_inner_box_1_title}>
-            Comprehensive Dashboard & User Interface
+            Comprehensive Asset Finder
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
@@ -57,7 +57,7 @@ export default function Services() {
         <div className={styles.service_inner_box_1}>
           <h4 className={styles.service_inner_box_1_title}>
           
-            Comprehensive Dashboard & User Interface
+            Advanced Port Scanning
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
@@ -68,7 +68,7 @@ export default function Services() {
 
         <div className={styles.service_inner_box_1}>
           <h4 className={styles.service_inner_box_1_title}>
-            Comprehensive Dashboard & User Interface
+            Integrated Reconnaissance Toolbox
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
@@ -78,7 +78,7 @@ export default function Services() {
         </div>
         <div className={styles.service_inner_box_1}>
           <h4 className={styles.service_inner_box_1_title}>
-            Comprehensive Dashboard & User Interface
+            Affordable Pricing
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum

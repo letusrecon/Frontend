@@ -47,6 +47,7 @@
     color: #ce4aa9;
     margin-bottom: 6%;
     font-family: var(--title-font);
+    font-size: 20px;
 
 }
 
@@ -87,6 +88,6 @@
         padding: 6% 5%;
     }
     .service_inner_box_1_title{
-        font-size: 15px;
+        font-size: 18px;
     }
 }

@@ -1,14 +1,13 @@
 .hero_container{
     display: flex;
     justify-content: center;
-
-   
     padding: 4% 7% ;
 }
 
 
 .hero_inner_container_1{
-    margin-right: 10%;
+        margin-right: 10%;
+
     margin-top: 9%;
 }
 
@@ -77,13 +76,14 @@
     }
     .hero_inner_container_1{
         text-align: center;
+        margin: 0;
      
         
        
     }
 
     .hero_text{
-        width: 338px;
+        width: 340px;
            text-align: center;
            line-height: 1.8;
         
