@@ -1,5 +1,5 @@
 .service_main_wrap{
-    padding: 5% 8%;
+    padding: 7% 8%;
 }
 .service_overview_wrap{
     text-align: center;
@@ -10,6 +10,7 @@
     margin-bottom: 2%;
     font-family: var(--title-font);
     font-size: 30px;
+  
 }
 
 .service_overview_desc{
@@ -57,20 +58,26 @@
 /* Mobile */
 
 @media screen and (max-width:900px) {
+
+    .service_main_wrap{
+        padding: 10% 5%;
+        margin-top: 10%;
+
+    }
  .service_overview_wrap{
     margin-top: 10%;
  }
     .service_box_wrap_1{
         flex-direction: column;
-        padding: 5% 2%;
+        padding: 5% 1%;
 
     }
     .service_overview_title{
-        font-size: 30px;
+        font-size: 25px;
          margin-bottom: 8%;
     }
     .service_overview_desc{
-        padding: 0% 1%;
+        padding: 0% 0%;
         margin-bottom: 8%;
         line-height: 2;
     }

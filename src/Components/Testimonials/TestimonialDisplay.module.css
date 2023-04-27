@@ -26,5 +26,8 @@
 @media screen and (max-width: 900px) {
    .testimoniual_li_wrap{
     margin-bottom: 10%;
+        padding: 5px 10px;
    }
+
+   
 }

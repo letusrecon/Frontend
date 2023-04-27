@@ -14,9 +14,7 @@ export default function Services() {
         <p className={styles.service_overview_desc}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
           totam cupiditate molestias minus a, sequi suscipit illo consectetur
-          nemo soluta.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Delectus totam cupiditate molestias minus a, sequi suscipit illo
-          consectetur nemo soluta?
+          nemo soluta.
         </p>
       </div>
 

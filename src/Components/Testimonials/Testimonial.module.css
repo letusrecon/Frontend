@@ -18,6 +18,11 @@
 @media screen and (max-width: 900px) {
     .testimonial_ul_wrap{
         flex-direction: column;
+         padding: 10% 1%;
     }
     
+    .testimonial_heading{
+        font-size: 25px;
+        margin-bottom: 2%;
+    }
 }
