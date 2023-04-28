@@ -9,8 +9,8 @@ export default function Navbar(){
         <div>
           <Image
             src="/assets/logo-removebg-preview.png"
-            width={170}
-            height={100}
+            width={180}
+            height={120}
           />
         </div>
         <div>
@@ -31,9 +31,11 @@ export default function Navbar(){
           </Link>
         </div>
         <div>
-          <button className={styles.action_btn}>Get started</button>
+          <Link href="/Register">
+            <button className={styles.action_btn}>Get started</button>
+          </Link>
         </div>
-      </nav>  
+      </nav>
     );
 
 }

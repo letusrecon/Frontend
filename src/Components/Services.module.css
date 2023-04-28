@@ -29,9 +29,9 @@
 .service_inner_box_1{
     text-align: center;
     border: 1px solid rgb(37, 35, 35);
-    margin: 0px 9px;
+    margin: 0px 15px;
     border-radius: 20px;
-    padding: 5% 2%;
+    padding: 2% 2%;
     background-color: #141d1e;
     /* box-shadow: rgba(201, 192, 192, 0.02) 0px 1px 3px 0px, rgba(144, 152, 161, 0.15) 0px 0px 0px 1px; */
     transition: all 200ms ease-in-out ;
@@ -40,12 +40,19 @@
 
 .service_inner_box_1:hover{
     background-color: #403741;
+    transform: scale(7px);
 
+}
+
+.service_icon{
+    font-size: 35px;
+    margin-bottom: 10%;
+    color:#5ba2b2 ;
 }
 
 .service_inner_box_1_title{
     color: #ce4aa9;
-    margin-bottom: 6%;
+    margin-bottom: 8%;
     font-family: var(--title-font);
     font-size: 20px;
 
@@ -54,6 +61,7 @@
 .service_inner_box_1_desc{
     color: whitesmoke;
     font-family: var(--text-font);
+    margin-bottom: 10%;
 }
 
 /* Mobile */
@@ -76,6 +84,8 @@
     .service_overview_title{
         font-size: 20px;
          margin-bottom: 8%;
+         text-transform: lowercase;
+         
     }
     .service_overview_desc{
         padding: 0% 0%;

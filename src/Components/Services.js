@@ -1,8 +1,12 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faServer } from "@fortawesome/free-regular-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faServer,
+  faDatabase,
+} from "@fortawesome/free-solid-svg-icons";
 import styles from "./Services.module.css";
+
+
 
 export default function Services() {
   return (
@@ -20,7 +24,7 @@ export default function Services() {
 
       <div className={styles.service_box_wrap_1}>
         <div className={styles.service_inner_box_1}>
-          <FontAwesomeIcon icon={faServer} />
+          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
           <h4 className={styles.service_inner_box_1_title}>
             Comprehensive Dashboard & User Interface
           </h4>
@@ -32,8 +36,11 @@ export default function Services() {
         </div>
 
         <div className={styles.service_inner_box_1}>
+          {/* <FontAwesomeIcon className={styles.service_icon} icon={faServer} /> */}
+          <FontAwesomeIcon className={styles.service_icon} icon={faDatabase} />
+
           <h4 className={styles.service_inner_box_1_title}>
-         Automated Vulnerbilties Reporting
+            Automated Vulnerbilties Reporting
           </h4>
           <p className={styles.service_inner_box_1_desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
@@ -42,6 +49,8 @@ export default function Services() {
           </p>
         </div>
         <div className={styles.service_inner_box_1}>
+          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+
           <h4 className={styles.service_inner_box_1_title}>
             Comprehensive Asset Finder
           </h4>
@@ -55,8 +64,8 @@ export default function Services() {
 
       <div className={styles.service_box_wrap_1}>
         <div className={styles.service_inner_box_1}>
+          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
           <h4 className={styles.service_inner_box_1_title}>
-          
             Advanced Port Scanning
           </h4>
           <p className={styles.service_inner_box_1_desc}>
@@ -67,6 +76,7 @@ export default function Services() {
         </div>
 
         <div className={styles.service_inner_box_1}>
+          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
           <h4 className={styles.service_inner_box_1_title}>
             Integrated Reconnaissance Toolbox
           </h4>
@@ -77,6 +87,7 @@ export default function Services() {
           </p>
         </div>
         <div className={styles.service_inner_box_1}>
+          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
           <h4 className={styles.service_inner_box_1_title}>
             Affordable Pricing
           </h4>

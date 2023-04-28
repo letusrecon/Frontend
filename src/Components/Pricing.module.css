@@ -1,0 +1,136 @@
+
+/* .pricing_main_container{
+
+} */
+.pricing_heading_wrap{
+    text-align: center;
+    padding: 5% 5%;
+    margin-top: 5%;
+}
+
+.pricing_heading{
+    color: whitesmoke;
+    font-family: var(--title-font);
+    font-size: 35px;
+}
+
+.pricing_list_wrap{
+    display: flex; 
+    justify-content: center;
+    background-color:  #141d1e;
+    padding: 8% 6%;
+}
+
+.package_box_1{
+
+    margin: 0% 2%;
+    padding: 2% 2%;
+    background-color: #39423c;
+      border-radius: 15px;
+      box-shadow: rgba(211, 203, 203, 0.818) 1px 1px 2.6px;
+}
+
+.package_box_2{
+    
+    margin: 0% 2%;
+    padding: 2% 2%;
+    background-color: #17291a;
+      border-radius: 15px;
+      box-shadow: rgba(188, 192, 197, 0.539) 0px 0px 0px 1px, rgba(187, 194, 194, 0.65) 0px 1px 1px -1px, rgba(203, 197, 197, 0.54) 0px 1px 0px inset;
+}
+
+.package_box_3{
+
+    margin: 0% 2%;
+    padding: 2% 2%;
+    background-color: #39423c;
+    border-radius: 15px;
+  box-shadow: rgba(211, 203, 203, 0.818) 1px 1px 2.6px;}
+
+.package_title{
+    margin-bottom: 6%;
+    color: whitesmoke;
+    font-family: var(--text-font);
+    font-size: 30px;
+}
+
+.package_desc{
+    font-size: 25px;
+    font-family: var(--text-font);
+    color: whitesmoke;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
+
+.package_amount{
+    font-size: 40px;
+    font-family: var(--text-font);
+    color: whitesmoke;
+    margin-bottom: 7%;
+    
+}
+
+.package_timeline{
+    margin-top: 5%;
+    color: #d1d4d0;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.package_action_btn{
+    width: 330px;
+    padding: 7px;
+    background-color: #ce4aa9;
+    border: 0;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 7%;
+    cursor: pointer;
+}
+
+.package_features_wrap{
+   
+}
+
+.package_feature_heading{
+    color: whitesmoke;
+    font-family: var(--text-font);
+    margin-bottom: 10px;
+}
+
+.package_feature{
+
+    font-size: 18px;
+    font-family: var(--text-font);
+    color: whitesmoke;
+    margin-bottom: 8px;
+}
+
+/* Mobile */
+
+@media screen and (max-width:900px){
+    .pricing_list_wrap{
+        flex-direction: column;
+        padding: 10% 6%;
+        
+    }
+    .package_action_btn{
+        width: 290px;
+    }
+
+
+    .package_box_1{
+        margin-bottom: 8%;
+        padding: 5% 7%;
+    }
+    
+    .package_box_2{
+          margin-bottom: 8%;
+          padding: 5% 7%;
+
+    }
+    .package_box_3{
+        padding: 5% 7%;
+    }
+}

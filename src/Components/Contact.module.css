@@ -1,0 +1,145 @@
+.contact_main_wrap{
+
+    padding: 6% 5%;
+    background-color: #0e1b16;
+}
+.contact_overview_wrap{
+    text-align: center;
+}
+.contact_main_heading{
+    font-size: 45px;
+    font-family: var(--title-font);
+    margin-bottom: 2%;
+    color: whitesmoke;
+}
+.contact_main_desc{
+    margin-bottom: 5%;
+    color: whitesmoke;
+    font-family: var(--text-font);
+    padding: 0% 15%;
+}
+
+.contact_inner_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.contact_inner_col_1{
+    margin-right: 8%;
+
+}
+
+.contact_info_title{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: var(--text-font);
+    margin-bottom: 10%;
+
+}
+
+.contact_adress{
+    font-size: 20px;
+    margin-bottom: 10%;
+    color: whitesmoke;
+}
+
+.tel_info{
+    font-size: 20px;
+    margin-bottom: 10%;
+    color: whitesmoke;
+}
+.email_info{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.input_wrap{
+    margin-bottom: 20px;
+}
+.label_wrap{
+     margin-bottom: 7px;
+
+}
+
+.input_label{
+    font-size: 20px;
+   
+    color:whitesmoke ;
+    font-family: var(--text-font);
+}
+
+.input{
+    background: none;
+    border: 1px solid #7a7f7d;
+    width: 500px;
+    padding: 15px ;
+    border-radius: 10px;
+    outline: none;
+    color: whitesmoke;
+}
+
+.textarea{
+    background: none;
+    border: 1px solid #7a7f7d;
+    border-radius: 10px;
+    outline: none;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.contact_btn_wrap{
+    text-align: center;
+}
+
+.contact_action_btn{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    width: 300px;
+    background-color: #ce4aa9;
+    color: whitesmoke;
+    
+}
+
+
+
+@media screen  and (max-width:900px){
+    .contact_main_wrap{
+        padding: 10% 5%;
+    }
+
+    .contact_overview_wrap{
+        margin-bottom: 10%;
+    }
+    .contact_main_desc{
+    padding: 1% 6%;
+    line-height: 2;
+
+
+    }
+
+
+    .contact_info_title{
+        font-size: 28px;
+    }
+    .contact_inner_wrap{
+        flex-direction: column;
+    }
+
+    .contact_inner_col_1{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .label_wrap{
+        margin-bottom: 12px;
+    }
+
+    .input{
+        width: 350px;
+    }
+    .textarea{
+        width: 350px;
+    }
+    
+}
