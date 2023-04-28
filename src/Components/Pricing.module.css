@@ -112,21 +112,21 @@
 @media screen and (max-width:900px){
     .pricing_list_wrap{
         flex-direction: column;
-        padding: 10% 6%;
+        padding: 15% 6%;
         
     }
     .package_action_btn{
-        width: 290px;
+        width: 280px;
     }
 
 
     .package_box_1{
-        margin-bottom: 8%;
+        margin-bottom: 10%;
         padding: 5% 7%;
     }
     
     .package_box_2{
-          margin-bottom: 8%;
+          margin-bottom: 10%;
           padding: 5% 7%;
 
     }
