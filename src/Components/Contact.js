@@ -17,8 +17,8 @@ export default function Contact() {
           <p className={styles.contact_adress}>
             182 ave - Glendale, NY 10285, US
           </p>
-          <p className={styles.tel_info}>1(8000 921 8972</p>
-          <p className={styles.email_info}>support@LetUsRecon.com</p>
+          <p className={styles.tel_info}>1 (8000) 921 8972</p>
+          <p className={styles.email_info}>Support@LetUsRecon.com</p>
         </div>
         <form>
           <div className={styles.input_wrap}>

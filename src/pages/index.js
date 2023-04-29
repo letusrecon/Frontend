@@ -5,6 +5,7 @@ import Testimonial from "@/Components/Testimonials/Testimonial"
 import Pricing from "@/Components/Pricing"
 import Blog from "@/Components/Blog"
 import Contact from "@/Components/Contact"
+import Footer from "@/Components/Footer"
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
     <Pricing/>
     <Blog/>
     <Contact/>
+    <Footer/>
 
    </div>
   )

@@ -1,5 +1,5 @@
 .blog_main_wrap{
-    background-image: linear-gradient( rgba( 2, 3, 1, 0.9), rgba( 2, 3, 1, 0.7)), url(../../public/assets/blogBg.jpg)  ;
+    background-image: linear-gradient( rgba( 2, 4, 3, 0.9), rgba( 2, 4, 3, 0.9)), url(../../public/assets/blogBg.jpg)  ;
     text-align: center;
     padding: 5% 5%;
     background-position: center;
