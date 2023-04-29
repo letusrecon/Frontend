@@ -102,4 +102,7 @@
     .service_inner_box_1_title{
         font-size: 15px;
     }
+    .service_inner_box_1_desc{
+        line-height: 1.7;
+    }
 }
