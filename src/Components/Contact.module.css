@@ -41,16 +41,19 @@
     font-size: 20px;
     margin-bottom: 10%;
     color: whitesmoke;
+    font-size: var(--text-font);
 }
 
 .tel_info{
     font-size: 20px;
     margin-bottom: 10%;
     color: whitesmoke;
+     font-size: var(--text-font);
 }
 .email_info{
     font-size: 20px;
     color: whitesmoke;
+     font-size: var(--text-font);
 }
 
 .input_wrap{
@@ -125,7 +128,7 @@
 
 
     .contact_info_title{
-        font-size: 20px;
+        font-size: 25px;
     }
     .contact_inner_wrap{
         flex-direction: column;
