@@ -67,6 +67,10 @@
         flex-direction: column;
            padding: 15% 6%;
     }
+    .footer_main_heading{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
     .footer_inner_col{
         margin-bottom: 16%;
     }

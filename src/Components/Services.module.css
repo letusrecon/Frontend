@@ -83,9 +83,9 @@
 
     }
     .service_overview_title{
-        font-size: 17px;
-         margin-bottom: 4%;
-         line-height: 1.7;
+        font-size: 19px;
+         margin-bottom: 5%;
+         line-height: 2;
        
          
     }
@@ -100,7 +100,8 @@
         padding: 6% 4%;
     }
     .service_inner_box_1_title{
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 2;
     }
     .service_inner_box_1_desc{
         line-height: 1.7;

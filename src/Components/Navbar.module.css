@@ -47,11 +47,11 @@
 
 
   .nav{
-      padding: 0% 5%;
+      padding: 0% 6%;
   }
   .logo{
-    width: 120px;
-    height: 120px;
+    width: 125px;
+    height: 130px;
 
   }
   .link {
@@ -66,7 +66,7 @@
     display: block;
     font-size: 23px;
     color: whitesmoke;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
    
   }
 }
