@@ -4,7 +4,7 @@ export default function Blog() {
   return (
     <div className={styles.blog_main_wrap}>
       <h1 className={styles.blog_section_heading}>
-        LetUsrECON The Ultimate Reconnaisance Tool
+         The Ultimate Reconnaisance Tool
       </h1>
       <p className={styles.blog_section_desc}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil fugit,
