@@ -7,7 +7,7 @@
 }
 
 .blog_section_heading{
-    font-size: 40px;
+    font-size: 25px;
     font-family: var(--title-font);
     color: whitesmoke;
     margin-bottom: 2%;
@@ -16,7 +16,7 @@
 .blog_section_desc{
     padding: 0% 10%;
     font-family: var(--text-font);
-    margin-bottom: 4%;
+    margin-bottom: 3%;
     color: whitesmoke;
 
 }
@@ -46,8 +46,9 @@
          padding: 15% 4%;
     }
     .blog_section_heading{
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: 5%;
+        line-height: 1.7;
     }
     .blog_section_desc{
         padding: 0% 4%;

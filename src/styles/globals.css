@@ -1,9 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+JP&display=swap');
 
   :root{
-    --title-font:'Creepster', cursive;
+    --title-font:'Press Start 2P', cursive;
+
     --text-font:'Noto Sans JP', sans-serif;
   }
 

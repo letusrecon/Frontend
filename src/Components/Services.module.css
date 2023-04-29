@@ -9,7 +9,7 @@
     color: whitesmoke;
     margin-bottom: 2%;
     font-family: var(--title-font);
-    font-size: 30px;
+    
   
 }
 
@@ -54,7 +54,8 @@
     color: #ce4aa9;
     margin-bottom: 8%;
     font-family: var(--title-font);
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 1.7;
 
 }
 
@@ -82,9 +83,10 @@
 
     }
     .service_overview_title{
-        font-size: 20px;
-         margin-bottom: 8%;
-         text-transform: lowercase;
+        font-size: 19px;
+         margin-bottom: 4%;
+         line-height: 1.7;
+       
          
     }
     .service_overview_desc{
@@ -95,9 +97,9 @@
 
     .service_inner_box_1{
         margin-bottom: 8%;
-        padding: 6% 5%;
+        padding: 6% 4%;
     }
     .service_inner_box_1_title{
-        font-size: 18px;
+        font-size: 15px;
     }
 }

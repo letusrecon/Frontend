@@ -15,6 +15,7 @@ export default function Testimonial() {
             name={item.Name}
             message={item.message}
             location={item.Location}
+            
           />
         ))}
       </ul>

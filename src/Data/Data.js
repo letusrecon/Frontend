@@ -16,6 +16,7 @@ export const TESTIMONIAL_DATA = [
     Name: "Ahmed Joshi",
     message: `"Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum deleniti magni, voluptate ex aliquam sit aperiam architecto quasi ipsam."`,
     Location: "New York",
+    image: 'http;///fsgshsjklsls'
   },
 ];
 

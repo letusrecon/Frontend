@@ -16,19 +16,19 @@ export default function Pricing() {
           <h3 className={styles.package_amount}>
             $40
             <span className={styles.package_timeline}>
-              semi annually
+              Semi annually
             </span>
           </h3>
 
           <button className={styles.package_action_btn}>Get started</button>
           <div className={styles.package_features_wrap}>
             <h2 className={styles.package_feature_heading}>Pro Includes:</h2>
-            <p className={styles.package_feature}>-Single user</p>
+            <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              -Access to all functionalities
+              - Access to all functionalities
             </p>
-            <p className={styles.package_feature}>-Support 24/7</p>
+            <p className={styles.package_feature}>- Support 24/7</p>
           </div>
         </div>
 
@@ -45,12 +45,12 @@ export default function Pricing() {
           <button className={styles.package_action_btn}>Get started</button>
           <div className={styles.package_features_wrap}>
             <h2 className={styles.package_feature_heading}>Lite Includes:</h2>
-            <p className={styles.package_feature}>-Single user</p>
+            <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              -Access to all functionalities
+              - Access to all functionalities
             </p>
-            <p className={styles.package_feature}>-Support 24/7</p>
+            <p className={styles.package_feature}>- Support 24/7</p>
           </div>
         </div>
 
@@ -67,12 +67,12 @@ export default function Pricing() {
           <button className={styles.package_action_btn}>Get started</button>
           <div className={styles.package_features_wrap}>
             <h2 className={styles.package_feature_heading}>Ultimate Includes:</h2>
-            <p className={styles.package_feature}>-Single user</p>
+            <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              -Access to all functionalities
+              - Access to all functionalities
             </p>
-            <p className={styles.package_feature}>-Support 24/7</p>
+            <p className={styles.package_feature}>- Support 24/7</p>
           </div>
         </div>
       </div>
