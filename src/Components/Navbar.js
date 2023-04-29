@@ -2,6 +2,9 @@ import Link from "next/link"
 import styles from './Navbar.module.css'
 import Image from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars} from "@fortawesome/free-solid-svg-icons";
+
 export default function Navbar(){
 
     return (
@@ -11,6 +14,7 @@ export default function Navbar(){
             src="/assets/logo-removebg-preview.png"
             width={180}
             height={120}
+            className={styles.logo}
           />
         </div>
         <div>
@@ -30,11 +34,13 @@ export default function Navbar(){
             Login
           </Link>
         </div>
+
         <div>
           <Link href="/Register">
             <button className={styles.action_btn}>Get started</button>
           </Link>
         </div>
+        <FontAwesomeIcon className={styles.toggle_icon} icon={faBars} />
       </nav>
     );
 
