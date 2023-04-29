@@ -13,7 +13,7 @@ export default function Services() {
     <div className={styles.service_main_wrap}>
       <div className={styles.service_overview_wrap}>
         <h2 className={styles.service_overview_title}>
-          Powerful LetUsRecon Pentesting Services
+          Our Pentesting Services
         </h2>
         <p className={styles.service_overview_desc}>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus

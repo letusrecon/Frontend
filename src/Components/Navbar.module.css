@@ -15,7 +15,7 @@
   color: whitesmoke;
   font-family: var(--title-font);
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .link:hover {
@@ -24,7 +24,7 @@
 
 .action_btn {
   border: 1px solid #ce4aa9;
-  padding: 6px 20px;
+  padding: 7px 20px;
   border-radius: 20px;
   background: none;
   color: whitesmoke;

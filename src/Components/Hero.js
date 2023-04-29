@@ -6,7 +6,13 @@ export default function Hero() {
   return (
     <div className={styles.hero_container}>
       <div className={styles.hero_inner_container_1}>
-        <h1 className={styles.hero_title}>LetUsRecon</h1>
+        <div className={styles.hero_heading_wrap}>
+          <span className={styles.let}>Let</span>
+          <span className={styles.us}>Us</span>
+          <span className={styles.re}>Re</span>
+          <span className={styles.con}>Con</span>
+        </div>
+
         <div className={styles.hero_text_wrap}>
           <p className={styles.hero_text}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque

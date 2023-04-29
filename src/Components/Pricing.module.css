@@ -78,10 +78,10 @@
 }
 
 .package_timeline{
-    margin-top: 5%;
+    margin-top: 7%;
     color: #d1d4d0;
-    font-size: 25px;
-    margin-left: 5px;
+    font-size: 21px;
+    margin-left: 7px;
 }
 
 .package_action_btn{
@@ -132,7 +132,7 @@
         padding: 14% 7%;
     }
     .package_title{
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .package_desc{
@@ -151,5 +151,6 @@
 
     .pricing_heading{
         line-height: 1.7;
+        font-size: 17px;
     }
 }

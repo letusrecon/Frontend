@@ -5,8 +5,8 @@
 }
 .testimonial_heading{
     color: whitesmoke;
-    margin-bottom: 5%;
-    font-size: 20px;
+    margin-bottom: 4%;
+    font-size: 25px;
     font-family: var(--title-font);
 }
 .testimonial_ul_wrap{
@@ -23,7 +23,7 @@
     }
     
     .testimonial_heading{
-        font-size: 19px;
+        font-size: 18px;
         margin-bottom: 2%;
         line-height: 1.7;
     }

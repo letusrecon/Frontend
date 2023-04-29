@@ -33,7 +33,7 @@ export default function Pricing() {
         </div>
 
         <div className={styles.package_box_2}>
-          <h2 className={styles.package_title}>Lite- Most popular</h2>
+          <h2 className={styles.package_title}>Lite</h2>
           <h3 className={styles.package_desc}>Best way to get started</h3>
           <h3 className={styles.package_amount}>
             $10
