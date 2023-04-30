@@ -9,6 +9,7 @@
     color: whitesmoke;
     margin-bottom: 2%;
     font-family: var(--title-font);
+    font-size: 35px;
     
   
 }
@@ -19,14 +20,14 @@
  font-family: var(--text-font);
 }
 
-.service_box_wrap_1{
+.service_flex_container{
     display: flex;
     margin-top: 5%;
     justify-content: center;
     
 }
 
-.service_inner_box_1{
+.service_inner_container{
     text-align: center;
     border: 1px solid rgb(37, 35, 35);
     margin: 0px 15px;
@@ -38,7 +39,7 @@
     box-shadow: rgba(186, 183, 183, 0.355) 0px 1px 1px;
 }
 
-.service_inner_box_1:hover{
+.service_inner_container:hover{
     background-color: #403741;
     transform: scale(7px);
 
@@ -50,19 +51,20 @@
     color:#5ba2b2 ;
 }
 
-.service_inner_box_1_title{
-    color: #ce4aa9;
-    margin-bottom: 8%;
+.service_inner_container_title{
+    color: var(  --btn-color);
+    margin-bottom: 5%;
     font-family: var(--title-font);
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.7;
 
 }
 
-.service_inner_box_1_desc{
+.service_inner_container_desc{
     color: whitesmoke;
     font-family: var(--text-font);
     margin-bottom: 10%;
+    line-height: 1.8;
 }
 
 /* Mobile */
@@ -77,33 +79,34 @@
  .service_overview_wrap{
     margin-top: 10%;
  }
-    .service_box_wrap_1{
-        flex-direction: column;
-        padding: 5% 1%;
-
-    }
-    .service_overview_title{
-        font-size: 19px;
+   .service_overview_title{
+        font-size: 30px;
          margin-bottom: 5%;
          line-height: 2;
        
          
     }
+    .service_flex_container{
+        flex-direction: column;
+        padding: 5% 1%;
+
+    }
+
     .service_overview_desc{
         padding: 0% 0%;
         margin-bottom: 8%;
         line-height: 2;
     }
 
-    .service_inner_box_1{
+    .service_inner_container{
         margin-bottom: 8%;
         padding: 6% 4%;
     }
-    .service_inner_box_1_title{
-        font-size: 16px;
-        line-height: 2;
+    .service_inner_container_title{
+        font-size: 25px;
+        
     }
-    .service_inner_box_1_desc{
+    .service_inner_container_desc{
         line-height: 1.7;
     }
 }

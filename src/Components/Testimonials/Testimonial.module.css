@@ -1,12 +1,12 @@
 .testimonial_main_wrap{
-    padding: 10% 5%;
+    padding: 10% 6%;
     text-align: center;
     background-color: #141d1e;
 }
 .testimonial_heading{
     color: whitesmoke;
     margin-bottom: 4%;
-    font-size: 25px;
+    font-size: 35px;
     font-family: var(--title-font);
 }
 .testimonial_ul_wrap{
@@ -23,7 +23,7 @@
     }
     
     .testimonial_heading{
-        font-size: 19px;
+        font-size: 25px;
         margin-bottom: 2%;
         line-height: 2;
     }

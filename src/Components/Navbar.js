@@ -13,7 +13,7 @@ export default function Navbar(){
           <Image
             src="/assets/logo-removebg-preview.png"
             width={180}
-            height={120}
+            height={125}
             className={styles.logo}
           />
         </div>

@@ -100,7 +100,7 @@
     border: 0;
     font-size: 18px;
     width: 300px;
-    background-color: #ce4aa9;
+    background-color: var(--btn-color);
     color: whitesmoke;
     
 }
@@ -116,7 +116,7 @@
         margin-bottom: 10%;
     }
     .contact_main_heading{
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 5%;
     }
     .contact_main_desc{

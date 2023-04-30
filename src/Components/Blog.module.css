@@ -7,14 +7,15 @@
 }
 
 .blog_section_heading{
-    font-size: 25px;
+    font-size: 36px;
     font-family: var(--title-font);
     color: whitesmoke;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    line-height: 1.7;
 }
 
 .blog_section_desc{
-    padding: 0% 10%;
+    padding: 0% 15%;
     font-family: var(--text-font);
     margin-bottom: 3%;
     color: whitesmoke;
@@ -35,7 +36,7 @@
     width: 300px;
     border: 0;
     border-radius: 15px;
-    background-color: #ce4aa9;
+    background-color: var(  --btn-color);
     color: whitesmoke;
     font-size: 20px;
 }
@@ -46,7 +47,7 @@
          padding: 15% 4%;
     }
     .blog_section_heading{
-        font-size: 18px;
+        font-size: 25px;
         margin-bottom: 5%;
         line-height: 1.7;
     }

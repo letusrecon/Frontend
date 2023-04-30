@@ -1,7 +1,7 @@
 .hero_container {
   display: flex;
   justify-content: center;
-  padding: 3% 10%;
+  padding: 5% 10%;
 }
 
 .hero_inner_container_1 {
@@ -17,13 +17,13 @@
 
 }
 .let{
-     font-size: 45px;
+     font-size: 50px;
   font-family: var(--title-font);
   color: #75e7cf;
 
 }
 .us{
-     font-size: 45px;
+     font-size: 50px;
 
   font-family: var(--title-font);
   color: #cfd2ee;
@@ -31,14 +31,14 @@
 }
 
 .re{
-     font-size: 45px;
+     font-size: 50px;
        
   font-family: var(--title-font);
   color: #d4b9f7;
 }
 
 .con{
-     font-size: 45px;
+     font-size: 50px;
    
   font-family: var(--title-font);
   color: #7864f2;
@@ -52,7 +52,7 @@
 
 .hero_action_btn {
   padding: 10px 25px;
-  border: 1px solid #ce4aa9;
+  border: 1px solid var(  --btn-color);
   color: whitesmoke;
   width: 150px;
   margin-top: 6%;
@@ -63,7 +63,7 @@
 }
 
 .hero_action_btn:hover {
-  background-color: #ce4aa9;
+  background-color: var(--btn-color);
 }
 .hero_img {
   border-radius: 15px;

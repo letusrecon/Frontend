@@ -9,7 +9,7 @@ export default function Pricing() {
         </h1>
       </div>
 
-      <div className={styles.pricing_list_wrap}>
+      <div className={styles.package_flex_container}>
         <div className={styles.package_box_1}>
           <h2 className={styles.package_title}>Pro</h2>
           <h3 className={styles.package_desc}>Best for Professionals</h3>
