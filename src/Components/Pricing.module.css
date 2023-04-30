@@ -80,7 +80,7 @@
 }
 
 .package_action_btn {
-  width: 330px;
+  width: 270px;
   padding: 7px;
   background: none;
   border: 1px solid var(--btn-color);
@@ -129,7 +129,7 @@
 
   .package_box_1 {
     margin-bottom: 10%;
-    padding: 14% 7%;
+    padding: 14% 5%;
   }
   .package_title {
     font-size: 25px;
@@ -141,18 +141,19 @@
 
   .package_box_2 {
     margin-bottom: 10%;
-    padding: 15% 7%;
+    padding: 15% 5%;
   }
   .package_box_3 {
-    padding: 14% 7%;
+    padding: 14% 5%;
   }
 
   .package_amount{
     margin-bottom: 2rem;
   }
   .package_action_btn {
-    width: 280px;
+    width: 269px;
     margin-bottom: 3rem;
+    
   }
 
 }

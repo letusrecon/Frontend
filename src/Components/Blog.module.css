@@ -34,11 +34,17 @@
 .blog_action_btn{
     padding: 10px 15px;
     width: 300px;
-    border: 0;
+    border: 1px solid var(--btn-color);
     border-radius: 15px;
-    background-color: var(  --btn-color);
+     background: none;
     color: whitesmoke;
     font-size: 20px;
+    transition: 100ms ease-in;
+    cursor: pointer;
+}
+
+.blog_action_btn:hover{
+    background-color: var(--btn-color);
 }
 
 @media screen and (max-width:900px) {

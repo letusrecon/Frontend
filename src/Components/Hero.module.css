@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 .hero_container {
   display: flex;
   justify-content: center;
@@ -18,14 +20,14 @@
 }
 .let{
      font-size: 50px;
-  font-family: var(--title-font);
+font-family: 'Bruno Ace SC', cursive;
   color: #75e7cf;
 
 }
 .us{
      font-size: 50px;
 
-  font-family: var(--title-font);
+ font-family: 'Bruno Ace SC', cursive;
   color: #cfd2ee;
 
 }
@@ -33,14 +35,14 @@
 .re{
      font-size: 50px;
        
-  font-family: var(--title-font);
+  font-family: 'Bruno Ace SC', cursive;
   color: #d4b9f7;
 }
 
 .con{
      font-size: 50px;
    
-  font-family: var(--title-font);
+  font-family: 'Bruno Ace SC', cursive;
   color: #7864f2;
 }
 .hero_text {

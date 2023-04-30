@@ -20,7 +20,7 @@ export default function Contact() {
           <p className={styles.tel_info}>1 (8000) 921 8972</p>
           <p className={styles.email_info}>Support@LetUsRecon.com</p>
         </div>
-        <form>
+        <form className={styles.form}>
           <div className={styles.input_wrap}>
             <div className={styles.label_wrap}>
               <label className={styles.input_label} htmlFor="">

@@ -29,6 +29,8 @@
 
 }
 
+
+
 .contact_info_title{
     font-size: 40px;
     color: whitesmoke;
@@ -56,6 +58,10 @@
      font-size: var(--text-font);
 }
 
+
+/* .form{
+    
+} */
 .input_wrap{
     margin-bottom: 20px;
 }
@@ -77,8 +83,12 @@
     width: 500px;
     padding: 15px ;
     border-radius: 10px;
-    outline: none;
+    
     color: whitesmoke;
+}
+
+.input:focus{
+    outline: #7a7f7d;
 }
 
 .textarea{
@@ -105,11 +115,12 @@
     
 }
 
+/* Mobile */
 
 
 @media screen  and (max-width:900px){
     .contact_main_wrap{
-        padding: 15% 5%;
+        padding: 15% 6%;
     }
 
     .contact_overview_wrap{
@@ -148,10 +159,11 @@
     }
 
     .input{
-        width: 350px;
+        max-width: 330px;
+        
     }
     .textarea{
-        width: 350px;
+        max-width: 330px;
     }
     
 }
