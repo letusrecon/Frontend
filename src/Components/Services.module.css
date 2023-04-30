@@ -47,7 +47,7 @@
 
 .service_icon{
     font-size: 35px;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     color:#5ba2b2 ;
 }
 
@@ -86,24 +86,25 @@
        
          
     }
+    .service_overview_desc{
+        padding: 0% 0%;
+        margin-bottom: 8%;
+        line-height: 2;
+    }
     .service_flex_container{
         flex-direction: column;
         padding: 5% 1%;
 
     }
 
-    .service_overview_desc{
-        padding: 0% 0%;
-        margin-bottom: 8%;
-        line-height: 2;
-    }
+    
 
     .service_inner_container{
         margin-bottom: 8%;
         padding: 6% 4%;
     }
     .service_inner_container_title{
-        font-size: 25px;
+        font-size: 20px;
         
     }
     .service_inner_container_desc{
