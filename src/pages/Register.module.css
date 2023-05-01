@@ -55,11 +55,11 @@ text-align: center;
   margin-top: 5%;
 
 }
-.register_text {
+.register_text_1 {
   color: whitesmoke;
   font-family: var(--text-font);
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.4;
 
   
 }
@@ -75,17 +75,17 @@ text-align: center;
   border: 0;
   border-radius: 20px;
   font-size: 19px;
-  margin-bottom: 7%;
+  margin-bottom: 6%;
   background-color: var(--btn-color);
   font-family: var(--text-font);
   color: black;
 }
 
-.register_login_text {
+.register_text_2 {
   color: whitesmoke;
  
   font-family: var(--text-font);
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .register_links {
@@ -159,8 +159,14 @@ text-align: center;
     margin-bottom: 1%;
   }
   
-  .register_text{
+  .register_text_1{
     text-align: left;
+    font-size: 15px;
+  }
+
+  .register_text_2{
+    font-size: 15px;
+    text-align: center;
   }
  
 .register_action_btn{

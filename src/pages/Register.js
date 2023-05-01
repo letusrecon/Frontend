@@ -63,7 +63,7 @@ export default function Register (){
             </div>
 
             <div className={styles.help_links_wrap}>
-              <p className={styles.register_text}>
+              <p className={styles.register_text_1}>
                 By signing up, you agree to our{" "}
                 <Link className={styles.register_links} href="/Terms">
                   Terms of Service
@@ -77,7 +77,7 @@ export default function Register (){
               <div className={styles.register_action_btn_wrap}>
                 <button className={styles.register_action_btn}>Sign up</button>
               </div>
-              <p className={styles.register_login_text}>
+              <p className={styles.register_text_2}>
                 Already own an account ?{" "}
                 <Link className={styles.register_links} href="/Login">
                   Sign in here
