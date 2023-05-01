@@ -1,0 +1,136 @@
+.main_register_container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.form_col {
+  padding: 4% 10%;
+  margin: 0rem 11rem;
+}
+
+.register_form {
+  padding: 7% 5%;
+}
+.register_heading {
+  font-family: var(--text-font);
+  font-size: 50px;
+  margin-bottom: 10%;
+  color: var(--btn-color);
+}
+
+.register_input_wrap {
+  margin-bottom: 25px;
+}
+
+.register_label {
+  display: block;
+  font-size: 20px;
+  color: #ccc;
+  font-family: var(--text-font);
+  margin-bottom: 10px;
+}
+
+.register_input {
+  width: 450px;
+  padding: 8px 10px;
+  background: rgba(255, 253, 253, 0.931);
+  border: 1px solid #aba3a3;
+  outline-color: var(--btn-color);
+  border-radius: 5px;
+}
+
+.help_links_wrap {
+  margin-top: 10%;
+
+}
+.register_text {
+  color: whitesmoke;
+  font-family: var(--text-font);
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+  
+}
+
+.register_action_btn_wrap {
+  text-align: center;
+}
+
+.register_action_btn {
+  padding: 8px 15px;
+  width: 300px;
+  margin: 20px 0px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 10%;
+  background-color: var(--btn-color);
+}
+
+.register_login_text {
+  color: whitesmoke;
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 17px;
+}
+
+.register_links {
+  text-decoration: none;
+  margin: 0px 4px;
+  font-family: var(--text-font);
+  color: var(--btn-color);
+}
+
+
+/* Mini screen */
+
+@media screen and (max-width: 1442px) {
+  .form_col {
+    padding: 3% 10%;
+    margin: 0rem 4rem;
+  }
+
+  .register_form {
+    padding: 6% 15%;
+  }
+
+  .regsiter_input {
+    width: 420px;
+  }
+  .register_action_btn{
+    width: 400px;
+  }
+
+}
+
+
+/* Mobile*/
+
+@media screen and (max-width: 900px) {
+  .form_col {
+    padding: 10% 11%;
+    margin: 0;
+  }
+
+  .register_form {
+    padding: 6% 1%;
+  }
+  .register_heading {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .register_input {
+    width: 300px;
+  }
+
+  /* .register_action_btn_wrap{
+   
+  } */
+  .img_col {
+    display: none;
+  }
+
+  
+}

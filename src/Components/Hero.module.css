@@ -7,7 +7,7 @@
 }
 
 .hero_inner_container_1 {
-  margin-right: 5%;
+  margin-right: 8%;
 
   margin-top: 9%;
   padding: 2% 1%;
@@ -19,13 +19,13 @@
 
 }
 .let{
-     font-size: 50px;
+     font-size: 55px;
 font-family: 'Bruno Ace SC', cursive;
   color: #75e7cf;
 
 }
 .us{
-     font-size: 50px;
+     font-size: 55px;
 
  font-family: 'Bruno Ace SC', cursive;
   color: #cfd2ee;
@@ -33,14 +33,14 @@ font-family: 'Bruno Ace SC', cursive;
 }
 
 .re{
-     font-size: 50px;
+     font-size: 55px;
        
   font-family: 'Bruno Ace SC', cursive;
   color: #d4b9f7;
 }
 
 .con{
-     font-size: 50px;
+     font-size: 55px;
    
   font-family: 'Bruno Ace SC', cursive;
   color: #7864f2;
@@ -123,7 +123,7 @@ font-family: 'Bruno Ace SC', cursive;
   }
 
   .hero_img {
-    width: 450px;
-    height: 450px;
+    width: 455px;
+    height: 455px;
   }
 }
