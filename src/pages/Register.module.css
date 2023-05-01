@@ -5,44 +5,54 @@
 }
 
 .form_col {
-  padding: 4% 10%;
-  margin: 0rem 11rem;
+  padding: 3% 10%;
+  margin: 0rem 9rem;
 }
 
 .register_form {
-  padding: 7% 5%;
+  padding: 3% 5%;
+}
+
+.register_logo_wrap{
+text-align: center;
+}
+.register_logo{
+ width: 120px;
+ height: 120px;
+ 
 }
 .register_heading {
   font-family: var(--text-font);
-  font-size: 50px;
-  margin-bottom: 10%;
+ font-size: 30px;
+  margin-bottom: 5%;
   color: var(--btn-color);
+  text-align: center;
 }
 
 .register_input_wrap {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .register_label {
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   color: #ccc;
   font-family: var(--text-font);
   margin-bottom: 10px;
 }
 
 .register_input {
-  width: 450px;
-  padding: 8px 10px;
+  width: 400px;
+  padding: 7px 10px;
   background: none;
   border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
-  border-radius: 5px;
+  border-radius: 20px;
   color: whitesmoke;
 }
 
 .help_links_wrap {
-  margin-top: 10%;
+  margin-top: 5%;
 
 }
 .register_text {
@@ -59,21 +69,23 @@
 } */
 
 .register_action_btn {
-  padding: 8px 15px;
-  width: 450px;
+  padding: 6px 15px;
+  width: 400px;
   margin: 20px 0px;
   border: 0;
   border-radius: 20px;
-  font-size: 18px;
-  margin-bottom: 10%;
+  font-size: 19px;
+  margin-bottom: 7%;
   background-color: var(--btn-color);
+  font-family: var(--text-font);
+  color: black;
 }
 
 .register_login_text {
   color: whitesmoke;
  
   font-family: var(--text-font);
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .register_links {
@@ -88,20 +100,21 @@
 
 @media screen and (max-width: 1442px) {
   .form_col {
-    padding: 3% 10%;
-    margin: 0rem 4rem;
+    padding: 2% 8%;
+    margin: 0rem 3rem;
   }
 
   .register_form {
-    padding: 4% 15%;
+    padding: 2% 15%;
   }
 
   .regsiter_input {
     width: 400px;
   }
   .register_action_btn{
-    width: 450px;
+    width: 400px;
   }
+  
 
 }
 
@@ -109,17 +122,29 @@
 /* Mobile*/
 
 @media screen and (max-width: 900px) {
+
+  
   .form_col {
-    padding: 10% 11%;
+    padding: 2rem 2rem;
     margin: 0;
   }
 
   .register_form {
-    padding: 6% 1%;
+    padding: 2% 1%;
   }
+
+  .register_logo{
+    height: 99px;
+  }
+
   .register_heading {
-    font-size: 35px;
+    font-size: 23px;
+    margin-bottom: 5%;
     
+    
+  }
+  .register_input_wrap{
+    margin-bottom: 19px;
   }
 
   .register_input {
@@ -129,9 +154,11 @@
   /* .register_action_btn_wrap{
    
   } */
-  .img_col {
-    display: none;
+
+  .help_links_wrap{
+    margin-bottom: 2%;
   }
+  
   .register_text{
     text-align: left;
   }
@@ -139,5 +166,9 @@
 .register_action_btn{
   width: 300px;
 }
+
+.img_col {
+    display: none;
+  }
   
 }

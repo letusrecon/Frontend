@@ -8,7 +8,16 @@ export default function Register (){
       <div className={styles.main_register_container}>
         <div className={styles.form_col}>
           <form className={styles.register_form} action="">
-            <h1 className={styles.register_heading}> Sign up</h1>
+            <div className={styles.register_logo_wrap}>
+              <Image
+                src="/assets/logo-removebg-preview.png"
+                width="100"
+                height="150"
+                className={styles.register_logo}
+              />
+            </div>
+
+            <h4 className={styles.register_heading}> Sign up</h4>
             <div className={styles.register_input_wrap}>
               <label className={styles.register_label} htmlFor="name">
                 Name
@@ -57,7 +66,7 @@ export default function Register (){
               <p className={styles.register_text}>
                 By signing up, you agree to our{" "}
                 <Link className={styles.register_links} href="/Terms">
-                Terms of Service
+                  Terms of Service
                 </Link>{" "}
                 and{" "}
                 <Link className={styles.register_links} href="/Policy">
@@ -79,7 +88,12 @@ export default function Register (){
         </div>
 
         <div className={styles.img_col}>
-          <Image src="/assets/hack02.jpg" width="930" height="1000" alt="register"/>
+          <Image
+            src="/assets/Imageregsiter.png"
+            width="930"
+            height="1000"
+            alt="register"
+          />
         </div>
       </div>
     );

@@ -7,8 +7,15 @@ export default function Login() {
     <div className={styles.main_login_container}>
       <div className={styles.login_form_col}>
         <form className={styles.login_form} action="">
+          <div className={styles.login_logo_wrap}>
+            <Image
+              src="/assets/logo-removebg-preview.png"
+              width="100"
+              height="150"
+              className={styles.login_logo}
+            />
+          </div>
           <h1 className={styles.login_heading}> Sign in</h1>
-        
 
           <div className={styles.login_input_wrap}>
             <label className={styles.login_label} htmlFor="email">
@@ -28,14 +35,12 @@ export default function Login() {
             />
           </div>
 
-
           <div className={styles.login_help_links_wrap}>
             <p className={styles.login_text}>
               Forgot Password ?{" "}
               <Link className={styles.login_links} href="/">
                 Click here
               </Link>{" "}
-             
             </p>
 
             <div className={styles.login_action_btn_wrap}>
@@ -52,7 +57,12 @@ export default function Login() {
       </div>
 
       <div className={styles.login_img_col}>
-        <Image src="/assets/Hacklatest.jpg" width="930" height="1000" alt="login"/>
+        <Image
+          src="/assets/Imageloginimg.png"
+          width="930"
+          height="1000"
+          alt="login"
+        />
       </div>
     </div>
   );
