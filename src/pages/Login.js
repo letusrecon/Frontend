@@ -42,7 +42,7 @@ export default function Login() {
               <button className={styles.login_action_btn}>Sign in</button>
             </div>
             <p className={styles.login_text}>
-              You don't have an account ?{" "}
+              You dont have an account ?
               <Link className={styles.login_links} href="/Register">
                 Create an account here
               </Link>{" "}
