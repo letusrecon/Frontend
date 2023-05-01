@@ -52,10 +52,18 @@ background: none;
 }
 
 .login_help_links_wrap {
-  margin-top: 10%;
+  margin-top: 7%;
 
 }
-.login_text {
+.login_text_1 {
+  color: whitesmoke;
+  font-family: var(--text-font);
+  font-size: 17px;
+  line-height: 1.5;
+
+  
+}
+.login_text_2{
   color: whitesmoke;
   font-family: var(--text-font);
   font-size: 17px;
@@ -71,11 +79,11 @@ background: none;
 .login_action_btn {
   padding: 8px 15px;
   width: 450px;
-  margin: 20px 0px;
+  margin: 19px 0px;
   border: 0;
   border-radius: 20px;
   font-size: 18px;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   background-color: var(--btn-color);
   color: black;
 }
@@ -141,20 +149,31 @@ background: none;
   }
 
   .login_form {
-    padding: 0% 2%;
+    padding: 1% 1%;
   }
   .login_heading {
-    font-size: 28px;
+    font-size: 25px;
     
   }
 
   .login_input {
     max-width: 320px;
 
+
   }
 .login_action_btn{
   width: 315px;
 }
+
+.login_text_1{
+  font-size: 16px;
+}
+
+.login_text_2{
+  font-size: 16px;
+  text-align: center;
+}
+  
   
   .login_img_col {
     display: none;
