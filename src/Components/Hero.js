@@ -15,11 +15,11 @@ export default function Hero() {
 
         <div className={styles.hero_text_wrap}>
           <p className={styles.hero_text}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            temporibus deserunt fuga, quisquam ea magni qui suscipit quod
-            perspiciatis, iusto obcaecati dignissimos ad debitis! Facilis odit
-            atque esse soluta quibusdam! A deleniti incidunt, quibusdam sunt
-            fugiat repellat reiciendis beatae quasi.
+            Unlock the power of comprehensive web reconnaissance with
+            LetUsRecon, the most advanced scanning tool designed to safeguard
+            your digital assets. Experience unparalleled accuracy and efficiency
+            while uncovering potential vulnerabilities and threats with just a
+            few clicks.
           </p>
         </div>
 
@@ -31,9 +31,9 @@ export default function Hero() {
       <div className={styles.hero_inner_container_2}>
         <Image
           className={styles.hero_img}
-          src="/assets/Free_Vector_Security_shield_vector_cyber_security_technology.jpg"
+          src="/assets/Landing_hero_image 101hero.png"
           width={565}
-          height={500}
+          height={490}
           alt="LetUsRecon"
         />
       </div>

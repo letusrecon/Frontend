@@ -6,20 +6,19 @@ export default function Contact() {
       <div className={styles.contact_overview_wrap}>
         <h1 className={styles.contact_main_heading}>Contact Us</h1>
         <p className={styles.contact_main_desc}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non vitae,
-          ipsam magnam vel ipsum ullam quae! Autem nostrum id nemo.
+          Feel free to reach out to us for any enquiries.
         </p>
       </div>
 
       <div className={styles.contact_inner_wrap}>
-        <div className={styles.contact_inner_col_1}>
+        {/* <div className={styles.contact_inner_col_1}>
           <h2 className={styles.contact_info_title}>Contact Information</h2>
           <p className={styles.contact_adress}>
             182 ave - Glendale, NY 10285, US
           </p>
           <p className={styles.tel_info}>1 (8000) 921 8972</p>
           <p className={styles.email_info}>Support@LetUsRecon.com</p>
-        </div>
+        </div> */}
         <form className={styles.form}>
           <div className={styles.input_wrap}>
             <div className={styles.label_wrap}>

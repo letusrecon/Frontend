@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from "./Footer.module.css"
+import { FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
 
 export default function Footer (){
  const cuurentDate = ()=>{
@@ -16,7 +17,9 @@ export default function Footer (){
             <h1 className={styles.footer_main_heading}>LetUsRecon</h1>
 
             <p className={styles.footer_text}>
-              The leading tool for easy and vbest Reconnaisance
+              Say goodbye to boring manual recon, and hello to lightning-fast
+              results that'll make your competitors green with envy.So go ahead
+              and give it a try - LetUsRecon, so you don't have to!
             </p>
           </div>
 
@@ -40,13 +43,13 @@ export default function Footer (){
               </li>
               <li className={styles.footer_inner_col_li}>
                 <Link className={styles.footer_link} href="/">
-                  Refundand Cancellation
+                  Refund Policy
                 </Link>
               </li>
             </ul>
           </div>
 
-          <div className={styles.footer_inner_col}>
+          <div className={styles.footer_inner_col_2}>
             <h1 className={styles.footer_inner_inner_heading}>Features</h1>
             <ul className={styles.inner_footer_inner_col_ul}>
               <li className={styles.footer_inner_col_li}>
@@ -72,12 +75,26 @@ export default function Footer (){
             </ul>
           </div>
         </div>
-        <hr className={styles.hr}/>
+        <hr className={styles.hr} />
         <div className={styles.copy_right_wrap}>
           <p className={styles.copy_right_text}>
             © {cuurentDate()} LetUsRecon - All Rights Reserved
           </p>
-          <div></div>
+          <div>
+            <a href="https://twitter.com/LetusRecon " target="_blank">
+             
+              <FaTwitter className={styles.footer_icon} />
+            </a>
+            <a c href=": https://www.instagram.com/letusrecon/ " target="_blank">
+           
+              <FaInstagram className={styles.footer_icon} />
+            </a>
+
+            <a href=" https://discord.gg/Wcg7T8hv" target="_blank">
+             
+              <FaDiscord className={styles.footer_icon} />
+            </a>
+          </div>
         </div>
       </footer>
     );

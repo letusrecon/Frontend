@@ -42,7 +42,7 @@ text-align: center;
 }
 
 .register_input {
-  width: 400px;
+  width: 450px;
   padding: 8px 10px;
   background: none;
   border: 1px solid #7e7a7a95;
@@ -70,7 +70,7 @@ text-align: center;
 
 .register_action_btn {
   padding: 6px 15px;
-  width: 400px;
+  width: 450px;
   margin: 20px 0px;
   border: 0;
   border-radius: 20px;
@@ -112,7 +112,7 @@ text-align: center;
     width: 400px;
   }
   .register_action_btn{
-    width: 400px;
+    width: 450px;
   }
   
 

@@ -12,7 +12,7 @@ export default function Pricing() {
       <div className={styles.package_flex_container}>
         <div className={styles.package_box_1}>
           <h2 className={styles.package_title}>Pro</h2>
-          <h3 className={styles.package_desc}>Best for Professionals</h3>
+          <h3 className={styles.package_desc}>Suitable for Professionals</h3>
           <h3 className={styles.package_amount}>
             $40
             <span className={styles.package_timeline}>
@@ -26,7 +26,7 @@ export default function Pricing() {
             <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              - Access to all functionalities
+              - Access to all features
             </p>
             <p className={styles.package_feature}>- Support 24/7</p>
           </div>
@@ -48,7 +48,7 @@ export default function Pricing() {
             <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              - Access to all functionalities
+              - Access to all features
             </p>
             <p className={styles.package_feature}>- Support 24/7</p>
           </div>
@@ -70,7 +70,7 @@ export default function Pricing() {
             <p className={styles.package_feature}>- Single user</p>
             <p className={styles.package_feature}>
               {" "}
-              - Access to all functionalities
+              - Access to all features
             </p>
             <p className={styles.package_feature}>- Support 24/7</p>
           </div>

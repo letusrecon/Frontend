@@ -1,11 +1,11 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faServer,
-  faDatabase,
-} from "@fortawesome/free-solid-svg-icons";
+import { faServer, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Services.module.css";
-
+import { MdDashboardCustomize, MdContactSupport } from "react-icons/md";
+import {TbSettingsAutomation} from 'react-icons/tb'
+import {FiSearch} from 'react-icons/fi'
+import {BiAnalyse} from 'react-icons/bi'
+import {FaTools} from 'react-icons/fa'
 
 
 export default function Services() {
@@ -13,51 +13,53 @@ export default function Services() {
     <div className={styles.service_main_wrap}>
       <div className={styles.service_overview_wrap}>
         <h2 className={styles.service_overview_title}>
-          Our Pentesting Services
+          The Ultimate Reconnaissance Solution
         </h2>
         <p className={styles.service_overview_desc}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
-          totam cupiditate molestias minus a, sequi suscipit illo consectetur
-          nemo soluta.
+          Upgrade your bug bounty game with our automated reconnaissance tool.
+          Save time and effort by eliminating manual recon and uncover hidden
+          vulnerabilities quickly.
         </p>
       </div>
 
       <div className={styles.service_flex_container}>
         <div className={styles.service_inner_container}>
-          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+          <MdDashboardCustomize className={styles.service_icon} />
+
           <h4 className={styles.service_inner_container_title}>
-            Comprehensive Dashboard & User Interface
+            User-Friendly Dashboard & Interface
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.{" "}
+            Effortlessly navigate the online landscape with our easy-to-use
+            dashboard, offering clear overviews of scans, subdomains, and
+            crucial metrics designed for users.
           </p>
         </div>
 
         <div className={styles.service_inner_container}>
           {/* <FontAwesomeIcon className={styles.service_icon} icon={faServer} /> */}
-          <FontAwesomeIcon className={styles.service_icon} icon={faDatabase} />
+
+          <TbSettingsAutomation className={styles.service_icon} />
 
           <h4 className={styles.service_inner_container_title}>
-            Automated Vulnerbilties Reporting
+            Automated Weakness Detection
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.
+            Receive comprehensive reports on potential weaknesses, enabling you
+            to proactively find and report vulnerabilities in the systems and
+            applications of your target.
           </p>
         </div>
         <div className={styles.service_inner_container}>
-          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+          <FiSearch className={styles.service_icon} />
 
           <h4 className={styles.service_inner_container_title}>
-            Comprehensive Asset Finder
+            In-Depth Asset Exploration
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.
+            Discover hidden web assets and potential attack surfaces using a
+            powerful asset exploration feature, providing you with a complete
+            understanding of the target's infrastructure.
           </p>
         </div>
       </div>
@@ -66,37 +68,36 @@ export default function Services() {
 
       <div className={styles.service_flex_container}>
         <div className={styles.service_inner_container}>
-          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+          <BiAnalyse className={styles.service_icon} />
           <h4 className={styles.service_inner_container_title}>
-            Advanced Port Scanning
+            Cutting-Edge Port Analysis
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.{" "}
+            Improve your process with advanced port analysis, identifying open
+            ports and services to pinpoint potential entry points in web assets.
           </p>
         </div>
 
         <div className={styles.service_inner_container}>
-          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+          <FaTools className={styles.service_icon} />
           <h4 className={styles.service_inner_container_title}>
-            Integrated Reconnaissance Toolbox
+            All-Inclusive Reconnaissance Toolkit{" "}
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.
+            Optimise your reconnaissance process with an integrated toolkit for
+            subdomain enumeration, directory brute-forcing, and concealed
+            parameter detection.
           </p>
         </div>
         <div className={styles.service_inner_container}>
-          <FontAwesomeIcon className={styles.service_icon} icon={faServer} />
+          <MdContactSupport className={styles.service_icon} />
           <h4 className={styles.service_inner_container_title}>
-            Affordable Pricing
+            Cost-Effective Pricing and 24/7 Support
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum
-            deleniti magni, voluptate ex aliquam sit aperiam architecto quasi
-            ipsam.
+            plans with exceptional service, tailored for users. Round-the-clock
+            support ensures you receive the help you need when seeking
+            vulnerabilities.
           </p>
         </div>
       </div>

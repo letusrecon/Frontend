@@ -55,6 +55,7 @@
   color: whitesmoke;
   font-family: var(--title-font);
   font-size: 30px;
+  text-align: center;
 }
 
 .package_desc {

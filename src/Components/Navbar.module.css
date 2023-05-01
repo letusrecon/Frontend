@@ -5,12 +5,30 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 1% 6%;
+  padding: 0% 6%;
   align-items: center;
 }
 
+.nav_logo{
+  width: 200px;
+  height: 150px;
+}
+
+/* .nav_logo_wrap{
+  margin-right: 25rem;
+} */
+
+.nav_inner_flex_wrap{
+  display: flex;
+}
+
+.nav_link_wrap{
+  margin: 10px 20px;
+  
+  
+}
 .link {
-  margin: 0px 10px;
+  margin: 0px 15px;
   text-decoration: none;
   color: whitesmoke;
   font-family: var(--title-font);
@@ -28,7 +46,7 @@
 }
 .action_btn {
   border: 1px solid var(--btn-color);
-  padding: 7px 20px;
+  padding: 8px 25px;
   border-radius: 20px;
   background: none;
   color: whitesmoke;

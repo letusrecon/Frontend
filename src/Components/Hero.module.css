@@ -3,7 +3,7 @@
 .hero_container {
   display: flex;
   justify-content: center;
-  padding: 5% 10%;
+  padding: 3% 10%;
 }
 
 .hero_inner_container_1 {
@@ -69,8 +69,8 @@ font-family: 'Bruno Ace SC', cursive;
 }
 .hero_img {
   border-radius: 15px;
-  transform: skewX(-13deg);
-  border: 1px solid rgb(52, 49, 49);
+  /* transform: skewX(-13deg); */
+  /* border: 1px solid rgb(52, 49, 49); */
 }
 
 
@@ -123,7 +123,7 @@ font-family: 'Bruno Ace SC', cursive;
   }
 
   .hero_img {
-    width: 455px;
-    height: 455px;
+    width: 465px;
+    height: 450px;
   }
 }
