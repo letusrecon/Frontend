@@ -85,7 +85,7 @@ text-align: center;
   color: whitesmoke;
  
   font-family: var(--text-font);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .register_links {
@@ -130,7 +130,7 @@ text-align: center;
   }
 
   .register_form {
-    padding: 2% 1%;
+    padding: 1% 1%;
   }
 
   .register_logo{
@@ -138,13 +138,13 @@ text-align: center;
   }
 
   .register_heading {
-    font-size: 23px;
-    margin-bottom: 5%;
+    font-size: 20px;
+    margin-bottom: 4%;
     
     
   }
   .register_input_wrap{
-    margin-bottom: 19px;
+    margin-bottom: 18px;
   }
 
   .register_input {
@@ -156,7 +156,7 @@ text-align: center;
   } */
 
   .help_links_wrap{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   
   .register_text{
