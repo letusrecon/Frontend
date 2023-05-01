@@ -79,7 +79,7 @@ export default function Register (){
         </div>
 
         <div className={styles.img_col}>
-          <Image src="/assets/hack02.jpg" width="930" height="1000" />
+          <Image src="/assets/hack02.jpg" width="930" height="1000" alt="register"/>
         </div>
       </div>
     );

@@ -52,7 +52,7 @@ export default function Login() {
       </div>
 
       <div className={styles.login_img_col}>
-        <Image src="/assets/hack01.jpg" width="930" height="1000" />
+        <Image src="/assets/hack01.jpg" width="930" height="1000" alt='login'/>
       </div>
     </div>
   );

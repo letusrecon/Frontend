@@ -15,6 +15,7 @@ export default function Navbar(){
             width={180}
             height={125}
             className={styles.logo}
+            alt="logo"
           />
         </div>
         <div>
