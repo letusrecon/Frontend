@@ -34,15 +34,15 @@
 .login_input {
   width: 450px;
   padding: 8px 10px;
-  background: rgba(255, 253, 253, 0.931);
-  border: 1px solid #aba3a3;
+background: none;
+  border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
   border-radius: 5px;
+  color: whitesmoke;
 }
 
 .login_help_links_wrap {
   margin-top: 10%;
-  text-align: center;
 
 }
 .login_text {
@@ -53,16 +53,16 @@
   
 }
 
-.login_action_btn_wrap {
+/* .login_action_btn_wrap {
   
-}
+} */
 
 .login_action_btn {
   padding: 8px 15px;
-  width: 300px;
+  width: 450px;
   margin: 20px 0px;
   border: 0;
-  border-radius: 3px;
+  border-radius: 20px;
   font-size: 18px;
   margin-bottom: 10%;
   background-color: var(--btn-color);
@@ -102,9 +102,9 @@
   .login_input {
     width: 400px;
   }
- .login_help_links_wrap{
-    text-align: center;
- }
+.login_action_btn{
+  width: 400px;
+}
 
 }
 
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 900px) {
   .login_form_col {
-    padding: 8rem 8%;
+    padding: 7rem 8%;
     margin: 0;
   }
 
@@ -121,14 +121,16 @@
   }
   .login_heading {
     font-size: 35px;
-    text-align: center;
+    
   }
 
   .login_input {
-    max-width: 310px;
+    max-width: 315px;
 
   }
-
+.login_action_btn{
+  width: 315px;
+}
   
   .login_img_col {
     display: none;

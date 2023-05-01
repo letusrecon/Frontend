@@ -8,7 +8,7 @@ export default function Register (){
       <div className={styles.main_register_container}>
         <div className={styles.form_col}>
           <form className={styles.register_form} action="">
-            <h1 className={styles.register_heading}> Registration</h1>
+            <h1 className={styles.register_heading}> Sign up</h1>
             <div className={styles.register_input_wrap}>
               <label className={styles.register_label} htmlFor="name">
                 Name
@@ -66,12 +66,12 @@ export default function Register (){
               </p>
 
               <div className={styles.register_action_btn_wrap}>
-                <button className={styles.register_action_btn}>Submit</button>
+                <button className={styles.register_action_btn}>Sign up</button>
               </div>
               <p className={styles.register_login_text}>
                 Already own an account ?{" "}
                 <Link className={styles.register_links} href="/Login">
-                  Login
+                  Sign in here
                 </Link>{" "}
               </p>
             </div>

@@ -7,7 +7,7 @@ export default function Login() {
     <div className={styles.main_login_container}>
       <div className={styles.login_form_col}>
         <form className={styles.login_form} action="">
-          <h1 className={styles.login_heading}> LetUsRecon Login</h1>
+          <h1 className={styles.login_heading}> Sign in</h1>
         
 
           <div className={styles.login_input_wrap}>
@@ -39,7 +39,7 @@ export default function Login() {
             </p>
 
             <div className={styles.login_action_btn_wrap}>
-              <button className={styles.login_action_btn}>Submit</button>
+              <button className={styles.login_action_btn}>Sign in</button>
             </div>
             <p className={styles.login_text}>
               You don't have an account ?{" "}
@@ -52,7 +52,7 @@ export default function Login() {
       </div>
 
       <div className={styles.login_img_col}>
-        <Image src="/assets/hack01.jpg" width="930" height="1000" alt='login'/>
+        <Image src="/assets/Hacklatest.jpg" width="930" height="1000" alt="login"/>
       </div>
     </div>
   );

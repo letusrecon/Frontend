@@ -34,10 +34,11 @@
 .register_input {
   width: 450px;
   padding: 8px 10px;
-  background: rgba(255, 253, 253, 0.931);
-  border: 1px solid #aba3a3;
+  background: none;
+  border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
   border-radius: 5px;
+  color: whitesmoke;
 }
 
 .help_links_wrap {
@@ -49,20 +50,20 @@
   font-family: var(--text-font);
   font-size: 17px;
   line-height: 1.5;
-  text-align: center;
+
   
 }
 
-.register_action_btn_wrap {
+/* .register_action_btn_wrap {
   text-align: center;
-}
+} */
 
 .register_action_btn {
   padding: 8px 15px;
-  width: 300px;
+  width: 450px;
   margin: 20px 0px;
   border: 0;
-  border-radius: 3px;
+  border-radius: 20px;
   font-size: 18px;
   margin-bottom: 10%;
   background-color: var(--btn-color);
@@ -70,7 +71,7 @@
 
 .register_login_text {
   color: whitesmoke;
-  text-align: center;
+ 
   font-family: var(--text-font);
   font-size: 17px;
 }
@@ -92,14 +93,14 @@
   }
 
   .register_form {
-    padding: 6% 15%;
+    padding: 4% 15%;
   }
 
   .regsiter_input {
-    width: 420px;
+    width: 400px;
   }
   .register_action_btn{
-    width: 400px;
+    width: 450px;
   }
 
 }
@@ -118,7 +119,7 @@
   }
   .register_heading {
     font-size: 35px;
-    text-align: center;
+    
   }
 
   .register_input {
@@ -131,6 +132,12 @@
   .img_col {
     display: none;
   }
-
+  .register_text{
+    text-align: left;
+  }
+ 
+.register_action_btn{
+  width: 300px;
+}
   
 }
