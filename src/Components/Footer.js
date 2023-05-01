@@ -18,8 +18,8 @@ export default function Footer (){
 
             <p className={styles.footer_text}>
               Say goodbye to boring manual recon, and hello to lightning-fast
-              results that'll make your competitors green with envy.So go ahead
-              and give it a try - LetUsRecon, so you don't have to!
+              results that will make your competitors green with envy.So go ahead
+              and give it a try - LetUsRecon, so you dont have to!
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer (){
              
               <FaTwitter className={styles.footer_icon} />
             </a>
-            <a c href=": https://www.instagram.com/letusrecon/ " target="_blank">
+            <a c href=" https://www.instagram.com/letusrecon/ " target="_blank">
            
               <FaInstagram className={styles.footer_icon} />
             </a>

@@ -59,7 +59,7 @@ export default function Services() {
           <p className={styles.service_inner_container_desc}>
             Discover hidden web assets and potential attack surfaces using a
             powerful asset exploration feature, providing you with a complete
-            understanding of the target's infrastructure.
+            understanding of the target is infrastructure.
           </p>
         </div>
       </div>
