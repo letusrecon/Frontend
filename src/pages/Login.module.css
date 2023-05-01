@@ -135,7 +135,7 @@ background: none;
 
 @media screen and (max-width: 900px) {
   .login_form_col {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     margin: 0;
   }
 
@@ -148,7 +148,7 @@ background: none;
   }
 
   .login_input {
-    max-width: 319px;
+    max-width: 320px;
 
   }
 .login_action_btn{
