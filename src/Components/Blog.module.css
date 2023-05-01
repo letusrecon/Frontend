@@ -33,10 +33,10 @@
 }
 
 .blog_action_btn{
-    padding: 10px 15px;
-    width: 300px;
+    padding: 10px 13px;
+    width: 250px;
     border: 1px solid var(--btn-color);
-    border-radius: 15px;
+    
      background: none;
     color: whitesmoke;
     font-size: 20px;
@@ -59,7 +59,7 @@
         line-height: 1.7;
     }
     .blog_section_desc{
-        padding: 0% 4%;
+        padding: 0% 2%;
         line-height: 2;
 
     }
