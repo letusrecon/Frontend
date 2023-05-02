@@ -91,13 +91,21 @@
     }
 
     .copy_right_wrap{
-        padding: 4% 3%;
+        padding: 5% 3%;
+        flex-direction: column;
+        text-align: center;
 
     }
 
+
+    .footer_icon_wrap{
+
+         margin-top: 4%;
+    }
     .footer_icon{
-        font-size: 18px;
-        margin: 0px 4px;
+        font-size: 25px;
+        margin: 0px 10px;
+  
     }
     
 }

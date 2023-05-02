@@ -33,10 +33,10 @@
 }
 
 .blog_action_btn{
-    padding: 10px 13px;
-    width: 250px;
+    padding: 10px 10px;
+    width: 230px;
     border: 1px solid var(--btn-color);
-    
+    border-radius: 25px;
      background: none;
     color: whitesmoke;
     font-size: 20px;

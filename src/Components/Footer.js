@@ -78,9 +78,9 @@ export default function Footer (){
         <hr className={styles.hr} />
         <div className={styles.copy_right_wrap}>
           <p className={styles.copy_right_text}>
-            © {cuurentDate()} LetUsRecon - All Rights Reserved
+            © {cuurentDate()} LetUsRecon - All Rights Reserved.
           </p>
-          <div>
+          <div className={styles.footer_icon_wrap}>
             <a href="https://twitter.com/LetusRecon " target="_blank">
              
               <FaTwitter className={styles.footer_icon} />

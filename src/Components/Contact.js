@@ -20,19 +20,31 @@ export default function Contact() {
           <p className={styles.email_info}>Support@LetUsRecon.com</p>
         </div> */}
         <form className={styles.form}>
-          <div className={styles.input_wrap}>
-            <div className={styles.label_wrap}>
-              <label className={styles.input_label} htmlFor="">
-                Name
-              </label>
+          <div className={styles.name_input_wrap}>
+            <div>
+              <div className={styles.label_wrap}>
+                <label className={styles.input_label} htmlFor="">
+                  Name
+                </label>
+              </div>
+              <input className={styles.name_input} type="text" />
             </div>
-            <input className={styles.input} type="text" />
+
+            <div>
+              <div className={styles.label_wrap}>
+                <label className={styles.input_label} htmlFor="">
+                  Email
+                </label>
+              </div>
+
+              <input className={styles.name_input} type="email" />
+            </div>
           </div>
 
           <div className={styles.input_wrap}>
             <div className={styles.label_wrap}>
               <label className={styles.input_label} htmlFor="">
-                Email
+                Subject
               </label>
             </div>
 
@@ -50,7 +62,7 @@ export default function Contact() {
               className={styles.textarea}
               name=""
               id="message"
-              cols="60"
+              cols="64"
               rows="7"
             ></textarea>
           </div>

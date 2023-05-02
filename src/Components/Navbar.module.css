@@ -47,7 +47,7 @@
 .action_btn {
   border: 1px solid var(--btn-color);
   padding: 8px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   background: none;
   color: whitesmoke;
   font-size: 18px;

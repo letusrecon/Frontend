@@ -1,10 +1,17 @@
 import Image from "next/image";
 import styles from './Hero.module.css'
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const variant = {
+  hideen:{
+    
+  }
+}
 
 export default function Hero() {
   return (
-    <div className={styles.hero_container}>
+    <motion.div className={styles.hero_container}>
       <div className={styles.hero_inner_container_1}>
         <div className={styles.hero_heading_wrap}>
           <span className={styles.let}>Let</span>
@@ -37,6 +44,6 @@ export default function Hero() {
           alt="LetUsRecon"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
