@@ -11,8 +11,8 @@ const heroVariant = {
   visible: {
     opacity: 1,
     transition: {
-duration: 1.7
-
+      delay: 0.3,
+      duration: 1.8,
     },
   },
 };
@@ -47,7 +47,7 @@ export default function Hero() {
       className={styles.hero_container}
     >
       <div className={styles.hero_inner_container_1}>
-        <div  className={styles.hero_heading_wrap}>
+        <div className={styles.hero_heading_wrap}>
           <span className={styles.let}>Let</span>
           <span className={styles.us}>Us</span>
           <span className={styles.re}>Re</span>

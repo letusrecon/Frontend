@@ -79,7 +79,7 @@ font-family: 'Bruno Ace SC', cursive;
 @media screen and (max-width: 900px) {
   .hero_container {
     flex-direction: column;
-    padding: 4% 7%;
+    padding: 4% 5%;
   }
   .hero_inner_container_1 {
     text-align: center;
@@ -89,17 +89,17 @@ font-family: 'Bruno Ace SC', cursive;
 
 
   .let{
-    font-size: 25px;
+    font-size: 30px;
   }
     .us{
-    font-size: 25px;
+    font-size: 30px;
   }
     .re{
-    font-size: 25px;
+    font-size: 30px;
   }
 
     .con{
-    font-size: 25px;
+    font-size: 30px;
   }
     .hero_text {
     text-align: center;
