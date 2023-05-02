@@ -24,13 +24,9 @@
     justify-content: center;
 }
 
-.contact_inner_col_1{
-    margin-right: 8%;
-
-}
 
 
-
+/* 
 .contact_info_title{
     font-size: 40px;
     color: whitesmoke;
@@ -56,18 +52,16 @@
     font-size: 20px;
     color: whitesmoke;
      font-size: var(--text-font);
-}
+} */
 
 
 /* .form{
     
 } */
-.input_wrap{
-    margin-bottom: 25px;
-}
 
 
-/* spplies to name and email inputs only */
+
+/* Applies to name and email inputs only */
 
 .name_input_wrap{
     display: flex;
@@ -84,6 +78,12 @@
     
     color: whitesmoke;
 
+}
+
+/* Applies to ther inputs */
+
+.input_wrap{
+    margin-bottom: 25px;
 }
 .label_wrap{
      margin-bottom: 10px;
@@ -159,9 +159,16 @@
 
     }
 
-    .contact_inner_wrap{
+
+    /* .contact_inner_wrap{
+        padding: 0% 9%;
+
+    } */
+
+    /* .form{
         
-    }
+    } */
+
 
 
     .input_wrap{
@@ -172,12 +179,15 @@
         margin-bottom: 12px;
     }
 
+    
     .name_input{
-        width: 158px;
+        width: 159px;
+        margin-right: 7px;
+        
     }
 
     .input{
-        max-width: 330px;
+        max-width: 328px;
         
     }
     .textarea{

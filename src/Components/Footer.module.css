@@ -3,16 +3,11 @@
 
 } */
 
-.footer_main_heading{
-    font-family: var(--title-font);
-    color: whitesmoke;
-    margin-bottom: 15px;
-    font-size: 30px;
-}
 
 .inner_footer_main_wrap{
        display: flex;
     padding: 4% 8%;
+    justify-content: space-between;
     
 }
 
@@ -23,6 +18,12 @@
     display: none;
 }
 
+
+.footer_logo{
+    width: 150px;
+    height: 100px;
+    margin: 0;
+}
 
 
 .footer_text{
@@ -80,11 +81,15 @@
     
     .inner_footer_main_wrap{
         flex-direction: column;
-           padding: 15% 6%;
+           padding: 9% 7%;
     }
     .footer_main_heading{
         font-size: 25px;
         margin-bottom: 16px;
+    }
+
+    .footer_text{
+        width: 320px;
     }
     .footer_inner_col{
         margin-bottom: 4rem;

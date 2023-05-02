@@ -27,7 +27,7 @@
   
   
 }
-.link {
+.link  {
   margin: 0px 15px;
   text-decoration: none;
   color: whitesmoke;
@@ -65,21 +65,26 @@
 
 
   .nav{
-      padding: 0% 6%;
+      padding: 0% 8%;
   }
-  .logo{
-    width: 95px;
-    height: 100px;
+
+  .nav_logo{
+     width: 120px;
+    height: 120px;
+    
 
   }
-  .link {
+  .nav_link_wrap{
     display: none;
   }
 
-  .action_btn {
-    display: none;
+  .action_btn{
+    padding: 7px 13px;
+    font-size: 16px;
   }
+ 
 
+ 
   .toggle_icon{
     display: block;
     font-size: 24px;

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Image from "next/image"
+import img from "../../public/assets/logo-removebg-preview.png";
 import styles from "./Footer.module.css"
 import { FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
 
@@ -14,12 +14,12 @@ export default function Footer (){
         <hr className={styles.hr} />
         <div className={styles.inner_footer_main_wrap}>
           <div className={styles.footer_inner_col}>
-            <h1 className={styles.footer_main_heading}>LetUsRecon</h1>
+            <img className={styles.footer_logo} src="/assets/logo-removebg-preview.png" alt="footer" />
 
             <p className={styles.footer_text}>
               Say goodbye to boring manual recon, and hello to lightning-fast
-              results that will make your competitors green with envy.So go ahead
-              and give it a try - LetUsRecon, so you dont have to!
+              results that will make your competitors green with envy.So go
+              ahead and give it a try!
             </p>
           </div>
 
@@ -82,16 +82,13 @@ export default function Footer (){
           </p>
           <div className={styles.footer_icon_wrap}>
             <a href="https://twitter.com/LetusRecon " target="_blank">
-             
               <FaTwitter className={styles.footer_icon} />
             </a>
             <a c href=" https://www.instagram.com/letusrecon/ " target="_blank">
-           
               <FaInstagram className={styles.footer_icon} />
             </a>
 
             <a href=" https://discord.gg/Wcg7T8hv" target="_blank">
-             
               <FaDiscord className={styles.footer_icon} />
             </a>
           </div>
