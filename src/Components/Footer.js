@@ -13,17 +13,21 @@ export default function Footer (){
       <footer className={styles.footer}>
         <hr className={styles.hr} />
         <div className={styles.inner_footer_main_wrap}>
-          <div className={styles.footer_inner_col}>
-            <img className={styles.footer_logo} src="/assets/logo-removebg-preview.png" alt="footer" />
+          <div className={styles.footer_inner_col_1}>
+            <img
+              className={styles.footer_logo}
+              src="/assets/LetUsRecon Logo (1).pdf (250 × 150px).png"
+              alt="footer"
+            />
 
             <p className={styles.footer_text}>
               Say goodbye to boring manual recon, and hello to lightning-fast
-              results that will make your competitors green with envy.So go
+              results that will make your competitors green with envy. So go
               ahead and give it a try!
             </p>
           </div>
 
-          <div className={styles.footer_inner_col}>
+          <div className={styles.footer_inner_col_2}>
             <h1 className={styles.footer_inner_inner_heading}>Company</h1>
             <ul className={styles.inner_footer_inner_col_ul}>
               <li className={styles.footer_inner_col_li}>
@@ -48,7 +52,7 @@ export default function Footer (){
               </li>
             </ul>
           </div>
-
+{/* 
           <div className={styles.footer_inner_col_2}>
             <h1 className={styles.footer_inner_inner_heading}>Features</h1>
             <ul className={styles.inner_footer_inner_col_ul}>
@@ -73,8 +77,11 @@ export default function Footer (){
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
+
         </div>
+
+
         <hr className={styles.hr} />
         <div className={styles.copy_right_wrap}>
           <p className={styles.copy_right_text}>

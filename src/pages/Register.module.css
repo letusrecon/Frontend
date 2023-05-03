@@ -149,6 +149,8 @@ text-align: center;
 
   .register_input {
     width: 300px;
+
+     padding: 9px 10px;
   }
 
   /* .register_action_btn_wrap{
