@@ -71,8 +71,8 @@
 .name_input{
         background: none;
     border: 1px solid #7a7f7d;
-    width: 260px;
-    padding: 15px ;
+    width: 312px;
+    padding: 14px ;
     border-radius: 10px;
     margin-right: 15px;
     
@@ -80,7 +80,7 @@
 
 }
 
-/* Applies to ther inputs */
+/* Applies to other inputs */
 
 .input_wrap{
     margin-bottom: 25px;
@@ -102,8 +102,8 @@
 .input{
     background: none;
     border: 1px solid #7a7f7d;
-    width: 540px;
-    padding: 15px ;
+    width: 638px;
+    padding: 14px ;
     border-radius: 10px;
     
     color: whitesmoke;
