@@ -62,8 +62,7 @@ export default function Contact() {
               className={styles.textarea}
               name=""
               id="message"
-              cols="75"
-              rows="7"
+              
             ></textarea>
           </div>
 

@@ -120,6 +120,8 @@
     outline: none;
     color: whitesmoke;
     padding: 10px;
+    width: 640px;
+    height: 150px;
 }
 
 .contact_btn_wrap{
