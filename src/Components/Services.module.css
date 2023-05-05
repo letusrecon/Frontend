@@ -30,7 +30,7 @@
 .service_inner_container{
     text-align: center;
     border: 1px solid rgb(37, 35, 35);
-    margin: 0px 15px;
+    margin: 0px 16px;
     border-radius: 20px;
     padding: 2% 1%;
     background-color: #141d1e;
@@ -53,7 +53,7 @@
 
 .service_inner_container_title{
     color: var(  --btn-color);
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     font-family: var(--title-font);
     font-size: 20px;
     line-height: 1.7;

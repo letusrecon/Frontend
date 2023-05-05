@@ -59,7 +59,7 @@ export default function Services() {
           <p className={styles.service_inner_container_desc}>
             Discover hidden web assets and potential attack surfaces using a
             powerful asset exploration feature, providing you with a complete
-            understanding of the target is infrastructure.
+            understanding of the target.
           </p>
         </div>
       </div>
@@ -70,11 +70,10 @@ export default function Services() {
         <div className={styles.service_inner_container}>
           <BiAnalyse className={styles.service_icon} />
           <h4 className={styles.service_inner_container_title}>
-            Cutting-Edge Port Analysis
+            Cutting-Edge Powerful Ports Discovery
           </h4>
           <p className={styles.service_inner_container_desc}>
-            Improve your process with advanced port analysis, identifying open
-            ports and services to pinpoint potential entry points in web assets.
+     identifying open ports and services to pinpoint potential entry points in web assets. Discover all ports using an efficient port scanning solution.
           </p>
         </div>
 

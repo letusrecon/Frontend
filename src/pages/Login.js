@@ -1,12 +1,54 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './Login.module.css'
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./Login.module.css";
+import { useState } from "react";
 
 export default function Login() {
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [isEmailTouched, setEmailTouched] = useState("");
+  const [enteredPassword, setEnteredPassword] = useState("");
+  const [isPasswordTouched, setPasswordTouched] = useState(false);
+
+  // Email
+
+  const emailInputIsValid = enteredEmail.trim() !== "";
+  const emailInputIsInValid = !emailInputIsValid && isEmailTouched;
+
+  const onBlurEmailHandler = () => {
+    setEmailTouched(true);
+  };
+
+  // Paasword
+
+  const passwordInputIsValid = enteredPassword.trim() !== "";
+  const passwordInputIsInValid = !passwordInputIsValid && isPasswordTouched;
+
+  const onBlurPasswordHandler = () => {
+    setPasswordTouched(true);
+  };
+
+  // Login submission
+  const loginSubmitHandler = (e) => {
+
+   e.preventDefault()
+    setEmailTouched(true);
+    setPasswordTouched(true);
+
+    if(!emailInputIsValid && !passwordInputIsValid){
+      return
+    }
+
+    console.log(enteredEmail, enteredPassword);
+  };
+
   return (
     <div className={styles.main_login_container}>
       <div className={styles.login_form_col}>
-        <form className={styles.login_form} action="">
+        <form
+          onSubmit={loginSubmitHandler}
+          className={styles.login_form}
+          action=""
+        >
           <div className={styles.login_logo_wrap}>
             <Image
               src="/assets/logo-removebg-preview.png"
@@ -19,9 +61,22 @@ export default function Login() {
 
           <div className={styles.login_input_wrap}>
             <label className={styles.login_label} htmlFor="email">
-              Email
+              Email Address
             </label>
-            <input name="email" className={styles.login_input} type="text" />
+            <input
+              name="email"
+              className={styles.login_input}
+              onChange={(e) => {
+                setEnteredEmail(e.target.value);
+              }}
+              onBlur={onBlurEmailHandler}
+              type="text"
+            />
+            {emailInputIsInValid && (
+              <p className={styles.login_error_msg}>
+                Email Address is required
+              </p>
+            )}
           </div>
 
           <div className={styles.login_input_wrap}>
@@ -32,7 +87,15 @@ export default function Login() {
               name="password"
               className={styles.login_input}
               type="password"
+              onBlur={onBlurPasswordHandler}
+              onChange={(e) => {
+                setEnteredPassword(e.target.value);
+              }}
             />
+
+            {passwordInputIsInValid && (
+              <p className={styles.login_error_msg}>Password is required </p>
+            )}
           </div>
 
           <div className={styles.login_help_links_wrap}>
@@ -44,7 +107,9 @@ export default function Login() {
             </p>
 
             <div className={styles.login_action_btn_wrap}>
-              <button className={styles.login_action_btn}>Sign in</button>
+              <button type="submit" className={styles.login_action_btn}>
+                Sign in
+              </button>
             </div>
             <p className={styles.login_text_2}>
               You dont have an account ?

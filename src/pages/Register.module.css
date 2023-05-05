@@ -51,6 +51,16 @@ text-align: center;
   color: whitesmoke;
 }
 
+.register_error_msg{
+  color: red;
+  margin-top: 8px;
+  font-family: var(--text-font);
+}
+
+
+
+
+
 .help_links_wrap {
   margin-top: 5%;
 
@@ -79,6 +89,7 @@ text-align: center;
   background-color: var(--btn-color);
   font-family: var(--text-font);
   color: black;
+  cursor: pointer;
 }
 
 .register_text_2 {

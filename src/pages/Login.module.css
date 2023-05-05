@@ -35,7 +35,7 @@ text-align: center;
 
 .login_label {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   color: #ccc;
   font-family: var(--text-font);
   margin-bottom: 10px;
@@ -50,6 +50,14 @@ background: none;
   border-radius: 20px;
   color: whitesmoke;
 }
+
+.login_error_msg{
+  color: red;
+  font-family: var(--text-font);
+  margin-top: 8px;
+}
+
+
 
 .login_help_links_wrap {
   margin-top: 7%;
