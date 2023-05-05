@@ -101,7 +101,7 @@ export default function Login() {
           <div className={styles.login_help_links_wrap}>
             <p className={styles.login_text_1}>
               Forgot Password ?{" "}
-              <Link className={styles.login_links} href="/">
+              <Link className={styles.login_links} href="/ResetPassword">
                 Click here
               </Link>{" "}
             </p>
