@@ -87,7 +87,6 @@ text-align: center;
   font-size: 19px;
   margin-bottom: 6%;
   background-color: var(--btn-color);
-  font-family: var(--text-font);
   color: black;
   cursor: pointer;
 }
