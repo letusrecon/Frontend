@@ -39,7 +39,7 @@ export default function ResetPassword() {
         </p>
         <input
           type="email"
-          placeholder="Your email Address
+          placeholder="Input Your email Address
         "
           className={styles.reset_password_input}
           onChange={(e) => {
