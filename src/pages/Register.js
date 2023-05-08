@@ -15,6 +15,7 @@ export default function Register() {
 
   // Name
   const nameInputIsValid = enteredName.trim() !== "";
+
   const nameInputIsInvalid = !nameInputIsValid && isNameTouched;
 
   const nameOnBlurHandler = () => {
@@ -33,6 +34,7 @@ export default function Register() {
   // Paasword
 
   const passwordInputIsValid = enteredPassword.trim() !== "";
+  const passwordInputount = enteredPassword < 6 ;
   const passwordInputIsInValid = !passwordInputIsValid && isPasswordTouched;
 
   const passwordOnBlurHandler = () => {
@@ -121,7 +123,7 @@ export default function Register() {
               onBlur={emailOnBlurhandler}
               name="email"
               className={styles.register_input}
-              type="text"
+              type="email"
             />
             {emailInputIsInValid && (
               <p className={styles.register_error_msg}>
@@ -166,7 +168,13 @@ export default function Register() {
               <p className={styles.register_error_msg}>
                 Password comfirmation is required
               </p>
-            )}
+            )
+            
+           
+            
+            }
+
+          
           </div>
 
           <div className={styles.help_links_wrap}>
