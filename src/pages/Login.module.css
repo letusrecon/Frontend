@@ -1,13 +1,13 @@
 .main_login_container {
 
-  padding: 1%;
+  padding: 6%;
  
 }
 
 .login_form_col {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  
   align-items: center;
 
 }
@@ -165,7 +165,7 @@ background: none;
   }
 
   .login_form {
-    padding: 4% 5%;
+    padding: 6% 6%;
   }
   .login_heading {
     font-size: 25px;
@@ -177,13 +177,13 @@ background: none;
   }
 
   .login_input {
-    max-width: 319px;
+    max-width: 300px;
     padding: 8px 10px;
 
 
   }
 .login_action_btn{
-  width: 319px;
+  width: 300px;
 }
 
 .login_text_1{
