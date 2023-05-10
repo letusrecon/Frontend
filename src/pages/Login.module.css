@@ -1,16 +1,21 @@
 .main_login_container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
+
+  padding: 4%;
+ 
 }
 
 .login_form_col {
-  padding: 5% 10%;
-  margin: 0rem 9rem;
+  display: flex;
+  justify-content: center;
+
 }
 
 .login_form {
-  padding: 7% 5%;
+  
+    padding: 3% 4%;
+     box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px;
+        background-color: #141d1e;
+        border-radius: 20px;
 }
 
 .login_logo_wrap{
@@ -30,7 +35,7 @@ text-align: center;
 }
 
 .login_input_wrap {
-  margin-bottom: 25px;
+  margin-bottom: 5%;
 }
 
 .login_label {
@@ -38,12 +43,12 @@ text-align: center;
   font-size: 18px;
   color: #ccc;
   font-family: var(--text-font);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .login_input {
-  width: 450px;
-  padding: 8px 10px;
+  width: 470px;
+  padding: 10px 10px;
 background: none;
   border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
@@ -54,7 +59,7 @@ background: none;
 .login_error_msg{
   color: red;
   font-family: var(--text-font);
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 
@@ -76,6 +81,7 @@ background: none;
   font-family: var(--text-font);
   font-size: 17px;
   line-height: 1.5;
+  text-align: center;
 
   
 }
@@ -86,10 +92,10 @@ background: none;
 
 .login_action_btn {
   padding: 8px 15px;
-  width: 450px;
+  width: 470px;
   margin: 19px 0px;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 18px;
   margin-bottom: 7%;
   background-color: var(--btn-color);
@@ -113,7 +119,7 @@ background: none;
 
 
 /* Mini screen */
-
+/* 
 @media screen and (max-width: 1442px) {
 
   .login_form_col {
@@ -146,7 +152,7 @@ background: none;
   width: 400px;
 }
 
-}
+} */
 
 /* Ipad */
 
@@ -157,15 +163,20 @@ background: none;
   }
 
   .login_form {
-    padding: 1% 1%;
+    padding: 1% 4%;
   }
   .login_heading {
     font-size: 25px;
     
   }
 
+  .login_label{
+    margin-bottom: 10px;
+  }
+
   .login_input {
-    max-width: 320px;
+    max-width: 319px;
+    padding: 8px 10px;
 
 
   }

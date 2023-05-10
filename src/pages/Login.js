@@ -121,14 +121,14 @@ export default function Login() {
         </form>
       </div>
 
-      <div className={styles.login_img_col}>
+      {/* <div className={styles.login_img_col}>
         <Image
           src="/assets/Imageloginimg.png"
           width="930"
           height="1000"
           alt="login"
         />
-      </div>
+      </div> */}
     </div>
   );
 }

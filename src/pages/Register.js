@@ -204,14 +204,14 @@ export default function Register() {
         </form>
       </div>
 
-      <div className={styles.img_col}>
+      {/* <div className={styles.img_col}>
         <Image
           src="/assets/Imageregsiter.png"
           width="930"
           height="1000"
           alt="LetUsRecon"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
