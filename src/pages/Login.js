@@ -56,6 +56,7 @@ export default function Login() {
                 width="100"
                 height="150"
                 className={styles.login_logo}
+                alt="letusrecon"
               />
             </Link>
           </div>

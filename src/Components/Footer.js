@@ -1,5 +1,5 @@
 import Link from "next/link"
-import img from "../../public/assets/logo-removebg-preview.png";
+import Image from "next/image";
 import styles from "./Footer.module.css"
 import { FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
 
@@ -15,10 +15,12 @@ export default function Footer (){
         <div className={styles.inner_footer_main_wrap}>
           <div className={styles.footer_inner_col_1}>
             <Link href="/">
-              <img
+              <Image
                 className={styles.footer_logo}
                 src="/assets/LetUsRecon Logo (1).pdf (250 × 150px).png"
-                alt="footer"
+                width="300"
+                height="150"
+                alt="letusrecon"
               />
             </Link>
 
