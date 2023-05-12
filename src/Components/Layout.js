@@ -1,16 +1,12 @@
-import Sidebar from "./Dashboard/Siderbar"
+import Sidebar from "./Dashboard/Siderbar";
+import styles from './Layout.module.css'
 
+export default function Layout({ children }) {
+  return (
+    <div className={styles.container}>
+      <Sidebar />
 
-export default function Layout ({children}){
-    return (
-        <div>
-
-            <Sidebar/>
-
-            <main>
-                {children}
-            </main>
-
-        </div>
-    )
+      <main>{children}</main>
+    </div>
+  );
 }

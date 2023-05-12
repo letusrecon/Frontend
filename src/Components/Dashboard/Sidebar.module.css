@@ -1,0 +1,32 @@
+.sidebar_nav{
+    background-color: rgb(35,34,35);
+    width: 300px;
+    height: 100vh;
+    padding: 10% 15%;
+}
+
+.sidebar_ul{
+    text-align: left;
+     margin-top: 5rem;
+}
+
+.sidebar_li{
+    list-style: none;
+   padding: 10% 5%;
+}
+
+.sidebar_link{
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.sidebar_icon{
+    margin-right: 10px;
+   
+}
+
+.icon_span{
+    margin-top: 15px;
+}
