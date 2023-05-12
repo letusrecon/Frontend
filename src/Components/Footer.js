@@ -14,11 +14,13 @@ export default function Footer (){
         <hr className={styles.hr} />
         <div className={styles.inner_footer_main_wrap}>
           <div className={styles.footer_inner_col_1}>
-            <img
-              className={styles.footer_logo}
-              src="/assets/LetUsRecon Logo (1).pdf (250 × 150px).png"
-              alt="footer"
-            />
+            <Link href="/">
+              <img
+                className={styles.footer_logo}
+                src="/assets/LetUsRecon Logo (1).pdf (250 × 150px).png"
+                alt="footer"
+              />
+            </Link>
 
             <p className={styles.footer_text}>
               Say goodbye to boring manual recon, and hello to lightning-fast
@@ -52,7 +54,7 @@ export default function Footer (){
               </li>
             </ul>
           </div>
-{/* 
+          {/* 
           <div className={styles.footer_inner_col_2}>
             <h1 className={styles.footer_inner_inner_heading}>Features</h1>
             <ul className={styles.inner_footer_inner_col_ul}>
@@ -78,9 +80,7 @@ export default function Footer (){
               </li>
             </ul>
           </div> */}
-
         </div>
-
 
         <hr className={styles.hr} />
         <div className={styles.copy_right_wrap}>

@@ -50,12 +50,14 @@ export default function Login() {
           action=""
         >
           <div className={styles.login_logo_wrap}>
-            <Image
-              src="/assets/logo-removebg-preview.png"
-              width="100"
-              height="150"
-              className={styles.login_logo}
-            />
+            <Link href="/">
+              <Image
+                src="/assets/logo-removebg-preview.png"
+                width="100"
+                height="150"
+                className={styles.login_logo}
+              />
+            </Link>
           </div>
           <h1 className={styles.login_heading}> Sign in</h1>
 

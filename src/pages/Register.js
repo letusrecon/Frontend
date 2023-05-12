@@ -83,13 +83,15 @@ export default function Register() {
           action=""
         >
           <div className={styles.register_logo_wrap}>
-            <Image
-              src="/assets/logo-removebg-preview.png"
-              width="100"
-              height="150"
-              className={styles.register_logo}
-              alt="LetUsRecon"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/logo-removebg-preview.png"
+                width="100"
+                height="150"
+                className={styles.register_logo}
+                alt="LetUsRecon"
+              />
+            </Link>
           </div>
 
           <h4 className={styles.register_heading}> Sign up</h4>
@@ -168,13 +170,7 @@ export default function Register() {
               <p className={styles.register_error_msg}>
                 Password comfirmation is required
               </p>
-            )
-            
-           
-            
-            }
-
-          
+            )}
           </div>
 
           <div className={styles.help_links_wrap}>

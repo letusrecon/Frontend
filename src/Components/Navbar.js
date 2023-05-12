@@ -5,48 +5,49 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-
 export default function Navbar() {
-  const [isShow, setShow] = useState(false);
+  const [isShowNav, setShowNav] = useState(false);
 
   const toggleHandler = () => {
-    console.log("working");
-    setShow(true)
-  
+    setShowNav(!isShowNav);
   };
 
   return (
     <nav className={styles.nav}>
       <div className={styles.nav_logo_wrap}>
-        <Image
-          src="/assets/logo-removebg-preview.png"
-          width={180}
-          height={125}
-          className={styles.nav_logo}
-          alt="logo"
-        />
+        <Link href="/">
+          <Image
+            src="/assets/logo-removebg-preview.png"
+            width={180}
+            height={125}
+            className={styles.nav_logo}
+            alt="logo"
+          />
+        </Link>
       </div>
 
       <div className={styles.nav_inner_flex_wrap}>
-        
-          <div className={ ` ${styles['nav_link_wrap']} ${isShow && <p> hello</p> }  `}>
-            <Link className={styles.link} href="/">
-              Docs
-            </Link>
-            <Link className={styles.link} href="/Docs">
-              Features
-            </Link>
-            <Link className={styles.link} href="/">
-              Pricing
-            </Link>
-            <Link className={styles.link} href="/">
-              Contact
-            </Link>
-            <Link className={styles.link} href="/Login">
-              Login
-            </Link>
-          </div>
-        
+        <div
+          className={` ${styles["nav_link_wrap"]}  ${
+            isShowNav && styles.expanded
+          } `}
+        >
+          <Link className={styles.link} href="/">
+            Docs
+          </Link>
+          <Link className={styles.link} href="/Docs">
+            Features
+          </Link>
+          <Link className={styles.link} href="/">
+            Pricing
+          </Link>
+          <Link className={styles.link} href="/">
+            Contact
+          </Link>
+          <Link className={styles.link} href="/Login">
+            Login
+          </Link>
+        </div>
 
         <div>
           <Link href="/Register">
