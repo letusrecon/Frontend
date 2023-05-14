@@ -89,7 +89,7 @@ export default function Footer (){
           <p className={styles.copy_right_text}>
             © {cuurentDate()} LetUsRecon - All Rights Reserved.
           </p>
-          <div className={styles.footer_icon_wrap}>
+          <div className=" flex mt-3 md:flex justify-center ">
             <a href="https://twitter.com/LetusRecon " target="_blank">
               <FaTwitter className={styles.footer_icon} />
             </a>

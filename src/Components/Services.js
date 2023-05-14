@@ -24,7 +24,9 @@ export default function Services() {
 
       <div className={styles.service_flex_container}>
         <div className={styles.service_inner_container}>
-          <MdDashboardCustomize className={styles.service_icon} />
+          <div className="justify-center text-5xl">
+            <MdDashboardCustomize className={styles.service_icon} />
+          </div>
 
           <h4 className={styles.service_inner_container_title}>
             User-Friendly Dashboard & Interface
@@ -73,7 +75,9 @@ export default function Services() {
             Cutting-Edge Powerful Ports Discovery
           </h4>
           <p className={styles.service_inner_container_desc}>
-     identifying open ports and services to pinpoint potential entry points in web assets. Discover all ports using an efficient port scanning solution.
+            identifying open ports and services to pinpoint potential entry
+            points in web assets. Discover all ports using an efficient port
+            scanning solution.
           </p>
         </div>
 

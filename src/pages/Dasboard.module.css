@@ -1,0 +1,26 @@
+.dashboard_container{
+    padding: 5rem;
+}
+
+.first_row{
+    display: flex;
+
+    
+}
+
+.welcome_wrap{
+    display: flex;
+    align-items: center;
+       
+}
+
+.profile_icon{
+    font-size: 80px;
+    color: whitesmoke;
+    margin-right: 5px;
+}
+
+.welcome_text{
+    color: whitesmoke;
+    
+}

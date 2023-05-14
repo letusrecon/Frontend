@@ -74,7 +74,7 @@ const btnVariant = {
 export default function Hero() {
   return (
     <div className={styles.hero_container}>
-      <div className={styles.hero_inner_container_1}>
+      <div className="text-center   md:mt-10 py-10   ">
         <motion.div
           variants={Variant1}
           initial="hidden"
@@ -93,7 +93,7 @@ export default function Hero() {
           animate="visible"
           className={styles.hero_text_wrap}
         >
-          <p className={styles.hero_text}>
+          <p className="mx-auto leading-9   md: text-slate-100 w-4/5  ">
             Unlock the power of comprehensive web reconnaissance with
             LetUsRecon, the most advanced scanning tool designed to safeguard
             your digital assets. Experience unparalleled accuracy and efficiency
@@ -124,7 +124,7 @@ export default function Hero() {
         <Image
           className={styles.hero_img}
           src="/assets/Landing_hero_image 101hero.png"
-          width={565}
+          width={1000}
           height={490}
           alt="LetUsRecon"
         />

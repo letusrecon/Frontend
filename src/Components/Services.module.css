@@ -32,7 +32,7 @@
     border: 1px solid rgb(37, 35, 35);
     margin: 0px 16px;
     border-radius: 20px;
-    padding: 2% 1%;
+    padding: 4% 1%;
     background-color: #141d1e;
     /* box-shadow: rgba(201, 192, 192, 0.02) 0px 1px 3px 0px, rgba(144, 152, 161, 0.15) 0px 0px 0px 1px; */
     transition: 200ms ease-in-out ;
@@ -49,11 +49,13 @@
     font-size: 35px;
     margin-bottom: 7%;
     color:#5ba2b2 ;
+    margin: auto
+    
 }
 
 .service_inner_container_title{
     color: var(  --btn-color);
-    margin-bottom: 4%;
+    margin-top: 4%;
     font-family: var(--title-font);
     font-size: 20px;
     line-height: 1.7;
@@ -63,7 +65,7 @@
 .service_inner_container_desc{
     color: whitesmoke;
     font-family: var(--text-font);
-    margin-bottom: 10%;
+    margin-top: 6%;
     line-height: 1.8;
 }
 
