@@ -24,7 +24,7 @@ export default function Dashboard() {
           <div className="flex items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
             <div className="">
-              <h2 className="text-slate-100">Hell Ismail,</h2>
+              <h2 className="text-slate-100">Hello Ismail,</h2>
               <h2 className="text-slate-100">Welcome Back</h2>
             </div>
           </div>
