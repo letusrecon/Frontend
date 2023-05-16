@@ -1,6 +1,6 @@
 .main_login_container {
 
-  padding: 7% 6%;
+  padding:5% 6%;
  
 }
 
@@ -39,7 +39,7 @@
 }
 
 .login_input_wrap {
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 
 .login_label {
@@ -52,7 +52,7 @@
 
 .login_input {
   width: 470px;
-  padding: 10px 10px;
+  padding: 4px 10px;
 background: none;
   border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
@@ -95,7 +95,7 @@ background: none;
 } */
 
 .login_action_btn {
-  padding: 8px 15px;
+  padding: 4px 15px;
   width: 470px;
   margin: 19px 0px;
   border: 0;
@@ -180,7 +180,7 @@ background: none;
 
   .login_input {
     max-width: 300px;
-    padding: 8px 10px;
+    padding: 4px 10px;
 
 
   }
