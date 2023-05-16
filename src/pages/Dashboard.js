@@ -9,9 +9,9 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Dashboard() {
   const columns = [
-    { name: "Target name", sortable: true, selector: (row) => row.Targetname },
-    { name: "Scan Type", selector: (row) => row.Scantype },
-    { name: "Last scanned", selector: (row) => row.Lastscanned },
+    { name: "Target name", sortable: true, selector: (row) => row.Target },
+    { name: "Scan Type", sortable: true, selector: (row) => row.Type },
+    { name: "Last scanned", sortable: true, selector: (row) => row.scanned },
     { name: "Status", sortable: true, selector: (row) => row.Status },
     { name: "Progress", sortable: true, selector: (row) => row.Progress },
     { name: "Result", sortable: true, selector: (row) => row.Result },
@@ -103,7 +103,12 @@ export default function Dashboard() {
         </div>
 
         <div className="mt-10">
-          <DataTable columns={columns} data={SCAN_HISTORY_DATA}/>
+          <DataTable
+            columns={columns}
+            fixedHeader
+            pagination
+            data={SCAN_HISTORY_DATA}
+          />
         </div>
       </div>
     </Layout>

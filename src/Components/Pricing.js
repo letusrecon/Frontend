@@ -56,7 +56,7 @@ export default function Pricing() {
 
         <div className={styles.package_box_3}>
           <h2 className={styles.package_title}>Ultimate</h2>
-          <h3 className={styles.package_desc}>Unlimited acess yearly acess</h3>
+          <h3 className={styles.package_desc}>Unlimited yearly acess</h3>
           <h3 className={styles.package_amount}>
             $90
             <span className={styles.package_timeline}>

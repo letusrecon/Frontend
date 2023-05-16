@@ -20,13 +20,12 @@ export const TESTIMONIAL_DATA = [
   },
 ];
 
-
 export const SCAN_HISTORY_DATA = [
   {
     id: 1,
-    "Target name": "tamu.edu",
-    "Scan type": "mayoclinic.com",
-    "Last scanned": "5/5/2023",
+    Target: "tamu.edu",
+    Type: "mayoclinic.com",
+    scanned: "5/5/2023",
     Status: "lcornock0",
     Progress: "1461",
     Result: "Basic Industries",
@@ -34,9 +33,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 2,
-    "Target name": "opensource.org",
-    "Scan type": "blinklist.com",
-    "Last scanned": "2/18/2023",
+    Target: "opensource.org",
+    Type: "blinklist.com",
+    scanned: "2/18/2023",
     Status: "dmadgett1",
     Progress: "61",
     Result: "Transportation",
@@ -44,9 +43,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 3,
-    "Target name": "moonfruit.com",
-    "Scan type": "tamu.edu",
-    "Last scanned": "9/19/2022",
+    Target: "moonfruit.com",
+    Type: "tamu.edu",
+    scanned: "9/19/2022",
     Status: "bfields2",
     Progress: "111",
     Result: "Finance",
@@ -54,9 +53,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 4,
-    "Target name": "plala.or.jp",
-    "Scan type": "earthlink.net",
-    "Last scanned": "6/26/2022",
+    Target: "plala.or.jp",
+    Type: "earthlink.net",
+    scanned: "6/26/2022",
     Status: "tadamthwaite3",
     Progress: "900",
     Result: "Capital Goods",
@@ -64,9 +63,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 5,
-    "Target name": "soup.io",
-    "Scan type": "xing.com",
-    "Last scanned": "7/12/2022",
+    Target: "soup.io",
+  Type: "xing.com",
+    scanned: "7/12/2022",
     Status: "dpaladino4",
     Progress: "350",
     Result: "Technology",
@@ -74,9 +73,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 6,
-    "Target name": "t.co",
-    "Scan type": "vinaora.com",
-    "Last scanned": "5/16/2022",
+    Target: "t.co",
+    Type: "vinaora.com",
+    scanned: "5/16/2022",
     Status: "ainderwick5",
     Progress: "774",
     Result: "Finance",
@@ -84,9 +83,9 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 7,
-    "Target name": "cnet.com",
-    "Scan type": "wisc.edu",
-    "Last scanned": "5/3/2023",
+  Target: "cnet.com",
+    Type: "wisc.edu",
+ scanned: "5/3/2023",
     Status: "llittleton6",
     Progress: "125",
     Result: "Consumer Services",
@@ -94,15 +93,12 @@ export const SCAN_HISTORY_DATA = [
   },
   {
     id: 8,
-    "Target name": "jiathis.com",
-    "Scan type": "ebay.com",
-    "Last scanned": "7/28/2022",
+    Target: "jiathis.com",
+ Type: "ebay.com",
+   scanned: "7/28/2022",
     Status: "lmacpeice7",
     Progress: "81",
     Result: "Health Care",
     Action: "Health Care",
   },
 ];
-
-
-
