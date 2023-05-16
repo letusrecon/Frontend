@@ -9,7 +9,7 @@
 .hero_inner_container_1 {
   margin-right: 8%;
 
-  margin-top: 9%;
+  margin-top: 7%;
   padding: 2% 1%;
 }
 
@@ -50,6 +50,7 @@ font-family: 'Bruno Ace SC', cursive;
   /* width: 550px; */
   line-height: 1.8;
   font-family: var(--text-font);
+  text-align: left;
 }
 
 .hero_action_btn {
@@ -119,11 +120,11 @@ font-family: 'Bruno Ace SC', cursive;
 
 @media screen and (max-width: 1442px) {
   .hero_inner_container_1 {
-    margin-top: 7%;
+    margin-top: 6%;
   }
 
   .hero_img {
-    width:905px;
+    width:1100px;
     height: 410px;
   }
 }

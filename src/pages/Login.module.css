@@ -20,12 +20,14 @@
         border-radius: 20px;
 }
 
-.login_logo_wrap{
-text-align: center;
-}
+/* .login_logo_wrap{
+
+} */
+
 .login_logo{
  width: 120px;
  height: 120px;
+ margin: auto;
  
 }
 .login_heading {
