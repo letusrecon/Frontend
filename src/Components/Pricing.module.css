@@ -113,6 +113,8 @@
   margin-bottom: 8px;
 }
 
+
+
 /* Mobile */
 
 @media screen and (max-width: 900px) {
@@ -160,4 +162,27 @@
     
   }
 
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .package_flex_container{
+    flex-direction: column;
+  }
+
+  .package_box_1{
+
+    height: 610px;
+
+  }
+
+  .package_box_2{
+    height: 610px;
+  }
+
+  .package_box_3{
+    height: 610px;
+  }
+  
 }
