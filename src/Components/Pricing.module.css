@@ -87,7 +87,7 @@
   border: 1px solid var(--btn-color);
   color: whitesmoke;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-bottom: 10%;
   cursor: pointer;
   transition: 1.7ms ease-in-out;
@@ -165,24 +165,24 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
 
-  .package_flex_container{
+  /* .package_flex_container{
     flex-direction: column;
-  }
+  } */
 
   .package_box_1{
 
-    height: 610px;
+    height: 615px;
 
   }
 
   .package_box_2{
-    height: 610px;
+    height: 615px;
   }
 
   .package_box_3{
-    height: 610px;
+    height: 615px;
   }
   
 }
