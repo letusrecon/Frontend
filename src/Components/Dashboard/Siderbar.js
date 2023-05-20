@@ -45,7 +45,7 @@ export default function Sidebar() {
             </li>
             <li className={styles.sidebar_li}>
               <MdOutlineManageSearch className={styles.sidebar_icon} />
-              <Link className={styles.sidebar_link} href="/port_discovvery">
+              <Link className={styles.sidebar_link} href="/port_discovery">
                 Ports Discovery{" "}
               </Link>
             </li>
