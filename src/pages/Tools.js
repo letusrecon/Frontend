@@ -6,7 +6,7 @@ import styles from "./Tools.module.css";
 export default function Tools() {
   return (
     <Layout>
-      <div>
+      <div className="px-10 py-12">
         {/* First top bar */}
         <div className={styles.tool_info_container}>
           <div className=" flex justify-between items-center">

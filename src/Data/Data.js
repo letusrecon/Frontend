@@ -1,3 +1,4 @@
+// Tetimonial data
 export const TESTIMONIAL_DATA = [
   {
     id: 1,
@@ -19,6 +20,8 @@ export const TESTIMONIAL_DATA = [
     Location: "New York",
   },
 ];
+
+// Scan history Data
 
 export const SCAN_HISTORY_DATA = [
   {
@@ -415,3 +418,96 @@ export const DISCOVERY_PORT_DATA = [{
   "server": "Tavu",
   "location": "google.ca"
 }]
+
+export const VULNERABILITIES = [
+  {
+    id: 1,
+    url: "netscape.com",
+    issue: "weather.com",
+    isseRelated: "content-based",
+    severity: "Horizontal",
+    notes: "f30e:6202:774f:8b4a:bc2c:d3cc:485d:f7b5/104",
+    guides: "pbs.org",
+  },
+  {
+    id: 2,
+    url: "xrea.com",
+    issue: "cnn.com",
+    isseRelated: "Synchronised",
+    severity: "demand-driven",
+    notes: "8cd3:10d9:be80:8f44:ddcd:bbc0:6b2c:3936/127",
+    guides: "jigsy.com",
+  },
+  {
+    id: 3,
+    url: "ca.gov",
+    issue: "soundcloud.com",
+    isseRelated: "5th generation",
+    severity: "holistic",
+    notes: "cd04:6a2b:9a2d:fc20:c1d3:b4a3:f41f:a4c0/6",
+    guides: "quantcast.com",
+  },
+  {
+    id: 4,
+    url: "storify.com",
+    issue: "usgs.gov",
+    isseRelated: "modular",
+    severity: "framework",
+    notes: "22c6:ea5:1125:51c0:c196:4641:70a3:9c62/6",
+    guides: "rakuten.co.jp",
+  },
+  {
+    id: 5,
+    url: "earthlink.net",
+    issue: "about.com",
+    isseRelated: "array",
+    severity: "implementation",
+    notes: "8315:8793:29af:f10a:87fc:3f44:4664:97d0/125",
+    guides: "xrea.com",
+  },
+  {
+    id: 6,
+    url: "economist.com",
+    issue: "cisco.com",
+    isseRelated: "hierarchy",
+    severity: "encryption",
+    notes: "4689:17ea:f822:b0a8:1e43:3a57:3925:fc5d/33",
+    guides: "vimeo.com",
+  },
+  {
+    id: 7,
+    url: "netvibes.com",
+    issue: "weibo.com",
+    isseRelated: "Reduced",
+    severity: "service-desk",
+    notes: "b36:5254:348a:faec:b100:63ba:c9e:e631/124",
+    guides: "nasa.gov",
+  },
+  {
+    id: 8,
+    url: "merriam-webster.com",
+    issue: "uiuc.edu",
+    isseRelated: "Re-contextualized",
+    severity: "open system",
+    notes: "41ee:d707:bfab:2b93:4444:8acf:b61b:7c21/44",
+    guides: "npr.org",
+  },
+  {
+    id: 9,
+    url: "unc.edu",
+    issue: "furl.net",
+    isseRelated: "explicit",
+    severity: "benchmark",
+    notes: "43c6:685a:dd27:c0ac:f0cc:d547:79b6:f4a3/63",
+    guides: "slashdot.org",
+  },
+  {
+    id: 10,
+    url: "hubpages.com",
+    issue: "paginegialle.it",
+    isseRelated: "regional",
+    severity: "24 hour",
+    notes: "9bb6:de40:2ea3:7543:9cf9:626d:c452:414b/14",
+    guides: "addtoany.com",
+  },
+];
