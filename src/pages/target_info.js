@@ -32,7 +32,7 @@ export default function target_info() {
           </div>
         </div>
         {/* card container */}
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 lg:gap-6 lg:p-5 text-sm">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 lg:p-5 text-sm">
           {/* card*/}
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
