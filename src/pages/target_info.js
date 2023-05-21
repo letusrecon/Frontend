@@ -40,39 +40,55 @@ export default function target_info() {
               <b>SITE INFO</b>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>URL</h3>
-              <h3>https://fireeye.com.443</h3>
-            </div>
-            <div className="grid grid-cols-2 justify-between text-white m-2 ">
-              <h3>Location</h3>
-              <h3>https://trellix.com/enus/index.html</h3>
-            </div>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">URL</h3>
+            <p className="text-right col-start-2 col-span-11">
+            https://fireeye.com.443
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Title</h3>
-              <h3>--</h3>
-            </div>
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Location</h3>
+            <p className="text-right col-start-2 col-span-11">
+            https://trellix.com/enus/index.html
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Web Server</h3>
-              <h3>Cloudflare</h3>
-            </div>
+          
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Title</h3>
+            <p className="text-right col-start-2 col-span-11">
+            --
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>IP</h3>
-              <h3>162.159.246.125</h3>
-            </div>
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Web&nbsp;Server</h3>
+            <p className="text-right col-start-2 col-span-11">
+            Cloudflare
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Content Length</h3>
-              <h3>--</h3>
-            </div>
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">IP</h3>
+            <p className="text-right col-start-2 col-span-11">
+            162.156.246.125
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Status Code</h3>
-              <h3>301</h3>
-            </div>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Content&nbsp;Length</h3>
+            <p className="text-right col-start-2 col-span-11">
+            --
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Status&nbsp;Code</h3>
+            <p className="text-right col-start-2 col-span-11">
+            301
+            </p>
+          </div>
           </div>
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
@@ -80,154 +96,225 @@ export default function target_info() {
               <b>Targeted GEOLOCATION</b>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>IP</h3>
-              <h3>31.12.79.35</h3>
-            </div>
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Hostname</h3>
-              <h3>edgetarminishv.02bom1.facebook.com</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">IP</h3>
+            <p className="text-right col-start-2 col-span-11">
+            31.13.79.35
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Hostname</h3>
+            <p className="text-right col-start-2 col-span-11">
+            edgetarminishv.02bom1.facebook.com
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">City</h3>
+            <p className="text-right col-start-2 col-span-11">
+            Mumbai
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Region</h3>
+            <p className="text-right col-start-2 col-span-11">
+            Maharashtra
+            </p>
+          </div>
+
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">IP</h3>
+            <p className="text-right col-start-2 col-span-11">
+            162.159.246.125
+            </p>
+          </div>
+            
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Country</h3>
+            <p className="text-right col-start-2 col-span-11">
+            IN
+            </p>
+          </div>
+            
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Org</h3>
+            <p className="text-right col-start-2 col-span-11">
+            AS32934
+            </p>
+          </div>
+      
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Postal</h3>
+            <p className="text-right col-start-2 col-span-11">
+            400070
+            </p>
+          </div>
+            
+          <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">Timezone</h3>
+            <p className="text-right col-start-2 col-span-11">
+            Asia/Kolkata
+            </p>
+          </div>
+          </div>
+
+          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
+            <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
+            <b className="grid grid-cols-1">#</b>
+            <p className="text-center col-start-2 col-span-11">
+              <b>Top Subdomain Found</b>
+            </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>City</h3>
-              <h3>Mumbai</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">1</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Region</h3>
-              <h3>Maharashtra</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">2</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>IP</h3>
-              <h3>162.159.246.125</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">3</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2 ">
-              <h3>Country</h3>
-              <h3>IN</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">4</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Org</h3>
-              <h3>AS32934 Facebook In.</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">5</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Postal</h3>
-              <h3>400070</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">6</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
-            <div className="grid grid-cols-2 justify-between text-white m-2">
-              <h3>Timezone</h3>
-              <h3>Asia/Kolkata</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">7</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
+            </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">8</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
+            </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">9</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
+            </div>
+            
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">10</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>ash-cas04.thefacebook.com</h3>
+            </p>
             </div>
           </div>
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
-            <div className="grid grid-cols-3 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
-              <b>#</b>
-              <p>
-                <b>Top Subdomain Found</b>
-              </p>
+            <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
+            <b className="grid grid-cols-1">#</b>
+            <p className="text-center col-start-2 col-span-11">
+              <b>IP Blocks</b>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>1</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>2</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">1</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>3</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
+           <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">2</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>4</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">3</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>5</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">4</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>6</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">5</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>7</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>8</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>9</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>10</h3>
-              <h3>ash_cas04.thefacebook.com</h3>
-            </div>
-          </div>
-
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
-            <div className="grid grid-cols-3 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
-              <b>#</b>
-              <b className="mx-6">IP Blocks</b>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">6</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>1</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>2</h3>
-              <h3>102.132.100.0/24</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">7</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>3</h3>
-              <h3>102.132.100.0/24</h3>
+           <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">8</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>4</h3>
-              <h3>102.132.100.0/24</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">9</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>5</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>6</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>7</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>8</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>9</h3>
-              <h3>102.132.100.0/24</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>10</h3>
-              <h3>102.132.100.0/24</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">10</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>102.132.100.0/24</h3>
+            </p>
             </div>
           </div>
 
@@ -262,48 +349,74 @@ export default function target_info() {
             </div>
           </div>
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
-            <div className="grid grid-cols-3 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
-              <b>#</b>
-              <b className="mx-6">Name Servers</b>
+            <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
+            <b className="grid grid-cols-1">#</b>
+            <p className="text-center col-start-2 col-span-11">
+              <b>Name Servers</b>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>1</h3>
-              <h3>A.NS.FACEBOOK.COM</h3>
-            </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>2</h3>
-              <h3>B.NS.FACEBOOK.COM</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">1</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>3</h3>
-              <h3>C.NS.FACEBOOK.COM</h3>
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">2</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>4</h3>
-              <h3>D.NS.FACEBOOK.COM</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">3</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>5</h3>
-              <h3>D.NS.FACEBOOK.COM</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">4</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>6</h3>
-              <h3>A.NS.FACEBOOK.COM</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">5</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
 
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>7</h3>
-              <h3>B.NS.FACEBOOK.COM</h3>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">6</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
-            <div className="grid grid-cols-3 justify-between text-white m-2">
-              <h3>8</h3>
-              <h3>C.NS.FACEBOOK.COM</h3>
+
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">7</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
             </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+            <h3 className="grid grid-cols-1">8</h3>
+            <p className="text-center col-start-2 col-span-11">
+            <h3>A.NS.FACEBOOK.COM</h3>
+            </p>
+            </div>
+
           </div>
         </div>
 
