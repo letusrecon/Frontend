@@ -107,9 +107,8 @@ export const SCAN_HISTORY_DATA = [
 ];
 
 
-// Target info data
-
-export const TARGET_INFO = [
+// Subdomain data
+export const SCANNED_DATA = [
   {
     id: 1,
     Url: "ameblo.jp",
@@ -418,6 +417,8 @@ export const DISCOVERY_PORT_DATA = [{
   "server": "Tavu",
   "location": "google.ca"
 }]
+
+// Vulnera
 
 export const VULNERABILITIES = [
   {

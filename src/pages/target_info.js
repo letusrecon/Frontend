@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function target_info() {
   return (
     <Layout>
-      <div className="py-20 px-7">
+      {/* <div className="py-20 px-7">
         <div className=" flex justify-between items-center px-3  mb-5">
           <div className="">
             <div className="">
@@ -31,9 +31,9 @@ export default function target_info() {
             </div>
           </div>
         </div>
-        {/* card container */}
+    
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 lg:p-5 text-sm">
-          {/* card*/}
+   
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="card_title bg-[#17291A] rounded-t-xl text-center text-white p-1">
@@ -451,7 +451,7 @@ export default function target_info() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 }

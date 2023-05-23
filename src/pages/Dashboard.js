@@ -2,12 +2,29 @@ import Layout from "@/Components/Layout";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import styles from "./Dasboard.module.css";
-import DataTable from "react-data-table-component";
+import DataTable, { createTheme } from "react-data-table-component";
 import { SCAN_HISTORY_DATA } from "@/Data/Data";
 import { MdArrowDropDown } from "react-icons/md";
 import { AiOutlineSearch } from "react-icons/ai";
+import { useState, useEffect } from "react";
+
+createTheme("custombackground", {
+  background: {
+    default: "transparent",
+  },
+  text: {
+    primary: "white",
+    secondary: "#2aa198",
+  },
+});
 
 export default function Dashboard() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   const columns = [
     { name: "Target name", sortable: true, selector: (row) => row.Target },
     { name: "Scan Type", sortable: true, selector: (row) => row.Type },
@@ -20,7 +37,7 @@ export default function Dashboard() {
   return (
     <Layout>
       <div className={styles.dashboard_container}>
-        <div className=" flex justify-between items-center">
+        <div className=" flex  md:justify-between items-center">
           <div className="flex items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
             <div className="">
@@ -102,14 +119,18 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="mt-10">
-          <DataTable
-            columns={columns}
-            fixedHeader
-            pagination
-            data={SCAN_HISTORY_DATA}
-          />
-        </div>
+        {isLoaded && (
+          <div className="mt-10">
+            <DataTable
+              className={styles.rdt_TableCol_Sortable}
+              columns={columns}
+              fixedHeader
+              theme="custombackground"
+              pagination
+              data={SCAN_HISTORY_DATA}
+            />
+          </div>
+        )}
       </div>
     </Layout>
   );

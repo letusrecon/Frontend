@@ -2,10 +2,28 @@ import Layout from "@/Components/Layout"
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
-import { TARGET_INFO } from "@/Data/Data";
-import DataTable from "react-data-table-component";
+import { SCANNED_DATA} from "@/Data/Data";
+import DataTable, {createTheme} from "react-data-table-component";
+import { useState, useEffect } from "react";
+
+createTheme("custombackground", {
+  background: {
+    default: "transparent",
+  },
+  text: {
+    primary: "white",
+    secondary: "#2aa198",
+  },
+});
 
 export default function subdomain_scan (){
+
+   const [isLoaded, setIsLoaded] = useState(false);
+
+   useEffect(() => {
+     setIsLoaded(true);
+   }, []);
+
 
     const columns = [
       { name: "URL", sortable: true, selector: (row) => row.Url },
@@ -47,8 +65,10 @@ export default function subdomain_scan (){
           </div>
 
           <div className="flex justify-between mt-20 items-center">
-            <h3 className="text-slate-100 text-1xl">Scan history:</h3>
-            <span>0</span>
+            <div className="flex">
+              <h3 className="text-slate-100 text-1x mr-2">Scan history:</h3>
+              <span className="text-slate-100">0</span>
+            </div>
 
             <div className="flex">
               <div className="mr-5">
@@ -85,9 +105,17 @@ export default function subdomain_scan (){
             </div>
           </div>
 
-          <div className="mt-4">
-            <DataTable columns={columns} pagination allowOverflow data={TARGET_INFO} />
-          </div>
+          {isLoaded && (
+            <div className="mt-4 ">
+              <DataTable
+                columns={columns}
+                pagination
+                allowOverflow
+                data={SCANNED_DATA}
+                theme="custombackground"
+              />
+            </div>
+          )}
         </div>
       </Layout>
     );

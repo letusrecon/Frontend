@@ -5,10 +5,28 @@ import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { DISCOVERY_PORT_DATA } from "@/Data/Data";
-import DataTable from "react-data-table-component";
+import DataTable, {createTheme} from "react-data-table-component";
+import { useState, useEffect } from "react";
 
+
+createTheme("custombackground", {
+  background: {
+    default: "transparent",
+  },
+  text: {
+    primary: "white",
+    secondary: "#2aa198",
+  },
+});
 
 export default function port_discovvery() {
+
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+      setIsLoaded(true);
+    }, []);
+
 
   const columns = [
     { name: "URL", sortable: true, selector: (row) => row.url },
@@ -29,7 +47,9 @@ export default function port_discovvery() {
         <div className=" flex justify-between items-center  mb-5">
           <div className="">
             <div className="">
-              <h1 className="text-slate-100 text-1xl">Additional Exposed Ports</h1>
+              <h1 className="text-slate-100 text-1xl">
+                Additional Exposed Ports
+              </h1>
               <h2 className="text-cyan-400">Fireeye.com</h2>
             </div>
           </div>
@@ -55,7 +75,7 @@ export default function port_discovvery() {
           <div className="flex justify-end">
             <div className="mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-              Url{" "}
+                Url{" "}
                 <span className="ml-4">
                   <MdArrowDropDown className=" text-xl " />
                 </span>
@@ -87,14 +107,17 @@ export default function port_discovvery() {
           </div>
         </div>
 
-        <div className="mt-4">
-          <DataTable
-            columns={columns}
-            pagination
-            allowOverflow
-            data={DISCOVERY_PORT_DATA}
-          />
-        </div>
+        {isLoaded && (
+          <div className="mt-4">
+            <DataTable
+              columns={columns}
+              pagination
+              allowOverflow
+              data={DISCOVERY_PORT_DATA}
+              theme="custombackground"
+            />
+          </div>
+        )}
       </div>
     </Layout>
   );

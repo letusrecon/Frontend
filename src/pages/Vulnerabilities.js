@@ -1,37 +1,58 @@
+
+
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { VULNERABILITIES } from "@/Data/Data";
-import DataTable from "react-data-table-component";
+import DataTable, {createTheme} from "react-data-table-component";
+import { useEffect, useState } from "react";
+
+createTheme("custombackground", {
+  background: {
+    default: "transparent",
+  },
+  text: {
+    primary: "white",
+    secondary: "#2aa198",
+  },
+});
 
 export default function Vulnerabilities() {
-      const columns = [
-        { name: "URL", sortable: true, selector: (row) => row.url },
 
-        {
-          name: "Issue Raised",
-          sortable: true,
-          selector: (row) => row.issue,
-        },
-        {
-          name: "issue Related",
-          sortable: true,
-          selector: (row) => row.isseRelated,
-        },
-        {
-          name: "Severity",
-          sortable: true,
-          selector: (row) => row.severity,
-        },
-        { name: "Notes", sortable: true, selector: (row) => row.notes },
-        {
-          name: "Guide",
-          sortable: true,
-          selector: (row) => row.guides,
-        },
-        
-      ];
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+ 
+  const columns = [
+    { name: "URL", sortable: true, selector: (row) => row.url },
+
+    {
+      name: "Issue Raised",
+      sortable: true,
+      selector: (row) => row.issue,
+    },
+    {
+      name: "issue Related",
+      sortable: true,
+      selector: (row) => row.isseRelated,
+    },
+    {
+      name: "Severity",
+      sortable: true,
+      selector: (row) => row.severity,
+    },
+    { name: "Notes", sortable: true, selector: (row) => row.notes },
+    {
+      name: "Guide",
+      sortable: true,
+      selector: (row) => row.guides,
+    },
+  ];
 
   return (
     <Layout>
@@ -62,8 +83,6 @@ export default function Vulnerabilities() {
         </div>
 
         <div className="mt-20 items-center">
-         
-
           <div className="flex justify-end">
             <div className="mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
@@ -100,12 +119,15 @@ export default function Vulnerabilities() {
         </div>
 
         <div className="mt-4">
+          { isLoaded && 
           <DataTable
             columns={columns}
             pagination
             allowOverflow
             data={VULNERABILITIES}
+            theme="custombackground"
           />
+       }
         </div>
       </div>
     </Layout>

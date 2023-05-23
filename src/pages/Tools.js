@@ -15,7 +15,7 @@ export default function Tools() {
                 <h2 className="text-slate-100">
                   <b>Available Tools</b>
                 </h2>
-                <h2 className="text-slate-100 text-[#5bb0c0]">
+                <h2 className=" text-[#5bb0c0]">
                   <b>Bing.com</b>
                 </h2>
               </div>
