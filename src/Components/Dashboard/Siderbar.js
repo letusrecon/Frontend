@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <div className="bg-[#232223]   w-[250px] h-14 md:h-screen fixed top-0 bottom-0">
+    <div className="hidden bg-[#232223] sm:hidden md:hidden lg:block  w-[250px] h-14 md:h-screen fixed top-0 bottom-0">
       <div
         className="
           flex flex-col

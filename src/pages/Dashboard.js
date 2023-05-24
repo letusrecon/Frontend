@@ -40,8 +40,8 @@ export default function Dashboard() {
   return (
     <Layout>
       <div className={styles.dashboard_container}>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
+        <div className="flex justify-between mb-8  sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+          <div className="flex items-center mb-4 sm:mb-4 lg:items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
             <div className="">
               <h2 className="text-slate-100">Hello Ismail,</h2>
@@ -49,7 +49,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="flex ">
+          <div className="flex items-center ">
             <form action="" className="mr-8 mt-3">
               <input
                 type="text"
@@ -69,8 +69,8 @@ export default function Dashboard() {
 
         <div className="mt-14">
           <h3 className="text-slate-100 text-3xl">Today</h3>
-          <div className="flex mt-10">
-            <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-20 rounded-xl mr-6">
+          <div className="flex flex-col sm:flex-col md:flex-col  lg:flex-row mt-10">
+            <div className="w-full mb-5 sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-20 rounded-xl mr-6">
               <div className="flex justify-center">
                 <RiQrScanLine className="text-slate-100 text-2xl mr-2" />
 
@@ -79,7 +79,7 @@ export default function Dashboard() {
 
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
-            <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16  rounded-xl mr-6">
+            <div className="w-full mb-5 sm:mb-5 md:mb-4  lg:8/12  lg:mb-0 border border-[#3A4245] bg-[#141C1D] py-4 px-16  rounded-xl mr-6">
               <div className="flex justify-center">
                 <TbClockHour3 className="text-slate-100 text-2xl mr-2" />
 
@@ -88,7 +88,7 @@ export default function Dashboard() {
 
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
-            <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16 rounded-xl mr-6">
+            <div className="w-full mb-5 sm:mb-5 md:mb-4  lg:w-8/12  lg:mb-0 border border-[#3A4245] bg-[#141C1D] py-4 px-16 rounded-xl mr-6">
               <div className="flex justify-center">
                 <GiTargeting className="text-slate-100 text-2xl mr-2" />
 
@@ -97,7 +97,7 @@ export default function Dashboard() {
 
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
-            <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16  rounded-xl p-5">
+            <div className="w-full border border-[#3A4245] bg-[#141C1D] py-4 lg:w-8/12 px-16  rounded-xl p-5">
               <div className="flex justify-center">
                 <TbWorld className="text-slate-100 text-2xl mr-2" />
 
@@ -109,8 +109,8 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="flex justify-between mt-14">
-          <div>
+        <div className="flex sm:flex-col lg:flex-row justify-between mt-14">
+          <div className="mb-4 sm:mb-4">
             <h2 className="text-slate-100 text-1xl"> This week (300 scans)</h2>
           </div>
 
