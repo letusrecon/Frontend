@@ -1,13 +1,11 @@
-
-
+import React from 'react'
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { DISCOVERY_PORT_DATA } from "@/Data/Data";
-import DataTable, {createTheme} from "react-data-table-component";
+import DataTable, { createTheme } from "react-data-table-component";
 import { useState, useEffect } from "react";
-
 
 createTheme("custombackground", {
   background: {
@@ -19,20 +17,19 @@ createTheme("custombackground", {
   },
 });
 
-export default function port_discovvery() {
+export default function Port_discovvery() {
 
-    const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    useEffect(() => {
-      setIsLoaded(true);
-    }, []);
-
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   const columns = [
     { name: "URL", sortable: true, selector: (row) => row.url },
     { name: "Title", sortable: true, selector: (row) => row.title },
     { name: "HTTP Status Code", sortable: true, selector: (row) => row.status },
- 
+
     {
       name: "Technologies",
       sortable: true,
@@ -64,7 +61,7 @@ export default function port_discovvery() {
             </form>
             <div>
               <CgProfile className="text-2xl mx-auto text-slate-100" />
-              <Link className="text-slate-100" href="/">
+              <Link className="text-slate-100" href="/profile">
                 My profile
               </Link>
             </div>
@@ -108,7 +105,7 @@ export default function port_discovvery() {
         </div>
 
         {isLoaded && (
-          <div className="mt-4">
+          <div className="mt-10">
             <DataTable
               columns={columns}
               pagination

@@ -16,6 +16,9 @@ createTheme("custombackground", {
     primary: "white",
     secondary: "#2aa198",
   },
+  divider: {
+    default: "#7E8582",
+  },
 });
 
 export default function Vulnerabilities() {
@@ -56,8 +59,8 @@ export default function Vulnerabilities() {
 
   return (
     <Layout>
-      <div className="mt-10 py-10 px-10">
-        <div className=" flex justify-between items-center  mb-5">
+      <div className="py-4 px-10">
+        <div className=" flex justify-between items-center  mb-8">
           <div className="">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Vulnerabilities</h1>
@@ -118,7 +121,7 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-14">
           { isLoaded && 
           <DataTable
             columns={columns}

@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function Urls() {
   return (
     <Layout>
-      <div className="px-8 py-12">
-      <div className=" flex justify-between items-center  mb-5">
+      <div className="px-10 py-5">
+        <div className=" flex justify-between items-center  mb-5">
           <div className="">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Resolved Domain</h1>
@@ -25,21 +25,23 @@ export default function Urls() {
             </form>
             <div>
               <CgProfile className="text-2xl mx-auto text-slate-100" />
-              <Link className="text-slate-100" href="/">
+              <Link className="text-slate-100" href="/profile">
                 My profile
               </Link>
             </div>
           </div>
         </div>
         <div className="flex flex-wrap justify-end">
-          <h2 className="text-[#5bb0c0] text-lg"><b>Include</b></h2>
+          <h2 className="text-[#5bb0c0] text-lg">
+            <b>Include</b>
+          </h2>
           <form action="" className="ml-8">
-                <input
-                  type="text"
-                  placeholder="type here"
-                  className="rounded-xl border text-white py-1 px-6 w-2/3 bg-transparent"
-                />
-              </form>
+            <input
+              type="text"
+              placeholder="type here"
+              className="rounded-xl border text-white py-1 px-6 w-2/3 bg-transparent"
+            />
+          </form>
         </div>
         <h3 className="text-white mb-6">
           <b>Results</b>
@@ -145,7 +147,7 @@ export default function Urls() {
           <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">3</h3>
             <p className="text-center col-start-2 col-span-11">
-              http://test.php.vulnweb.com:80/redir.php?test=query'+OR+sqlspider
+              http://test.php.vulnweb.com:80/redir.php?test=query&apos+OR+sqlspider
             </p>
           </div>
 
@@ -166,7 +168,7 @@ export default function Urls() {
           <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">6</h3>
             <p className="text-center col-start-2 col-span-11">
-            http://test.php.vulnweb.com/showimage.php?file=./picture/1.jpg&size=1607
+              http://test.php.vulnweb.com/showimage.php?file=./picture/1.jpg&size=1607
             </p>
           </div>
 
@@ -184,7 +186,7 @@ export default function Urls() {
             </p>
           </div>
 
-           <div className="grid grid-cols-12 text-white m-2">
+          <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">9</h3>
             <p className="text-center col-start-2 col-span-11">
               http://test.php.vulnweb.com/redir.php?test=query%27
@@ -197,7 +199,6 @@ export default function Urls() {
               http://test.php.vulnweb.com:80/redir.php?test=query'+OR+sqlspider
             </p>
           </div>
-
         </div>
         {/* end */}
       </div>

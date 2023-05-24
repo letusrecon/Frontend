@@ -31,7 +31,7 @@ export default function Tools() {
               </form>
               <div>
                 <CgProfile className="text-2xl mx-auto text-slate-100" />
-                <Link className="text-slate-100" href="/">
+                <Link className="text-slate-100" href="/profile">
                   {" "}
                   My profile
                 </Link>

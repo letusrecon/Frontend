@@ -37,7 +37,7 @@ export default function Dashboard() {
   return (
     <Layout>
       <div className={styles.dashboard_container}>
-        <div className=" flex  md:justify-between items-center">
+        <div className="flex items-center justify-between">
           <div className="flex items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
             <div className="">
@@ -56,7 +56,7 @@ export default function Dashboard() {
             </form>
             <div>
               <CgProfile className="text-2xl mx-auto text-slate-100" />
-              <Link className="text-slate-100" href="/">
+              <Link className="text-slate-100" href="/profile">
                 {" "}
                 My profile
               </Link>
