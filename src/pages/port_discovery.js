@@ -40,7 +40,7 @@ export default function Port_discovvery() {
   ];
   return (
     <Layout>
-      <div className="mt-10 py-10 px-10">
+      <div className="py-5 px-10">
         <div className=" flex justify-between items-center  mb-5">
           <div className="">
             <div className="">
