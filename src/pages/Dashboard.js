@@ -40,7 +40,7 @@ export default function Dashboard() {
   return (
     <Layout>
       <div className={styles.dashboard_container}>
-        <div className="flex justify-between mb-8  sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+        <div className="flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="flex items-center mb-4 sm:mb-4 lg:items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
             <div className="">
@@ -69,8 +69,8 @@ export default function Dashboard() {
 
         <div className="mt-14">
           <h3 className="text-slate-100 text-3xl">Today</h3>
-          <div className="flex flex-col sm:flex-col md:flex-col  lg:flex-row mt-10">
-            <div className="w-full mb-5 sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-20 rounded-xl mr-6">
+          <div className="flex flex-col sm:justify-center sm:flex-col md:flex-col  lg:flex-row mt-10">
+            <div className="w-full mb-5  sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-20 rounded-xl lg:mr-6">
               <div className="flex justify-center">
                 <RiQrScanLine className="text-slate-100 text-2xl mr-2" />
 
@@ -109,21 +109,30 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="flex sm:flex-col lg:flex-row justify-between mt-14">
-          <div className="mb-4 sm:mb-4">
-            <h2 className="text-slate-100 text-1xl"> This week (300 scans)</h2>
+        <div className="flex justify-center s  flex-col sm:flex-col lg:flex-row lg:justify-between mt-14">
+          <div className="  mb-8 sm:mb-4 lg:mb-0">
+            <h2 className="text-slate-100 text-lg md:text-sm ">
+              {" "}
+              This week (300 scans)
+            </h2>
           </div>
 
-          <div>
-            <h2 className="text-slate-100 text-1xl">Subdomains Details</h2>
+          <div className="">
+            <h2 className="text-slate-100 text-lg md:text-sm">
+              Subdomains Details
+            </h2>
           </div>
         </div>
 
-        <div className="flex justify-between mt-20 items-center">
-          <h3 className="text-slate-100 text-1xl">Scan history</h3>
+        <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
+          <div className="mb-6 sm:mb-6  sm:text-left">
+            <h3 className="text-slate-100  lg:text-lg  text-xl">
+              Scan history
+            </h3>
+          </div>
 
           <div className="flex">
-            <div className="mr-5">
+            <div className="mr-2 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
                 Entries{" "}
                 <span className="ml-4">
@@ -143,7 +152,7 @@ export default function Dashboard() {
         </div>
 
         {isLoaded && (
-          <div className="mt-10">
+          <div className="mt-10 hidden lg:block">
             <DataTable
               className={styles.rdt_TableCol_Sortable}
               columns={columns}
