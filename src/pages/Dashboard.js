@@ -5,8 +5,11 @@ import styles from "./Dasboard.module.css";
 import DataTable, { createTheme } from "react-data-table-component";
 import { SCAN_HISTORY_DATA } from "@/Data/Data";
 import { MdArrowDropDown } from "react-icons/md";
-import { AiOutlineSearch } from "react-icons/ai";
 import { useState, useEffect } from "react";
+import { RiQrScanLine } from "react-icons/ri";
+import {GiTargeting} from 'react-icons/gi'
+import { TbWorld } from 'react-icons/tb'
+import {TbClockHour3} from 'react-icons/tb'
 
 createTheme("custombackground", {
   background: {
@@ -68,19 +71,39 @@ export default function Dashboard() {
           <h3 className="text-slate-100 text-3xl">Today</h3>
           <div className="flex mt-10">
             <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-20 rounded-xl mr-6">
-              <h5 className="text-slate-100 text-center ">Scan Performed</h5>
+              <div className="flex justify-center">
+                <RiQrScanLine className="text-slate-100 text-2xl mr-2" />
+
+                <h5 className="text-slate-100 text-center ">Scan Performed</h5>
+              </div>
+
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
             <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16  rounded-xl mr-6">
-              <h3 className="text-slate-100 text-center">Running scans</h3>
+              <div className="flex justify-center">
+                <TbClockHour3 className="text-slate-100 text-2xl mr-2" />
+
+                <h3 className="text-slate-100 text-center">Running scans</h3>
+              </div>
+
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
             <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16 rounded-xl mr-6">
-              <h3 className="text-slate-100 text-center">Targets</h3>
+              <div className="flex justify-center">
+                <GiTargeting className="text-slate-100 text-2xl mr-2" />
+
+                <h3 className="text-slate-100 text-center">Targets</h3>
+              </div>
+
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
             <div className="border border-[#3A4245] bg-[#141C1D] py-4 w-8/12 px-16  rounded-xl p-5">
-              <h3 className="text-slate-100 text-center">Subdomains Found</h3>
+              <div className="flex justify-center">
+                <TbWorld className="text-slate-100 text-2xl mr-2" />
+
+                <h3 className="text-slate-100 text-center">Subdomains Found</h3>
+              </div>
+
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
           </div>
