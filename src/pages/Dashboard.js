@@ -39,7 +39,7 @@ export default function Dashboard() {
   ];
   return (
     <Layout>
-      <div className={styles.dashboard_container}>
+      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10 ">
         <div className="flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="flex items-center mb-4 sm:mb-4 lg:items-center">
             <CgProfile className=" text-7xl text-slate-100 mr-3" />
