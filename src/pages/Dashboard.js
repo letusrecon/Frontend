@@ -151,14 +151,14 @@ export default function Dashboard() {
         </div>
 
         {isLoaded && (
-          <div className="">
+          <div className="mt-10 hidden lg:block">
             <DataTable
               className={styles.rdt_TableCol_Sortable}
               columns={columns}
               fixedHeader
               theme="custombackground"
               pagination
-              responsive={true}
+              responsive
               data={SCAN_HISTORY_DATA}
             />
           </div>
