@@ -6,11 +6,11 @@ import styles from "./Tools.module.css";
 export default function Tools() {
   return (
     <Layout>
-      <div className="px-10 my-5">
+      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         {/* First top bar */}
         <div className={styles.tool_info_container}>
-          <div className=" flex justify-between items-center mb-6">
-            <div className="flex items-center">
+          <div className=" flex flex-col lg:flex-row justify-between lg:items-center mb-6">
+            <div className="flex mb-4 lg:mb-0 items-center">
               <div className="">
                 <h2 className="text-slate-100">
                   <b>Available Tools</b>
@@ -41,8 +41,8 @@ export default function Tools() {
         </div>
         {/* ends here */}
         {/* card start here */}
-        <div className="grid lg:grid-cols-3 sm:grid-cols-1 lg:py-5 px-2 lg:gap-9 text-sm">
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+        <div className="grid  lg:grid-cols-3 sm:grid-cols-1 lg:py-5 px-2 lg:gap-9 text-sm">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>Subdomains from ASN Number</b>
             </h3>
@@ -60,7 +60,7 @@ export default function Tools() {
           </div>
           {/* card ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>Subdomains from IP Ranges</b>
             </h3>
@@ -78,7 +78,7 @@ export default function Tools() {
           </div>
           {/* Ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>403 Bypass</b>
             </h3>
@@ -96,7 +96,7 @@ export default function Tools() {
           </div>
           {/* Ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>Directory Bruteforce</b>
             </h3>
@@ -114,7 +114,7 @@ export default function Tools() {
           </div>
           {/* card ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>Extract swagger.json endpoints</b>
             </h3>
@@ -132,7 +132,7 @@ export default function Tools() {
           </div>
           {/* Ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-5">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-5">
             <h3 className="mb-4 text-base">
               <b>Admin Panel Finder</b>
             </h3>
@@ -150,7 +150,7 @@ export default function Tools() {
           </div>
           {/* Ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-4">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-4">
             <h3 className="mb-4 text-base">
               <b>Subdomain Takeover</b>
             </h3>
@@ -169,9 +169,11 @@ export default function Tools() {
           </div>
           {/* card ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-4">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-4">
             <h3 className="mb-4 text-base">
-              <p><b>Subdomains from SSL configurations</b></p>
+              <p>
+                <b>Subdomains from SSL configurations</b>
+              </p>
             </h3>
             <h3 className="mb-9">
               Discover subdomains by analysing SSL/TLS certificates and
@@ -188,7 +190,7 @@ export default function Tools() {
           </div>
           {/* Ends here */}
           {/* card start here */}
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] text-white text-center p-4">
+          <div className="bg-[#141C1D] sm:mb-4 md:mb-0 mb-4 lg:mb-0 rounded-xl border border-[#3A4245] text-white text-center p-4">
             <h3 className="mb-4 text-base">
               <b>Interesting JSON files</b>
             </h3>

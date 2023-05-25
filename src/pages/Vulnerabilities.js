@@ -59,7 +59,7 @@ export default function Vulnerabilities() {
 
   return (
     <Layout>
-      <div className=" px-4 py-5 sm:py-5 md:px-4 sm:px-4  lg:py-4 lg:px-10">
+      <div className=" px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="">
             <div className="">

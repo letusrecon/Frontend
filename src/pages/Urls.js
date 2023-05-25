@@ -7,7 +7,7 @@ import {MdArrowDropDown } from 'react-icons/md'
 export default function Urls() {
   return (
     <Layout>
-      <div className="py-10 px-5 md:px-8  lg:px-10 lg:py-5">
+      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         <div className="flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="">
@@ -21,7 +21,7 @@ export default function Urls() {
               <input
                 type="text"
                 placeholder="Example.com"
-                className="rounded-xl border py-1 px-6 w-4/3 bg-transparent "
+                className="rounded-md border py-1 px-6 w-4/3 bg-transparent "
               />
             </form>
             <div>
@@ -34,25 +34,24 @@ export default function Urls() {
         </div>
         <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
           <div className="">
-            <h3 className="text-slate-100 text-2xl  mb-4 lg:mb-0 mr-2">Result</h3>
-           
+            <h3 className="text-slate-100 text-2xl  mb-4 lg:mb-0 mr-2">
+              Result
+            </h3>
           </div>
 
           <div className="flex flex-col sm:flex-col lg:flex-row">
-            <div className="  lg:mr-5">
-             <h3 className="text-2xl mb-3 lg:mb-0 sm:mb-3 text-cyan-500">Include</h3>
-            </div>
+            {/* <div className="  lg:mr-5">
+              <h3 className="text-2xl mb-3 lg:mb-0 sm:mb-3 text-cyan-500">
+                Include
+              </h3>
+            </div> */}
 
-            <form
-              action=""
-              className=" mr-7  lg:mr-5 mb-4 lg:mb-0  "
-            >
+            <form action="" className=" mr-7  lg:mr-5 mb-4 lg:mb-0  ">
               <input
                 type="text"
                 placeholder="Type here"
-                className="rounded-xl border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
+                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
               />
-            
             </form>
 
             <div className="">
@@ -139,7 +138,7 @@ export default function Urls() {
         </div>
 
         {/* table start here */}
-        <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] my-10 pb-12">
+        <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] my-10 py-2">
           <div className="grid grid-cols-12 card_title rounded-t-xl text-white p-1">
             <b className="grid grid-cols-1">#</b>
             <p className="text-center col-start-2 col-span-11">

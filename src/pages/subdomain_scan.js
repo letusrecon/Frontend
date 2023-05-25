@@ -40,7 +40,7 @@ export default function Subdomain_scan() {
   ];
   return (
     <Layout>
-      <div className="py-5 sm:py-5 px-4 lg:py-5 lg:px-10">
+      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-3 lg:mb-0 sm:mb-3">
             <div className="">
@@ -68,9 +68,7 @@ export default function Subdomain_scan() {
 
         <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
           <div className="flex">
-            <h3 className="text-slate-100  mb-4 lg:mb-0 mr-2">
-              Scan history:
-            </h3>
+            <h3 className="text-slate-100  mb-4 lg:mb-0 mr-2">Scan history:</h3>
             <span className="text-slate-100  text-lg ">0</span>
           </div>
 
@@ -113,7 +111,6 @@ export default function Subdomain_scan() {
           <div className="hidden sm:hidden lg:block md:block mt-8 ">
             <DataTable
               columns={columns}
-            
               pagination
               data={SCANNED_DATA}
               theme="custombackground"
