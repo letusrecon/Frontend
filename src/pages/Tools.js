@@ -9,7 +9,7 @@ export default function Tools() {
       <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         {/* First top bar */}
         <div className={styles.tool_info_container}>
-          <div className=" flex flex-col lg:flex-row justify-between lg:items-center mb-6">
+          <div className=" flex  lg:flex-row justify-between lg:items-center mb-6">
             <div className="flex mb-4 lg:mb-0 items-center">
               <div className="">
                 <h2 className="text-slate-100">
@@ -22,13 +22,7 @@ export default function Tools() {
             </div>
 
             <div className="flex ">
-              <form action="" className="mr-8 mt-3">
-                <input
-                  type="text"
-                  placeholder="Example.com"
-                  className="rounded-md border py-1 px-6 w-4/3 bg-transparent "
-                />
-              </form>
+              
               <div>
                 <CgProfile className="text-2xl mx-auto text-slate-100" />
                 <Link className="text-slate-100" href="/profile">

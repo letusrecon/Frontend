@@ -42,7 +42,7 @@ export default function Subdomain_scan() {
     <Layout>
       <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
-          <div className="mb-3 lg:mb-0 sm:mb-3">
+          <div className="mb-4 lg:mb-0 sm:mb-3">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Resolved Domain</h1>
               <h2 className="text-cyan-400">Fireeye.com</h2>
@@ -50,7 +50,7 @@ export default function Subdomain_scan() {
           </div>
 
           <div className="flex ">
-            <form action="" className="mr-8 mt-3">
+            <form action="" className=" mr-8 sm:mr-6 lg:mr-8 mt-3">
               <input
                 type="text"
                 placeholder="Example.com"
@@ -84,16 +84,14 @@ export default function Subdomain_scan() {
 
             <form
               action=""
-              className=" mr-7  lg:mr-5 mb-4 lg:mb-0   flex justify-between"
+              className=" mr-5  lg:mr-4 mb-4 lg:mb-0   flex justify-between"
             >
               <input
                 type="text"
                 placeholder=" Search"
                 className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
               />
-              <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
-                Search
-              </button>
+            
             </form>
 
             <div className="">

@@ -40,7 +40,7 @@ export default function Port_discovvery() {
   ];
   return (
     <Layout>
-      <div className="py-5 px-5 sm:py-4 md:py-4 lg:py-5 lg:px-10">
+      <div className="py-7 px-5 sm:py-4 md:py-4 lg:py-5 lg:px-10">
         <div className=" flex flex-col lg:flex-row justify-between lg:items-center  mb-5">
           <div className="mb-3 md:mb-3 lg:mb-0">
             <div className="">
@@ -52,7 +52,7 @@ export default function Port_discovvery() {
           </div>
 
           <div className="flex ">
-            <form action="" className="mr-8 mt-3">
+            <form action="" className=" mr-6 sm:mr-6 lg:mr-8 mt-3">
               <input
                 type="text"
                 placeholder="Example.com"
@@ -73,7 +73,7 @@ export default function Port_discovvery() {
             <div className="mb-4 lg:mb-0 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
                 Url{" "}
-                <span className="ml-4">
+                <span className=" ml-4">
                   <MdArrowDropDown className=" text-xl " />
                 </span>
               </button>
@@ -85,9 +85,7 @@ export default function Port_discovvery() {
                 placeholder=" type here"
                 className="rounded-md border py-1 mr-3 px-6 w-4/3 bg-transparent text-slate-100 "
               />
-              <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
-                Search
-              </button>
+            
             </form>
 
             <div className="">

@@ -61,7 +61,7 @@ export default function Vulnerabilities() {
     <Layout>
       <div className=" px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
         <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
-          <div className="">
+          <div className="mb-3 md:mb-3 lg:mb-0">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Vulnerabilities</h1>
               <h2 className="text-cyan-400">Fireeye.com</h2>
@@ -104,9 +104,6 @@ export default function Vulnerabilities() {
               placeholder=" Search"
               className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
             />
-            <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
-              Search
-            </button>
           </form>
 
           <div className="">
