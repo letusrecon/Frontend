@@ -1,11 +1,11 @@
-import Navbar from "@/Components/Navbar"
-import Hero from "@/Components/Hero"
-import Services from "@/Components/Services"
-import Testimonial from "@/Components/Testimonials/Testimonial"
-import Pricing from "@/Components/Pricing"
-import Blog from "@/Components/Blog"
-import Contact from "@/Components/Contact"
-import Footer from "@/Components/Footer"
+import Navbar from "@/Components/Home/Navbar"
+import Hero from "@/Components/Home/Hero"
+import Services from "@/Components/Home/Services"
+import Testimonial from "@/Components/Home/Testimonials/Testimonial"
+import Pricing from "@/Components/Home/Pricing"
+import Blog from "@/Components/Home/Blog"
+import Contact from "@/Components/Home/Contact"
+import Footer from "@/Components/Home/Footer"
 
 const index = () => {
   return (

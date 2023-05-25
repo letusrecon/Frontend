@@ -29,3 +29,12 @@
     border: 1px solid  rgb(147, 147, 147);
 } */
 
+
+
+@media screen and (max-width: 764px) {
+    .dashboard_container{
+    padding: 3rem 4% ;
+}
+
+    
+}

@@ -70,7 +70,7 @@ export default function Dashboard() {
         <div className="mt-14">
           <h3 className="text-slate-100 text-3xl">Today</h3>
           <div className="flex flex-col sm:justify-center sm:flex-col md:flex-col  lg:flex-row mt-10">
-            <div className="w-full mb-5  sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-20 rounded-xl lg:mr-6">
+            <div className="w-full mb-5  sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-16 rounded-xl lg:mr-6">
               <div className="flex justify-center">
                 <RiQrScanLine className="text-slate-100 text-2xl mr-2" />
 
@@ -79,7 +79,7 @@ export default function Dashboard() {
 
               <h1 className="text-center text-white mt-3 text-5xl">0</h1>
             </div>
-            <div className="w-full mb-5 sm:mb-5 md:mb-4  lg:8/12  lg:mb-0 border border-[#3A4245] bg-[#141C1D] py-4 px-16  rounded-xl mr-6">
+            <div className="w-full mb-5 sm:mb-5 md:mb-4  lg:w-8/12  lg:mb-0 border border-[#3A4245] bg-[#141C1D] py-4 px-16  rounded-xl mr-6">
               <div className="flex justify-center">
                 <TbClockHour3 className="text-slate-100 text-2xl mr-2" />
 

@@ -2,13 +2,14 @@ import Layout from "@/Components/Layout";
 import styles from "./Urls.module.css";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
+import {MdArrowDropDown } from 'react-icons/md'
 
 export default function Urls() {
   return (
     <Layout>
-      <div className="px-10 py-5">
-        <div className=" flex justify-between items-center  mb-5">
-          <div className="">
+      <div className="py-10 px-5 md:px-8  lg:px-10 lg:py-5">
+        <div className="flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+          <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Resolved Domain</h1>
               <h2 className="text-cyan-500">Fireeye.com</h2>
@@ -31,23 +32,41 @@ export default function Urls() {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-end">
-          <h2 className="text-[#5bb0c0] text-lg">
-            <b>Include</b>
-          </h2>
-          <form action="" className="ml-8">
-            <input
-              type="text"
-              placeholder="type here"
-              className="rounded-xl border text-white py-1 px-6 w-2/3 bg-transparent"
-            />
-          </form>
-        </div>
-        <h3 className="text-white mb-6">
-          <b>Results</b>
-        </h3>
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
+          <div className="">
+            <h3 className="text-slate-100 text-2xl  mb-4 lg:mb-0 mr-2">Result</h3>
+           
+          </div>
 
-        <div className="grid lg:grid-cols-5 sm:grid-cols-1 gap-6 text-center">
+          <div className="flex flex-col sm:flex-col lg:flex-row">
+            <div className="  lg:mr-5">
+             <h3 className="text-2xl mb-3 lg:mb-0 sm:mb-3 text-cyan-500">Include</h3>
+            </div>
+
+            <form
+              action=""
+              className=" mr-7  lg:mr-5 mb-4 lg:mb-0  "
+            >
+              <input
+                type="text"
+                placeholder="Type here"
+                className="rounded-xl border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
+              />
+            
+            </form>
+
+            <div className="">
+              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
+                Export{" "}
+                <span className="ml-4">
+                  <MdArrowDropDown className=" text-xl " />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-5 mt-8 sm:grid-cols-1 gap-6 text-center">
           {/* card start here */}
           <div
             className="bg-[#141C1D] rounded-xl text-[#5bb0c0] 

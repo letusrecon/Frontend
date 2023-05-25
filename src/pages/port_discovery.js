@@ -40,9 +40,9 @@ export default function Port_discovvery() {
   ];
   return (
     <Layout>
-      <div className="py-5 px-10">
-        <div className=" flex justify-between items-center  mb-5">
-          <div className="">
+      <div className="py-5 px-5 sm:py-4 md:py-4 lg:py-5 lg:px-10">
+        <div className=" flex flex-col lg:flex-row justify-between lg:items-center  mb-5">
+          <div className="mb-3 md:mb-3 lg:mb-0">
             <div className="">
               <h1 className="text-slate-100 text-1xl">
                 Additional Exposed Ports
@@ -69,8 +69,8 @@ export default function Port_discovvery() {
         </div>
 
         <div className=" mt-20 items-center">
-          <div className="flex justify-end">
-            <div className="mr-5">
+          <div className="flex flex-col lg:flex-row lg:justify-end">
+            <div className="mb-4 lg:mb-0 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
                 Url{" "}
                 <span className="ml-4">
@@ -79,19 +79,16 @@ export default function Port_discovvery() {
               </button>
             </div>
 
-            <form action="" className="mr-5 ">
+            <form action="" className="mr-5 flex mb-4 lg:mb-0  ">
               <input
                 type="text"
                 placeholder=" type here"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 "
+                className="rounded-md border py-1 mr-3 px-6 w-4/3 bg-transparent text-slate-100 "
               />
-            </form>
-
-            <div className="mr-5">
               <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
                 Search
               </button>
-            </div>
+            </form>
 
             <div className="">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
@@ -105,7 +102,7 @@ export default function Port_discovvery() {
         </div>
 
         {isLoaded && (
-          <div className="mt-10">
+          <div className="hidden lg:block md:block mt-10">
             <DataTable
               columns={columns}
               pagination

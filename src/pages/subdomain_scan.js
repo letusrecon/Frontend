@@ -40,9 +40,9 @@ export default function Subdomain_scan() {
   ];
   return (
     <Layout>
-      <div className=" py-6 px-10">
-        <div className=" flex justify-between items-center  mb-5">
-          <div className="">
+      <div className="py-5 sm:py-5 px-4 lg:py-5 lg:px-10">
+        <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+          <div className="mb-3 lg:mb-0 sm:mb-3">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Resolved Domain</h1>
               <h2 className="text-cyan-400">Fireeye.com</h2>
@@ -66,14 +66,16 @@ export default function Subdomain_scan() {
           </div>
         </div>
 
-        <div className="flex justify-between mt-20 items-center">
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
           <div className="flex">
-            <h3 className="text-slate-100 text-1x mr-2">Scan history:</h3>
-            <span className="text-slate-100">0</span>
+            <h3 className="text-slate-100  mb-4 lg:mb-0 mr-2">
+              Scan history:
+            </h3>
+            <span className="text-slate-100  text-lg ">0</span>
           </div>
 
-          <div className="flex">
-            <div className="mr-5">
+          <div className="flex flex-col sm:flex-col lg:flex-row">
+            <div className=" mb-4 lg:mb-0 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
                 Entries{" "}
                 <span className="ml-4">
@@ -82,19 +84,19 @@ export default function Subdomain_scan() {
               </button>
             </div>
 
-            <form action="" className="mr-5 ">
+            <form
+              action=""
+              className=" mr-7  lg:mr-5 mb-4 lg:mb-0   flex justify-between"
+            >
               <input
                 type="text"
                 placeholder=" Search"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 "
+                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
               />
-            </form>
-
-            <div className="mr-5">
               <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
                 Search
               </button>
-            </div>
+            </form>
 
             <div className="">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
@@ -108,9 +110,10 @@ export default function Subdomain_scan() {
         </div>
 
         {isLoaded && (
-          <div className="mt-8 ">
+          <div className="hidden sm:hidden lg:block md:block mt-8 ">
             <DataTable
               columns={columns}
+            
               pagination
               data={SCANNED_DATA}
               theme="custombackground"

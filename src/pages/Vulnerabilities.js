@@ -59,8 +59,8 @@ export default function Vulnerabilities() {
 
   return (
     <Layout>
-      <div className="py-4 px-10">
-        <div className=" flex justify-between items-center  mb-8">
+      <div className=" px-4 py-5 sm:py-5 md:px-4 sm:px-4  lg:py-4 lg:px-10">
+        <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Vulnerabilities</h1>
@@ -85,52 +85,50 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className="mt-20 items-center">
-          <div className="flex justify-end">
-            <div className="mr-5">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Entries{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
+        <div className="flex flex-col sm:flex-col lg:justify-end lg:flex-row">
+          <div className=" mb-4 lg:mb-0 lg:mr-5">
+            <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
+              Entries{" "}
+              <span className="ml-4">
+                <MdArrowDropDown className=" text-xl " />
+              </span>
+            </button>
+          </div>
 
-            <form action="" className="mr-5 ">
-              <input
-                type="text"
-                placeholder=" Search"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 "
-              />
-            </form>
+          <form
+            action=""
+            className=" mr-10  lg:mr-5 mb-4 lg:mb-0   flex justify-between"
+          >
+            <input
+              type="text"
+              placeholder=" Search"
+              className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
+            />
+            <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
+              Search
+            </button>
+          </form>
 
-            <div className="mr-5">
-              <button className="text-slate px-5 rounded-md py-1 bg-cyan-300">
-                Search
-              </button>
-            </div>
-
-            <div className="">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Export{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
+          <div className="">
+            <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
+              Export{" "}
+              <span className="ml-4">
+                <MdArrowDropDown className=" text-xl " />
+              </span>
+            </button>
           </div>
         </div>
 
-        <div className="mt-14">
-          { isLoaded && 
-          <DataTable
-            columns={columns}
-            pagination
-            allowOverflow
-            data={VULNERABILITIES}
-            theme="custombackground"
-          />
-       }
+        <div className=" hidden lg:block md:block mt-14">
+          {isLoaded && (
+            <DataTable
+              columns={columns}
+              pagination
+              allowOverflow
+              data={VULNERABILITIES}
+              theme="custombackground"
+            />
+          )}
         </div>
       </div>
     </Layout>
