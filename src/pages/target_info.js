@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function target_info() {
   return (
     <Layout>
-      {/* <div className="py-20 px-7">
+      <div className="py-20 px-7">
         <div className=" flex justify-between items-center px-3  mb-5">
           <div className="">
             <div className="">
@@ -163,78 +163,78 @@ export default function target_info() {
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
             <b className="grid grid-cols-1">#</b>
-            <p className="text-center col-start-2 col-span-11">
-              <b>Top Subdomain Found</b>
+            <p className="text-center col-start-2 col-span-11 font-bold">
+              Top Subdomain Found
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">1</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">2</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">3</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">4</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">5</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">6</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">7</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">8</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">9</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
             
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">10</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>ash-cas04.thefacebook.com</h3>
+            ash-cas04.thefacebook.com
             </p>
             </div>
           </div>
@@ -250,70 +250,70 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">1</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
            <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">2</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">3</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">4</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">5</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">6</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">7</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
            <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">8</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">9</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">10</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>102.132.100.0/24</h3>
+            102.132.100.0/24
             </p>
             </div>
           </div>
@@ -359,14 +359,14 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">1</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">2</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -374,7 +374,7 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">3</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -382,7 +382,7 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">4</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -390,7 +390,7 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">5</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -398,7 +398,7 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">6</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -406,14 +406,14 @@ export default function target_info() {
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">7</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">
             <h3 className="grid grid-cols-1">8</h3>
             <p className="text-center col-start-2 col-span-11">
-            <h3>A.NS.FACEBOOK.COM</h3>
+            A.NS.FACEBOOK.COM
             </p>
             </div>
 
@@ -451,7 +451,7 @@ export default function target_info() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Layout>
   );
 }
