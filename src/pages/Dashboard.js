@@ -54,13 +54,12 @@ export default function Dashboard() {
               <input
                 type="text"
                 placeholder="Example.com"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent "
+                className="rounded-md border py-1 text-slate-200 px-6 w-4/3 bg-transparent "
               />
             </form>
             <div>
-              <CgProfile className="text-2xl mx-auto text-slate-100" />
               <Link className="text-slate-100" href="/profile">
-                {" "}
+                <CgProfile className="text-2xl mx-auto text-slate-100" />
                 My profile
               </Link>
             </div>
