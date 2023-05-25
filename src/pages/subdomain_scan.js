@@ -54,12 +54,12 @@ export default function Subdomain_scan() {
               <input
                 type="text"
                 placeholder="Example.com"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent "
+                className="rounded-md border py-1 px-6 w-3/4 md:w-4/3 lg:w-4/3 bg-transparent "
               />
             </form>
             <div>
-              <CgProfile className="text-2xl mx-auto text-slate-100" />
               <Link className="text-slate-100" href="/profile">
+                <CgProfile className="text-2xl mx-auto text-slate-100" />
                 My profile
               </Link>
             </div>
@@ -91,7 +91,6 @@ export default function Subdomain_scan() {
                 placeholder=" Search"
                 className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
               />
-            
             </form>
 
             <div className="">
