@@ -151,7 +151,7 @@ export default function Dashboard() {
         </div>
 
         {isLoaded && (
-          <div className="mt-10 hidden lg:block">
+          <div className="mt-10">
             <DataTable
               className={styles.rdt_TableCol_Sortable}
               columns={columns}
