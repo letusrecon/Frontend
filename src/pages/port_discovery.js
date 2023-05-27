@@ -57,7 +57,7 @@ export default function Port_discovvery() {
           </div>
         </div>
 
-        <div className=" mt-20 items-center">
+        <div className=" mt-7 sm:mt-5 md:mt-15 lg:mt-20 items-center">
           <div className="flex flex-col lg:flex-row lg:justify-end">
             <div className="mb-4 lg:mb-0 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
@@ -72,18 +72,17 @@ export default function Port_discovvery() {
               <input
                 type="text"
                 placeholder=" type here"
-                className="rounded-md border py-1 mr-3 px-6 w-4/3 bg-transparent text-slate-100 "
+                className="rounded-md border py-1 mr-3 px-6 w-4/5 md:w-4/3 lg:w-4/3 bg-transparent text-slate-100 "
               />
+              <div className="">
+                <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
+                  Export{" "}
+                  <span className="ml-4">
+                    <MdArrowDropDown className=" text-xl " />
+                  </span>
+                </button>
+              </div>
             </form>
-
-            <div className="">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Export{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
           </div>
         </div>
 

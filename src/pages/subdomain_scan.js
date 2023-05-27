@@ -30,8 +30,8 @@ export default function Subdomain_scan() {
   ];
   return (
     <Layout>
-      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
-        <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+      <div className="px-4 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
+        <div className=" flex flex-col  sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 lg:mb-0 sm:mb-3">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Resolved Domain</h1>
@@ -56,9 +56,9 @@ export default function Subdomain_scan() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
+        <div className="flex flex-col mt-7 sm:mt-7 md:mt-10 lg:flex-row lg:justify-between lg:mt-15 lg:items-center">
           <div className="flex">
-            <h3 className="text-slate-100  mb-4 lg:mb-0 mr-2">Scan history:</h3>
+            <h3 className="text-slate-100 sm:text-xl text-xl  mb-4 lg:mb-0 mr-2">Scan history:</h3>
             <span className="text-slate-100  text-lg ">0</span>
           </div>
 
@@ -96,7 +96,7 @@ export default function Subdomain_scan() {
 
         {isLoaded && (
           <div className=" mt-8 ">
-            <Table columns={columns} data={SCANNED_DATA} />
+            <Table columns={columns} allowOverflow={true} data={SCANNED_DATA} />
           </div>
         )}
       </div>

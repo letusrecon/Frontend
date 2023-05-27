@@ -5,7 +5,7 @@ import Nav from "./Dashboard/Nav";
 
 export default function Layout({ children }) {
   return (
-    <div className=" md:grid md:min-h-screen grid-rows-header ">
+    <div className=" md:grid md:min-h-screen md:grid-rows-header ">
       <div>
         <Nav />
       </div>
