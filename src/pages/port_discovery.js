@@ -88,7 +88,7 @@ export default function Port_discovvery() {
         </div>
 
         {isLoaded && (
-          <div className="hidden lg:block md:block mt-10">
+          <div className="mt-7">
             <Table columns={columns} allowOverflow data={DISCOVERY_PORT_DATA} />
           </div>
         )}

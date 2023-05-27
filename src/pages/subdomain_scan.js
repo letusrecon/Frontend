@@ -95,7 +95,7 @@ export default function Subdomain_scan() {
         </div>
 
         {isLoaded && (
-          <div className="hidden sm:hidden lg:block md:block mt-8 ">
+          <div className=" mt-8 ">
             <Table columns={columns} data={SCANNED_DATA} />
           </div>
         )}

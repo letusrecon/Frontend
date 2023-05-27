@@ -113,7 +113,7 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className=" hidden lg:block md:block mt-14">
+        <div className=" mt-8">
           {isLoaded && (
             <Table columns={columns} allowOverflow data={VULNERABILITIES} />
           )}

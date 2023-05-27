@@ -15,7 +15,11 @@ export default function bypasser() {
           Subdomains bypass
 
         </ToolsSearchInput>
-        <ToolsFilterBox></ToolsFilterBox>
+
+
+        <ToolsFilterBox>
+          
+        </ToolsFilterBox>
 
       </div>
     </Layout>
