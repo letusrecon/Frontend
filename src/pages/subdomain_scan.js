@@ -4,18 +4,8 @@ import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { SCANNED_DATA } from "@/Data/Data";
-import DataTable, { createTheme } from "react-data-table-component";
 import { useState, useEffect } from "react";
-
-createTheme("custombackground", {
-  background: {
-    default: "transparent",
-  },
-  text: {
-    primary: "white",
-    secondary: "#2aa198",
-  },
-});
+import Table from "@/Components/Dashboard/DataTable/Table";
 
 export default function Subdomain_scan() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -106,12 +96,7 @@ export default function Subdomain_scan() {
 
         {isLoaded && (
           <div className="hidden sm:hidden lg:block md:block mt-8 ">
-            <DataTable
-              columns={columns}
-              pagination
-              data={SCANNED_DATA}
-              theme="custombackground"
-            />
+            <Table columns={columns} data={SCANNED_DATA} />
           </div>
         )}
       </div>

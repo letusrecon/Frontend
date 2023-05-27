@@ -1,32 +1,21 @@
 import Layout from "@/Components/Layout";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
-import styles from "./Dasboard.module.css";
-import DataTable, { createTheme } from "react-data-table-component";
 import { SCAN_HISTORY_DATA } from "@/Data/Data";
 import { MdArrowDropDown } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { RiQrScanLine } from "react-icons/ri";
-import {GiTargeting} from 'react-icons/gi'
-import { TbWorld } from 'react-icons/tb'
-import {TbClockHour3} from 'react-icons/tb'
-
-createTheme("custombackground", {
-  background: {
-    default: "transparent",
-  },
-  text: {
-    primary: "white",
-    secondary: "#2aa198",
-  },
-});
+import { GiTargeting } from "react-icons/gi";
+import { TbWorld } from "react-icons/tb";
+import { TbClockHour3 } from "react-icons/tb";
+import Table from "@/Components/Dashboard/DataTable/Table";
 
 export default function Dashboard() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
-  }, []);
+  }, []); 
 
   const columns = [
     { name: "Target name", sortable: true, selector: (row) => row.Target },
@@ -151,16 +140,8 @@ export default function Dashboard() {
         </div>
 
         {isLoaded && (
-          <div className="mt-10">
-            <DataTable
-              className={styles.rdt_TableCol_Sortable}
-              columns={columns}
-              fixedHeader
-              theme="custombackground"
-              pagination
-              responsive
-              data={SCAN_HISTORY_DATA}
-            />
+          <div className="mt-10 ">
+            <Table columns={columns} data={SCAN_HISTORY_DATA} />
           </div>
         )}
       </div>

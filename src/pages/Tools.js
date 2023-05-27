@@ -22,7 +22,6 @@ export default function Tools() {
             </div>
 
             <div className="flex ">
-              
               <div>
                 <CgProfile className="text-2xl mx-auto text-slate-100" />
                 <Link className="text-slate-100" href="/profile">
@@ -47,9 +46,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/403_bypasser">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* card ends here */}

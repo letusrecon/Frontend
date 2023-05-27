@@ -1,24 +1,13 @@
-import React from 'react'
+import React from "react";
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { DISCOVERY_PORT_DATA } from "@/Data/Data";
-import DataTable, { createTheme } from "react-data-table-component";
+import Table from "@/Components/Dashboard/DataTable/Table";
 import { useState, useEffect } from "react";
 
-createTheme("custombackground", {
-  background: {
-    default: "transparent",
-  },
-  text: {
-    primary: "white",
-    secondary: "#2aa198",
-  },
-});
-
 export default function Port_discovvery() {
-
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -100,13 +89,7 @@ export default function Port_discovvery() {
 
         {isLoaded && (
           <div className="hidden lg:block md:block mt-10">
-            <DataTable
-              columns={columns}
-              pagination
-              allowOverflow
-              data={DISCOVERY_PORT_DATA}
-              theme="custombackground"
-            />
+            <Table columns={columns} allowOverflow data={DISCOVERY_PORT_DATA} />
           </div>
         )}
       </div>

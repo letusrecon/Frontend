@@ -15,7 +15,7 @@ export default function Sidebar() {
     <div className="hidden bg-[#232223] sm:hidden md:block lg:block  w-[284px] h-14 md:h-screen fixed top-0 bottom-0">
       <div
         className="
-          flex flex-col
+          flex flex-col 
    o
         
       "
@@ -84,13 +84,13 @@ export default function Sidebar() {
         </nav>
 
       
-          <div className=" py-4 px-14  fixed   bottom-0">
-            <div className="  text-center justify-center  flex font-bold">
-              <AiOutlineLogout className="text-2xl text-slate-100 mr-3" />
-              <h3 className="text-slate-100 text-xl"> LOGOUT</h3>
-            </div>
+{/*           
+            <div className="  flex font-bold">
+              <AiOutlineLogout className="text-2xl mx-6 text-slate-100 " />
+              <h3 className="text-slate-100 text-lg"> LOGOUT</h3>
+            </div> */}
           
-        </div>
+      
       </div>
     </div>
   );

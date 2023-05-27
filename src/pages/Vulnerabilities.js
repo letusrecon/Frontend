@@ -1,12 +1,12 @@
-
-
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";
 import { VULNERABILITIES } from "@/Data/Data";
-import DataTable, {createTheme} from "react-data-table-component";
+import { createTheme } from "react-data-table-component";
+import Table from "@/Components/Dashboard/DataTable/Table";
 import { useEffect, useState } from "react";
+
 
 createTheme("custombackground", {
   background: {
@@ -22,15 +22,12 @@ createTheme("custombackground", {
 });
 
 export default function Vulnerabilities() {
-
-
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
 
- 
   const columns = [
     { name: "URL", sortable: true, selector: (row) => row.url },
 
@@ -118,13 +115,7 @@ export default function Vulnerabilities() {
 
         <div className=" hidden lg:block md:block mt-14">
           {isLoaded && (
-            <DataTable
-              columns={columns}
-              pagination
-              allowOverflow
-              data={VULNERABILITIES}
-              theme="custombackground"
-            />
+            <Table columns={columns} allowOverflow data={VULNERABILITIES} />
           )}
         </div>
       </div>
