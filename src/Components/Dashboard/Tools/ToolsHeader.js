@@ -6,8 +6,8 @@ import { CgProfile } from "react-icons/cg";
 export default function ToolsHeader() {
   return (
 
-      <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
-        <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+      <div className="px-5  md:px-8 py-5  lg:px-10">
+        <div className=" flex flex-col mb-8 lg:mb-0 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 lg:mb-0 sm:mb-3">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Available tools</h1>

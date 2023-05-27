@@ -1,7 +1,16 @@
-import React from 'react'
+import React from "react";
+import Layout from "@/Components/Layout";
+import ToolsHeader from "@/Components/Dashboard/Tools/ToolsHeader";
+import ToolsSearchInput from "@/Components/Dashboard/Tools/ToolsSearchInput";
 
 export default function admin_panel_inder() {
   return (
-    <div>admin_panel-_inder</div>
-  )
+    <Layout>
+      <div>
+        <ToolsHeader />
+
+        <ToolsSearchInput>Admin Panel Finder</ToolsSearchInput>
+      </div>
+    </Layout>
+  );
 }

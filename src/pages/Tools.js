@@ -46,7 +46,7 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <Link href="/tools/403_bypasser">
+              <Link href="/tools/subs_by_asn">
                 <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
                   Start
                 </button>
@@ -66,9 +66,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/subs_from_ip_ranges">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
@@ -84,9 +86,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/403_bypasser">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
@@ -102,9 +106,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/directory_bruteforcev">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* card ends here */}
@@ -120,9 +126,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/swagger_endpoints">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
@@ -138,9 +146,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/admin_panel_inder">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
@@ -157,9 +167,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/subs_takeover">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* card ends here */}
@@ -178,9 +190,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/subs_by_ssl">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
@@ -197,9 +211,11 @@ export default function Tools() {
             </h3>
             {/* button */}
             <div className="m-4">
-              <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
-                Start
-              </button>
+              <Link href="/tools/interesting_json">
+                <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
+                  Start
+                </button>
+              </Link>
             </div>
           </div>
           {/* Ends here */}
