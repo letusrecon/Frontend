@@ -12,12 +12,28 @@ export default function ToolsFilterBox(props) {
         </div>
 
         <div className="flex flex-col sm:flex-col lg:flex-row">
-          <div>
+          {/* <div>
             <h3 className="text-slate-200 mr-3 text-lg lg:mt-1">Filter</h3>
-          </div>
+          </div> */}
+          <form
+            action=""
+            className="mr-0  lg:mr-4 mb-4 lg:mb-0   flex justify-between"
+          >
+            <input
+              type="text"
+              placeholder="filter Query"
+              className="rounded-xl border py-1 px-6 w-4/3  bg-[#344C51] text-slate-200 mr-3 "
+            />
+            <button className="border border-slate-100 rounded-xl  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
+              Payload{" "}
+              <span className="ml-4">
+                <MdArrowDropDown className=" text-xl " />
+              </span>
+            </button>
+          </form>
 
           <div className="">
-            <button className="border border-cyan-400 rounded-md px-2 py-1 text-slate-100 flex ">
+            <button className="border border-slate-200 rounded-xl px-3 py-1 text-slate-100 flex ">
               Export{" "}
               <span className="ml-4">
                 <MdArrowDropDown className=" text-xl " />

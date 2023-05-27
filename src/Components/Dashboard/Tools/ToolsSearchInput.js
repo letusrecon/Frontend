@@ -16,7 +16,7 @@ export default function ToolsSearchInput(props) {
             <input
               type="text"
               placeholder=" Search here"
-              className="rounded-md border py-1 px-5 w-96 bg-[#333A3C] text-slate-100 "
+              className="rounded-md border py-1 px-5 w-4/5 lg:w-96 bg-[#333A3C] text-slate-100 "
             />
           </form>
         </div>

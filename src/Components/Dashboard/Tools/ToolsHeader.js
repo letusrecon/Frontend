@@ -7,11 +7,11 @@ export default function ToolsHeader() {
   return (
 
       <div className="px-5  md:px-8 py-5  lg:px-10">
-        <div className=" flex flex-col mb-8 lg:mb-0 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+        <div className=" flex flex-col mb-3 lg:mb-0 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 lg:mb-0 sm:mb-3">
             <div className="">
-              <h1 className="text-slate-100 text-1xl">Available tools</h1>
-              <h2 className="text-cyan-400">Freeye.com</h2>
+              <h1 className="text-slate-100 text-2xl">Available tools</h1>
+              
             </div>
           </div>
 
@@ -20,7 +20,7 @@ export default function ToolsHeader() {
               <input
                 type="text"
                 placeholder="Example.com"
-                className="rounded-md border py-1 text-slate-200 px-6 w-4/3 bg-transparent "
+                className="rounded-md border py-1 text-slate-200 px-6 lg:w-4/3 bg-transparent "
               />
             </form>
             <div>
