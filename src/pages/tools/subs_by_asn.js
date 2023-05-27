@@ -10,7 +10,7 @@ export default function subs_by_asn() {
      <div>
        <ToolsHeader />
        <ToolsSearchInput>Subdomains From ASN Number</ToolsSearchInput>
-       <ToolsFilterBox/>
+       <ToolsFilterBox></ToolsFilterBox>
      </div>
    </Layout>
  );
