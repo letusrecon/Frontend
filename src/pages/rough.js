@@ -3,7 +3,7 @@ import Table from '@/Components/Dashboard/DataTable/Table'
 import { VULNERABILITIES } from '@/Data/Data';
 import { useState, useEffect } from 'react';
 
-export default function rough() {
+export default function Rough() {
       const [isLoaded, setIsLoaded] = useState(false);
 
       useEffect(() => {
