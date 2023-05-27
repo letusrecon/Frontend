@@ -32,7 +32,7 @@ export default function Urls() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row lg:justify-between mt-20 lg:items-center">
+        <div className="flex flex-col lg:flex-row lg:justify-between mt-10 lg:items-center">
           <div className="">
             <h3 className="text-slate-100 text-2xl  mb-4 lg:mb-0 mr-2">
               Result
@@ -46,22 +46,21 @@ export default function Urls() {
               </h3>
             </div> */}
 
-            <form action="" className=" mr-7  lg:mr-5 mb-4 lg:mb-0  ">
+            <form action="" className=" mr-7  flex lg:mr-5 mb-3 lg:mb-0  ">
               <input
                 type="text"
                 placeholder="Type here"
-                className="rounded-md border py-1 px-6 w-4/3 bg-transparent text-slate-100 mr-3 "
+                className="rounded-md border py-1 px-6 w-4/5 sm:4/5 md:w-4/3 lg:4/3 bg-transparent text-slate-100 mr-3 "
               />
+              <div className="">
+                <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
+                  Export{" "}
+                  <span className="ml-4">
+                    <MdArrowDropDown className=" text-xl " />
+                  </span>
+                </button>
+              </div>
             </form>
-
-            <div className="">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Export{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
           </div>
         </div>
 
