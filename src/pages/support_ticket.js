@@ -10,19 +10,19 @@ export default function support() {
         lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="">
-              <h1 className="text-slate-100 text-1xl"><b>Create Ticket</b></h1>
-              <h2 className="text-cyan-500">Fireeye.com</h2>
+              <h1 className="text-slate-100 text-xl"><b>Create Ticket</b></h1>
+           
             </div>
           </div>
 
           <div className="flex ">
-            <form action="" className="mr-8 mt-3">
+            {/* <form action="" className="mr-8 mt-3">
               <input
                 type="text"
                 placeholder="Example.com"
                 className="rounded-lg border py-1 px-6 w-4/3 bg-transparent "
               />
-            </form>
+            </form> */}
             <div>
               <CgProfile className="text-2xl mx-auto text-slate-100" />
               <Link className="text-slate-100" href="/profile">
@@ -49,7 +49,7 @@ export default function support() {
                       focus:outline-none focus:bg-transparent"
                       id="grid-first-name"
                       type="text"
-                      placeholder="type here..."
+                      placeholder="Type here..."
                     />
                   </div>
                   <div className="w-full lg:col-span-3 sm:mt-5 lg:mt-0">
@@ -104,7 +104,7 @@ export default function support() {
                       focus:outline-none focus:bg-transparent focus:border-gray-500"
                       id="grid-description"
                       type="text"
-                      placeholder="type here..."
+                      placeholder="Type here..."
                     />
                   </div>
                 </div>
@@ -160,10 +160,10 @@ export default function support() {
                       </label>
                     </div>
                   </div>
-                </div>
-                <div className="">
+                </div> 
+                <div className="sm:text-center text-center  lg:text-left md:text-left">
                   <button
-                    className="bg-[#63C0D2] hover:bg-[#63C0D2] focus:shadow-outline
+                    className="bg-[#63C0D2] hover:bg-[#63C0D2] lg:w-96 md:w-72 w-3/4  sm:w-6/12  focus:shadow-outline
                     focus:outline-none text-lg text-black py-2 px-10 mb-6 rounded-xl"
                     type="button"
                   >

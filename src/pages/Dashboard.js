@@ -9,6 +9,7 @@ import { GiTargeting } from "react-icons/gi";
 import { TbWorld } from "react-icons/tb";
 import { TbClockHour3 } from "react-icons/tb";
 import Table from "@/Components/Dashboard/DataTable/Table";
+import Filter from "@/Components/Dashboard/UI/Filter";
 
 export default function Dashboard() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -116,35 +117,13 @@ export default function Dashboard() {
               </h2>
             </div>
           </div>
+          <Filter>
+            Scan History
+          </Filter>
 
-          <div className="flex flex-col sm:flex-col lg:flex-row lg:justify-between mt-10 lg:items-center">
-            <div className="mb-6 sm:mb-6  sm:text-left">
-              <h3 className="text-slate-100  lg:text-lg  md:text-lg text-2xl">
-                Scan history
-              </h3>
-            </div>
-
-            <div className="flex">
-              <div className="mr-2 lg:mr-5">
-                <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                  Entries{" "}
-                  <span className="ml-4">
-                    <MdArrowDropDown className=" text-xl " />
-                  </span>
-                </button>
-              </div>
-
-              <form action="" className=" ">
-                <input
-                  type="text"
-                  placeholder=" Search"
-                  className="rounded-md border py-1 px-6 w-4/5 sm:w-4/5 md:w-4/3 lg:w-72 bg-transparent text-slate-100 "
-                />
-              </form>
-            </div>
-          </div>
+         
           {isLoaded && (
-            <div className="mt-6 ">
+            <div className="mt-4 ">
               <Table columns={columns} data={SCAN_HISTORY_DATA} />
             </div>
           )}

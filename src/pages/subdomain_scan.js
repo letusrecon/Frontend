@@ -6,6 +6,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import { SCANNED_DATA } from "@/Data/Data";
 import { useState, useEffect } from "react";
 import Table from "@/Components/Dashboard/DataTable/Table";
+import Filter from "@/Components/Dashboard/UI/Filter";
 
 export default function Subdomain_scan() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -56,47 +57,13 @@ export default function Subdomain_scan() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-7 sm:mt-5 md:mt-14 lg:mt-14 lg:flex-row lg:justify-between  lg:items-center">
-          <div className="flex">
-            <h3 className="text-slate-100 sm:text-xl text-xl  mb-4 lg:mb-0 mr-2">
-              Scan history:
-            </h3>
-            <span className="text-slate-100  text-lg ">0</span>
-          </div>
-
-          <div className="flex flex-col sm:flex-col lg:flex-row">
-            <div className=" mb-4 lg:mb-0 lg:mr-5">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Entries{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
-
-            <form
-              action=""
-              className=" mr-5  lg:mr-4 mb-3 lg:mb-0   flex justify-between"
-            >
-              <input
-                type="text"
-                placeholder=" Search"
-                className="rounded-md border py-1 px-6 w-4/5 sm:w-4/5 md:w-4/3 lg:w-4/3 bg-transparent text-slate-100 mr-3 "
-              />
-              <div className="">
-                <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                  Export{" "}
-                  <span className="ml-4">
-                    <MdArrowDropDown className=" text-xl " />
-                  </span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+       <Filter>
+        Scan History: 0
+        
+       </Filter>
 
         {isLoaded && (
-          <div className=" mt-3 sm:mt-2 lg:mt-8 ">
+          <div className=" mt-3 sm:mt-2 lg:mt-4 ">
             <Table columns={columns} allowOverflow={true} data={SCANNED_DATA} />
           </div>
         )}

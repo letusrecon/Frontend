@@ -6,6 +6,7 @@ import { VULNERABILITIES } from "@/Data/Data";
 import { createTheme } from "react-data-table-component";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useEffect, useState } from "react";
+import Filter from "@/Components/Dashboard/UI/Filter";
 
 
 createTheme("custombackground", {
@@ -82,37 +83,11 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className="flex mt-5 sm:mt-5 md:mt-14 lg:mt-14 flex-col sm:flex-col lg:justify-end lg:flex-row">
-          <div className=" mb-4 lg:mb-0 lg:mr-5">
-            <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-              Entries{" "}
-              <span className="ml-4">
-                <MdArrowDropDown className=" text-xl " />
-              </span>
-            </button>
-          </div>
+        <Filter/>
 
-          <form
-            action=""
-            className=" mr-10  lg:mr-5 mb-4 lg:mb-0   flex justify-between"
-          >
-            <input
-              type="text"
-              placeholder=" Search"
-              className="rounded-md border py-1 px-6 w-4/5 sm:w-4/5 md:w-4/3 lg:w-4/3 bg-transparent text-slate-100 mr-3 "
-            />
-            <div className="">
-              <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
-                Export{" "}
-                <span className="ml-4">
-                  <MdArrowDropDown className=" text-xl " />
-                </span>
-              </button>
-            </div>
-          </form>
-        </div>
+       
 
-        <div className=" mt-6">
+        <div className=" mt-4">
           {isLoaded && (
             <Table columns={columns} allowOverflow data={VULNERABILITIES} />
           )}
