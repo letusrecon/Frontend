@@ -1,5 +1,6 @@
 import Sidebar from "./Dashboard/Siderbar";
 import styles from "./Layout.module.css";
+import Footer from "./Dashboard/Footer";
 
 import Nav from "./Dashboard/Nav";
 
@@ -15,6 +16,11 @@ export default function Layout({ children }) {
         
         </div>
         {children}
+      </div>
+      <div>
+
+        <Footer/>
+
       </div>
     </div>
   );

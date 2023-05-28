@@ -15,8 +15,8 @@ export default function Sidebar() {
     <div className="hidden bg-[#232223] sm:hidden md:block lg:block  w-[284px] h-14 md:h-screen fixed top-0 bottom-0">
       <div
         className="
-          flex flex-col 
-   o
+        
+   
         
       "
       >
@@ -24,7 +24,7 @@ export default function Sidebar() {
           <Image
             src="/assets/logo-removebg-preview.png"
             width="150"
-            height="140"
+            height="130"
             alt="LetUsRecon"
           />
           <ul className={styles.sidebar_ul}>
@@ -81,16 +81,14 @@ export default function Sidebar() {
               </Link>
             </li>
           </ul>
-        </nav>
 
-      
-{/*           
-            <div className="  flex font-bold">
-              <AiOutlineLogout className="text-2xl mx-6 text-slate-100 " />
-              <h3 className="text-slate-100 text-lg"> LOGOUT</h3>
-            </div> */}
-          
-      
+          <div className="bg-[#3D3E3D]">
+            <div className="  flex bottom-5  fixed font-bold">
+              <AiOutlineLogout className="text-2xl   mt-1 mr-5 text-slate-100 " />
+              <h3 className="text-slate-100 text-2xl"> LOGOUT</h3>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
   );

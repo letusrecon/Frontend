@@ -57,7 +57,7 @@ export default function Port_discovvery() {
           </div>
         </div>
 
-        <div className=" mt-7 sm:mt-5 md:mt-15 lg:mt-20 items-center">
+        <div className=" mt-7 sm:mt-5 md:mt-15 lg:mt-15 items-center">
           <div className="flex flex-col lg:flex-row lg:justify-end">
             <div className="mb-4 lg:mb-0 lg:mr-5">
               <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
