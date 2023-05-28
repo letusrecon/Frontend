@@ -3,8 +3,8 @@ import { MdArrowDropDown } from "react-icons/md";
 
 export default function ToolsFilterBox(props) {
   return (
-    <div className="px-5 md:px-8   lg:px-10">
-      <div className="flex flex-col py-6 px-5 rounded-lg bg-[#273030] lg:flex-row lg:justify-between mt-10 lg:items-center">
+    <div className="">
+      <div className="flex flex-col py-6 px-5 rounded-lg bg-[#273030] lg:flex-row lg:justify-between mt-8 lg:items-center">
         <div className="flex">
           <p className="text-slate-50  mb-4 lg:mb-0 mr-2">
          {props.children}
@@ -12,9 +12,7 @@ export default function ToolsFilterBox(props) {
         </div>
 
         <div className="flex flex-col sm:flex-col lg:flex-row">
-          {/* <div>
-            <h3 className="text-slate-200 mr-3 text-lg lg:mt-1">Filter</h3>
-          </div> */}
+      
           <form
             action=""
             className="mr-0  lg:mr-3 mb-4 lg:mb-0 "
@@ -27,7 +25,7 @@ export default function ToolsFilterBox(props) {
           </form>
 
           <div className="flex ">
-            <button className="border border-slate-100 rounded-xl mr-2  md:mr-2 lg:mr-3  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
+            <button className="border border-slate-100 rounded-xl mr-4  md:mr-2 lg:mr-3  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
               Payload{" "}
               <span className="ml-4">
                 <MdArrowDropDown className=" text-xl " />

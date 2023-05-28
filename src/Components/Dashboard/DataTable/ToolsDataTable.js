@@ -1,5 +1,6 @@
 import React from 'react'
 import DataTable, {createTheme} from 'react-data-table-component'
+import { useState,useEffect } from 'react';
 
 createTheme("custombackground", {
   background: {
@@ -32,14 +33,24 @@ const tableStyles = {
   },
 };
 
-export default function ToolDataTable() {
+export default function ToolsDataTable(props) {
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(()=>{
+    setIsLoaded(true)
+
+  },[])
   return (
-    <DataTable
-      theme="custombackground"
-      pagination
-      responsive={true}
-      {...props}
-      customStyles={tableStyles}
-    />
+    <div className='mt-5'>
+      {isLoaded && 
+      <DataTable
+        theme="custombackground"
+        pagination
+        responsive={true}
+        {...props}
+        customStyles={tableStyles}
+      />
+}
+    </div>
   );
 }

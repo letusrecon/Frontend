@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function ToolsSearchInput(props) {
   return (
-    <div className="px-5  md:px-8 mt-10 lg:px-10">
-      <div className="flex flex-col lg:flex-row  lg:justify-between lg:items-center">
+    <div className="">
+      <div className="flex flex-col lg:flex-row  mt-7 lg:justify-between lg:items-center">
         <div className=" lg:mr-5">
           <h3 className="text-slate-100 font-bold mb-3 lg:mb-0 mr-2">
             {props.children}

@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 export default function ToolsHeader() {
   return (
 
-      <div className="px-5  md:px-8 py-5  lg:px-10">
+      <div className="">
         <div className=" flex flex-col mb-3 lg:mb-0 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-4 lg:mb-0 sm:mb-3">
             <div className="">
