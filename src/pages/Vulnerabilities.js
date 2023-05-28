@@ -57,7 +57,7 @@ export default function Vulnerabilities() {
   return (
     <Layout>
       <div className=" px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
-        <div className=" flex flex-col mb-8 sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
+        <div className=" flex flex-col  sm:flex-col  md:flex-row  lg:flex-row  lg:items-center lg:justify-between">
           <div className="mb-3 md:mb-3 lg:mb-0">
             <div className="">
               <h1 className="text-slate-100 text-1xl">Vulnerabilities</h1>
@@ -82,7 +82,7 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className="flex mt-7 sm:mt-5 md:mt-15 lg:mt-15 flex-col sm:flex-col lg:justify-end lg:flex-row">
+        <div className="flex mt-5 sm:mt-5 md:mt-14 lg:mt-14 flex-col sm:flex-col lg:justify-end lg:flex-row">
           <div className=" mb-4 lg:mb-0 lg:mr-5">
             <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
               Entries{" "}

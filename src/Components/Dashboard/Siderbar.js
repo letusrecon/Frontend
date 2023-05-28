@@ -26,6 +26,7 @@ export default function Sidebar() {
             width="150"
             height="130"
             alt="LetUsRecon"
+            className="h-23"
           />
           <ul className={styles.sidebar_ul}>
             <li className={styles.sidebar_li}>
@@ -82,10 +83,10 @@ export default function Sidebar() {
             </li>
           </ul>
 
-          <div className="bg-[#3D3E3D]">
-            <div className="  flex bottom-5  fixed font-bold">
-              <AiOutlineLogout className="text-2xl   mt-1 mr-5 text-slate-100 " />
-              <h3 className="text-slate-100 text-2xl"> LOGOUT</h3>
+          <div className="">
+            <div className=" cursor-pointer hover:bg-[#3D3E3D] px-3 py-1 rounded-md flex bottom-4  fixed ">
+              <AiOutlineLogout className="text-xl   mt-1 mr-5 text-slate-100 " />
+              <h3 className="text-slate-100 text-xl font-semibold"> LOGOUT</h3>
             </div>
           </div>
         </nav>
