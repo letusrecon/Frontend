@@ -2,7 +2,7 @@ import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import styles from "./Tools.module.css";
-import Footer from "@/Components/Dashboard/Footer";
+
 
 export default function Tools() {
   return (

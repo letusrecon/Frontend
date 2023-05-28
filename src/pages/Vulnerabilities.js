@@ -1,7 +1,6 @@
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
-import { MdArrowDropDown } from "react-icons/md";
 import { VULNERABILITIES } from "@/Data/Data";
 import { createTheme } from "react-data-table-component";
 import Table from "@/Components/Dashboard/DataTable/Table";

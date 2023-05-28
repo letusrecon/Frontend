@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
-import { MdArrowDropDown } from "react-icons/md";
 import { SCANNED_DATA } from "@/Data/Data";
 import { useState, useEffect } from "react";
 import Table from "@/Components/Dashboard/DataTable/Table";

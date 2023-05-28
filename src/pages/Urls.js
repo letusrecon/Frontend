@@ -1,5 +1,4 @@
 import Layout from "@/Components/Layout";
-import styles from "./Urls.module.css";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import Filter from "@/Components/Dashboard/UI/Filter";

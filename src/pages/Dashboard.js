@@ -2,7 +2,6 @@ import Layout from "@/Components/Layout";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import { SCAN_HISTORY_DATA } from "@/Data/Data";
-import { MdArrowDropDown } from "react-icons/md";
 import { useState, useEffect } from "react";
 import { RiQrScanLine } from "react-icons/ri";
 import { GiTargeting } from "react-icons/gi";
