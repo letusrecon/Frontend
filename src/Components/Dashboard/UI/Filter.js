@@ -14,7 +14,7 @@ export default function Filter(props) {
             <input
               type="text"
               placeholder="Filter Query"
-              className=" w-4/5 sm:w-4/5 md:w-4/3 outline-0   rounded-s-xl border py-1 px-5 rounded-e-0  lg:w-72  bg-[#344C51] text-slate-200"
+              className=" w-4/5 sm:w-4/5 md:w-4/3 outline-0 sm:outline-0 lg:outline-0  -mr-1  rounded-s-xl border py-1 px-5 rounded-e-0  lg:w-72  bg-[#344C51] text-slate-200"
             />
             <button className="border border-slate-100   rounded-e-xl  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
               Payload{" "}
