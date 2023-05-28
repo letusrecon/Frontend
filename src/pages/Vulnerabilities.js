@@ -82,7 +82,7 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-col lg:justify-end lg:flex-row">
+        <div className="flex mt-7 sm:mt-5 md:mt-15 lg:mt-15 flex-col sm:flex-col lg:justify-end lg:flex-row">
           <div className=" mb-4 lg:mb-0 lg:mr-5">
             <button className="border rounded-md px-3 py-1 text-slate-100 flex ">
               Entries{" "}

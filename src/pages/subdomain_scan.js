@@ -56,7 +56,7 @@ export default function Subdomain_scan() {
           </div>
         </div>
 
-        <div className="flex flex-col mt-7 sm:mt-7 md:mt-10 lg:flex-row lg:justify-between lg:mt-15 lg:items-center">
+        <div className="flex flex-col mt-7 sm:mt-5 md:mt-15 lg:mt-15 lg:flex-row lg:justify-between  lg:items-center">
           <div className="flex">
             <h3 className="text-slate-100 sm:text-xl text-xl  mb-4 lg:mb-0 mr-2">
               Scan history:

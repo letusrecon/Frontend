@@ -56,7 +56,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className=" md:mt-14 lg:mt-10">
+          <div className="mt-7 sm:mt-5 md:mt-15 lg:mt-15">
             <h3 className="text-slate-100 text-3xl">Today</h3>
             <div className="flex flex-col sm:justify-center sm:flex-col md:flex-col  lg:flex-row mt-10">
               <div className="w-full mb-5  sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-16 rounded-xl lg:mr-6">
