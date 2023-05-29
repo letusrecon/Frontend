@@ -12,7 +12,7 @@ export default function subs_takeover() {
       { name: "Domain", sortable: true, selector: (row) => row.domain },
       { name: " Issue", sortable: true, selector: (row) => row.issue },
       { name: "Severity", sortable: true, selector: (row) => row.severity },
-      { name: "Refrence", sortable: true, selector: (row) => row.refrence},]
+      { name: "Reference", sortable: true, selector: (row) => row.refrence},]
 return (
   <Layout>
     <div className="px-5 md:px-8 sm:py-5 py-5  lg:px-10">

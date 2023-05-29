@@ -97,8 +97,10 @@
     background-color: var(--btn-color);
 }
 
-/* .package_features_wrap {
-} */
+.package_features_wrap {
+
+  
+} 
 
 .package_feature_heading {
   color: whitesmoke;
@@ -107,10 +109,14 @@
 }
 
 .package_feature {
+  
   font-size: 18px;
   font-family: var(--text-font);
   color: whitesmoke;
   margin-bottom: 8px;
+  display: flex;
+  
+
 }
 
 
