@@ -101,7 +101,7 @@ export default function Sidebar() {
             <li className="mb-4">
               <Link
                 className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
-                  router.pathname == "/Url" ? styles["active"] : ""
+                  router.pathname == "/Urls" ? styles["active"] : ""
                 }  `}
                 href="/Urls"
               >
