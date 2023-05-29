@@ -31,12 +31,12 @@ export default function support() {
             </div>
           </div>
         </div>
-        {/* <div className="lg:px-12">
+        <div className="lg:px-12">
           <div className="lg:px-12">
-            <div className="lg:px-12"> */}
+            <div className="lg:px-12">
               <form className="">
-                <div className="grid lg:grid-cols-8 lg:gap-8 mb-6">
-                  <div className="w-full lg:col-span-3 mb-6 md:mb-0">
+                <div className="grid lg:grid-cols-2 lg:gap-8 mb-6">
+                  <div className="w-full mb-6 md:mb-0">
                     <label
                       className="block tracking-wide text-white font-bold mb-1 text-lg"
                       for="grid-subject"
@@ -52,7 +52,7 @@ export default function support() {
                       placeholder="Type here..."
                     />
                   </div>
-                  <div className="w-full lg:col-span-3 sm:mt-5 lg:mt-0">
+                  <div className="w-full sm:mt-5 lg:mt-0">
                     <label
                       className="block tracking-wide text-lg text-white font-bold mb-1"
                       for="grid-priority"
@@ -89,8 +89,8 @@ export default function support() {
                     </div>
                   </div>
                 </div>
-                <div className="mb-6 grid lg:grid-cols-8">
-                  <div className="lg:col-span-6">
+                <div className="mb-6">
+                  <div className="">
                     <label
                       className="block text-white font-bold mb-2 text-lg"
                       for="grid-description"
@@ -108,8 +108,8 @@ export default function support() {
                     />
                   </div>
                 </div>
-                <div className="mb-6 grid lg:grid-cols-8">
-                  <div className="lg:col-span-6">
+                <div className="mb-6">
+                  <div className="">
                     <label
                       className="block text-white font-bold text-lg mb-1"
                       for="grid-related-attachment"
@@ -161,19 +161,19 @@ export default function support() {
                     </div>
                   </div>
                 </div> 
-                <div className="sm:text-center text-center  lg:text-left md:text-left">
+                <div className="sm:text-center text-center  lg:text-center md:text-center">
                   <button
                     className="bg-[#63C0D2] hover:bg-[#63C0D2] lg:w-96 md:w-72 w-3/4  sm:w-6/12  focus:shadow-outline
-                    focus:outline-none text-lg text-black py-2 px-10 mb-6 rounded-xl"
+                    focus:outline-none text-lg text-black py-2 px-3 mb-6 rounded-xl"
                     type="button"
                   >
                     Submit Ticket
                   </button>
                 </div>
               </form>
-            {/* </div>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </Layout>
   );

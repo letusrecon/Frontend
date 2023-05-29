@@ -109,7 +109,7 @@ export default function Urls() {
         </div>
 
         {/* table start here */}
-        <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] my-10 py-2">
+        <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] lg:m-5 sm:m-10">
           <div className="grid grid-cols-12 card_title rounded-t-xl text-white p-1">
             <b className="grid grid-cols-1">#</b>
             <p className="text-center col-start-2 col-span-11">

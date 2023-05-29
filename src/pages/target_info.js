@@ -322,7 +322,7 @@ export default function target_info() {
               </div>
             </div>
           </div>
-          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
+          <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] mb-6 sm:mb-2 lg:mb-0 md:mb-0">
             <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
               <b className="grid grid-cols-1">#</b>
               <p className="text-center col-start-2 col-span-11">
