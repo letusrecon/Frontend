@@ -18,7 +18,7 @@
     padding: 3% 4%;
      box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px;
         background-color: #141d1e;
-        border-radius: 20px;
+        border-radius: 10px;
 }
 
 /* .login_logo_wrap{
@@ -57,10 +57,15 @@
 background: none;
   border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
-  border-radius: 20px;
+  border-radius: 10px;
   color: whitesmoke;
 }
 
+.login_input:focus{
+    background-color: #344c51;
+  outline: #909593;
+  border: 1px solid #939996;
+}
 .login_error_msg{
   color: red;
   font-family: var(--text-font);
@@ -73,22 +78,26 @@ background: none;
   margin-top: 7%;
 
 }
-.login_text_1 {
+.forgot_pass_text {
   color: whitesmoke;
   font-family: var(--text-font);
   font-size: 17px;
   line-height: 1.5;
+ 
 
   
 }
-.login_text_2{
-  color: whitesmoke;
-  font-family: var(--text-font);
-  font-size: 17px;
-  line-height: 1.5;
-  text-align: center;
 
-  
+.forgot_pass_link {
+  text-decoration: none;
+  /* margin: 0px 4px; */
+  font-family: var(--text-font);
+  color: var(--btn-color);
+    margin: 0px 4px;
+}
+
+.forgot_pass_link:hover{
+  text-decoration: underline;
 }
 
 /* .login_action_btn_wrap {
@@ -110,16 +119,23 @@ background: none;
 .login_text {
   color: whitesmoke;
 
+
   font-family: var(--text-font);
   font-size: 17px;
 }
 
-.login_links {
+
+
+.login_link {
   text-decoration: none;
   /* margin: 0px 4px; */
   font-family: var(--text-font);
   color: var(--btn-color);
     margin: 0px 4px;
+}
+
+.login_link:hover{
+  text-decoration: underline;
 }
 
 

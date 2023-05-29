@@ -104,9 +104,9 @@ export default function Login() {
           </div>
 
           <div className={styles.login_help_links_wrap}>
-            <p className={styles.login_text_1}>
+            <p className={styles.forgot_pass_text}>
               Forgot Password ?{" "}
-              <Link className={styles.login_links} href="/ResetPassword">
+              <Link className={styles.forgot_pass_link} href="/ResetPassword">
                 Click here
               </Link>{" "}
             </p>
@@ -116,9 +116,9 @@ export default function Login() {
                 Sign in
               </button>
             </div>
-            <p className={styles.login_text_2}>
+            <p className={styles.login_text}>
               You dont have an account ?
-              <Link className={styles.login_links} href="/Register">
+              <Link className={styles.login_link} href="/Register">
                 Create an account here
               </Link>{" "}
             </p>

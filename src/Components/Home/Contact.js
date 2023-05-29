@@ -1,6 +1,17 @@
-import styles from './Contact.module.css'
+import styles from "./Contact.module.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
+
+  const onChange = (e)=>{
+    console.log(e);
+  }
+
+  const contactSubmitHandler = ()=>{
+    console.log();
+  }
+
+
   return (
     <div className={styles.contact_main_wrap}>
       <div className={styles.contact_overview_wrap}>
@@ -19,7 +30,7 @@ export default function Contact() {
           <p className={styles.tel_info}>1 (8000) 921 8972</p>
           <p className={styles.email_info}>Support@LetUsRecon.com</p>
         </div> */}
-        <form className={styles.form}>
+        <form onSubmit={contactSubmitHandler} className={styles.form}>
           <div className={styles.name_input_wrap}>
             <div>
               <div className={styles.label_wrap}>
@@ -62,12 +73,21 @@ export default function Contact() {
               className={styles.textarea}
               name=""
               id="message"
-              
             ></textarea>
           </div>
 
+            <div className="flex justify-center">
+              <ReCAPTCHA
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={onChange}
+              />
+            </div>
+        
+
           <div className={styles.contact_btn_wrap}>
-            <button className={styles.contact_action_btn}>Send Message</button>
+            <button type="submit" className={styles.contact_action_btn}>
+              Send Message
+            </button>
           </div>
         </form>
       </div>

@@ -2,10 +2,11 @@ import Image from "next/image";
 import styles from "./Register.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Register() {
-  const [enteredName, setEnteredName] = useState("");
-  const [isNameTouched, setNameTouched] = useState(false);
+  // const [enteredName, setEnteredName] = useState("");
+  // const [isNameTouched, setNameTouched] = useState(false);
   const [enteredEmail, setEnteredEmail] = useState("");
   const [isEmailTouched, setEmailTouched] = useState("");
   const [enteredPassword, setEnteredPassword] = useState("");
@@ -14,13 +15,13 @@ export default function Register() {
    const [isConfirmPasswordTouched, setConfirmPasswordTouched] = useState(false);
 
   // Name
-  const nameInputIsValid = enteredName.trim() !== "";
+  // const nameInputIsValid = enteredName.trim() !== "";
 
-  const nameInputIsInvalid = !nameInputIsValid && isNameTouched;
+  // const nameInputIsInvalid = !nameInputIsValid && isNameTouched;
 
-  const nameOnBlurHandler = () => {
-    setNameTouched(true);
-  };
+  // const nameOnBlurHandler = () => {
+  //   setNameTouched(true);
+  // };
 
   // Email
 
@@ -50,18 +51,22 @@ export default function Register() {
   }
 
 
+  const onChange = ()=>{
+    console.log();
+  }
+
   // Submission
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    setNameTouched(true);
+   
     setEmailTouched(true)
     setPasswordTouched(true)
     setConfirmPasswordTouched(true)
 
     
 
-    if (!nameInputIsValid) {
+    if (!passwordInputIsValid && !emailInputIsInValid) {
       return;
     }
 
@@ -95,7 +100,13 @@ export default function Register() {
           </div>
 
           <h4 className={styles.register_heading}> Sign up</h4>
-          <div className={styles.register_input_wrap}>
+          <p className={styles.register_text_1}>
+            Already own an account ?{" "}
+            <Link className={styles.register_links} href="/Login">
+              Sign in here
+            </Link>{" "}
+          </p>
+          {/* <div className={styles.register_input_wrap}>
             <label className={styles.register_label} htmlFor="name">
               Full Name
             </label>
@@ -112,7 +123,7 @@ export default function Register() {
             {nameInputIsInvalid && (
               <p className={styles.register_error_msg}>Full Name is required</p>
             )}
-          </div>
+          </div> */}
 
           <div className={styles.register_input_wrap}>
             <label className={styles.register_label} htmlFor="email">
@@ -172,9 +183,21 @@ export default function Register() {
               </p>
             )}
           </div>
+          <div className="flex justify-center mt-7">
+            <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={onChange}
+            />
+          </div>
 
-          <div className={styles.help_links_wrap}>
-            <p className={styles.register_text_1}>
+        
+            <div className={styles.register_action_btn_wrap}>
+              <button type="submit" className={styles.register_action_btn}>
+                Sign up
+              </button>
+            </div>
+
+            <p className={styles.register_text_2}>
               By signing up, you agree to our{" "}
               <Link className={styles.register_links} href="/Terms">
                 Terms of Service
@@ -184,19 +207,7 @@ export default function Register() {
                 Privacy Policy
               </Link>
             </p>
-
-            <div className={styles.register_action_btn_wrap}>
-              <button type="submit" className={styles.register_action_btn}>
-                Sign up
-              </button>
-            </div>
-            <p className={styles.register_text_2}>
-              Already own an account ?{" "}
-              <Link className={styles.register_links} href="/Login">
-                Sign in here
-              </Link>{" "}
-            </p>
-          </div>
+          
         </form>
       </div>
 

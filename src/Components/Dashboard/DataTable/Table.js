@@ -30,6 +30,37 @@ const tableStyles = {
       borderTopWidth: "1px",
     },
   },
+
+  pageButtonsStyle: {
+			borderRadius: '50%',
+			height: '40px',
+			width: '40px',
+			padding: '8px',
+			margin: 'px',
+			cursor: 'pointer',
+			transition: '0.4s',
+			color: "white",
+			// fill: theme.button.default,
+			backgroundColor: 'transparent',
+			'&:disabled': {
+				cursor: 'unset',
+				color: "white",
+			
+			},
+			'&:hover:not(:disabled)': {
+				
+        color: "white"
+			},
+			'&:focus': {
+				outline: 'none',
+			
+			},
+		},
+  
+	
+
+    	
+
 };
 
 export default function Table(props) {
