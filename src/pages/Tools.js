@@ -108,7 +108,7 @@ export default function Tools() {
               </h3>
               {/* button */}
               <div className="m-4">
-                <Link href="/tools/directory_bruteforcev">
+                <Link href="/tools/directory_bruteforce">
                   <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
                     Start
                   </button>
@@ -148,7 +148,7 @@ export default function Tools() {
               </h3>
               {/* button */}
               <div className="m-4">
-                <Link href="/tools/admin_panel_inder">
+                <Link href="/tools/admin_panel_finder">
                   <button class="bg-transparent hover:bg-[#5bb0c0] py-1 px-6 border border-[#5bb0c0] hover:border-transparent rounded-xl">
                     Start
                   </button>

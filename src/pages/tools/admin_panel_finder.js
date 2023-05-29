@@ -7,7 +7,7 @@ import { ADMIN_PATH_FINDER } from "@/Data/ToolsData";
 import ToolsDataTable from "@/Components/Dashboard/DataTable/ToolsDataTable";
 
 
-export default function admin_panel_inder() {
+export default function admin_panel_finder() {
   const columns = [
     { name: "Pontential Admin Path", sortable: true, selector: (row) => row.path },
     { name: "Status Code", sortable: true, selector: (row) => row.status },

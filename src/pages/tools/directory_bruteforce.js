@@ -6,7 +6,7 @@ import ToolsFilterBox from "@/Components/Dashboard/Tools/ToolsFilterBox";
 import { DIRECTORY_BRUCEFORCE_DATA } from '@/Data/ToolsData';
 import ToolsDataTable from '@/Components/Dashboard/DataTable/ToolsDataTable';
 
-export default function directory_bruteforcev() {
+export default function directory_bruteforce() {
   const columns = [
     { name: "Directory Path", sortable: true, selector: (row) => row.directory },
     { name: "Status code", sortable: true, selector: (row) => row.status },

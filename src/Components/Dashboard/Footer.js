@@ -7,7 +7,7 @@ export default function Footer() {
       return  new Date().getFullYear()
     }
   return (
-    <div className=" bg-[#232223] flex flex-col sm:flex-col md:flex-row lg:flex-row justify-center sm:justify-center md:justify-end lg:justify-end sm:px-5 px-5 md:px-10 lg:px-10 py-5 ">
+    <div className=" bg-[#232223] flex flex-col sm:flex-col md:flex-row lg:flex-row justify-center sm:justify-center md:justify-end lg:justify-end sm:px-5 px-5 md:px-10 lg:px-10 py-4 sm:py-4 md:py-6 lg:py-10 ">
       <div className="text-center sm:mb-3 mb-3 md:mb-0 lg:mb-0 text-slate-200 mr-9">
         <p className="text-md">
           {FooterDate()} LetUsRecon - All Rights Reserved

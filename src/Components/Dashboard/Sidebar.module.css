@@ -9,24 +9,25 @@
 
 .sidebar_ul{
     text-align: left;
+    padding: 7% 0%;
     
      
 }
 
-.sidebar_li{
+/* .sidebar_li{
     list-style: none;
   
    display: flex;
     margin-top: 10%;
     padding: 5px 10px;
-}
+} */
 
-.sidebar_li:hover{
+/* .sidebar_li:hover{
     background-color: var(--btn-color);
     border-radius: 7px;
-}
+} */
 
-.sidebar_link{
+/* .sidebar_link{
     text-decoration: none;
     font-family: var(--text-font);
     font-size: 18px;
@@ -35,9 +36,9 @@
    
     
    
-}
+} */
 
-.sidebar_icon{
+/* .sidebar_icon{
     margin-right: 10px;
     color: whitesmoke;
     font-size: 25px;
@@ -45,6 +46,9 @@
   
 
    
-}
+} */
 
+.active{
+    background-color: #63c0d2;
+}
 

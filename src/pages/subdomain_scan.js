@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import Filter from "@/Components/Dashboard/UI/Filter";
 
+
 export default function Subdomain_scan() {
   const [isLoaded, setIsLoaded] = useState(false);
 
