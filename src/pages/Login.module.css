@@ -81,7 +81,7 @@ background: none;
 .forgot_pass_text {
   color: whitesmoke;
   font-family: var(--text-font);
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
  
 
@@ -116,7 +116,7 @@ background: none;
   color: black;
 }
 
-.login_text {
+.signup_text {
   color: whitesmoke;
 
 
@@ -184,7 +184,7 @@ background: none;
   }
 
   .login_form {
-    padding: 6% 6%;
+    padding: 8% 7%;
   }
   .login_heading {
     font-size: 25px;
@@ -205,12 +205,12 @@ background: none;
   width: 300px;
 }
 
-.login_text_1{
-  font-size: 16px;
+.forgot_pass_text{
+  font-size: 15px;
 }
 
-.login_text_2{
-  font-size: 16px;
+.signup_text{
+  font-size: 15px;
   text-align: center;
 }
   

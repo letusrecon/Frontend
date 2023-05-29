@@ -143,7 +143,7 @@
   }
 
   .register_form {
-    padding: 6% 7%;
+    padding: 8% 7%;
   }
 
   .register_logo {
@@ -172,12 +172,12 @@
    
   } */
 
-  .help_links_wrap {
-    margin-bottom: 1%;
+  .register_action_btn_wrap{
+    margin-bottom: 5%;
   }
 
   .register_text_1 {
-    text-align: left;
+    margin-bottom: 5%;
     font-size: 15px;
   }
 
