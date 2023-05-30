@@ -21,7 +21,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
   return (
     <div
       className={` ${
-        isShowSideBar ? "w-full -ms-0 bg-[#5BA2B2] h-screen z-10 relative" : ""
+        isShowSideBar ? "w-full sm:-ms-0 ms-0 bg-[#5BA2B2] h-screen z-10 relative" : ""
       } bg-[#232223] -ms-80 lg:-ms-0  lg:w-[284px] lg:top-0  lg:h-screen md:h-screen fixed  `}
     >
       <div

@@ -5,18 +5,18 @@ import Image from "next/image";
 export default function Nav({onClickHandler}) {
   
   return (
-    <nav className="bg-[#5ba2b2] md:hidden lg:hidden  py-0 px-4 flex justify-between">
+    <nav className="bg-[#5ba2b2] md:hidden lg:hidden  py-0 px-5 flex justify-between">
       <Image
         src="/assets/logo-removebg-preview.png"
         width="50"
         height="40"
         alt="LetUsRecon"
-        className="h-20 w-20"
+        className="h-24 w-20"
       />
       <div className="">
         <FontAwesomeIcon
           onClick={onClickHandler}
-          className="text-slate-300 text-xl mt-8"
+          className="text-slate-300 text-2xl mt-8"
           icon={faBars}
         />
       </div>
