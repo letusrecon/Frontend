@@ -23,7 +23,7 @@ export default function subs_from_ip_ranges() {
         sortable: true,
         selector: (row) => row.server,
       },
-      { name: "Loaction", sortable: true, selector: (row) => row.location },
+      { name: "Location", sortable: true, selector: (row) => row.location },
     ];
 return (
   <Layout>

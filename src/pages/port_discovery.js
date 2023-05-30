@@ -59,6 +59,7 @@ export default function Port_discovvery() {
         </div>
 
         <Filter>
+          Additional Attack Surface: 100
 
         </Filter>
 

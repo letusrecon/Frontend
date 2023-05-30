@@ -58,7 +58,7 @@ export default function Subdomain_scan() {
         </div>
 
        <Filter>
-        Scan History: 0
+      Total Alive subdomains Found: 0
         
        </Filter>
 

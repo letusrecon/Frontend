@@ -19,7 +19,7 @@ export default function subs_by_asn() {
     },
     { name: "IP", sortable: true, selector: (row) => row.ip },
     { name: "Server Software", sortable: true, selector: (row) => row.server },
-    { name: "Loaction", sortable: true, selector: (row) => row.location },
+    { name: "Location", sortable: true, selector: (row) => row.location },
   ];
  return (
    <Layout>

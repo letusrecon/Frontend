@@ -1,9 +1,11 @@
-import Link from "next/link";
+import React from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
+import { Link as ScrollLink} from "react-scroll";
 
 export default function Navbar() {
   const [isShowNav, setShowNav] = useState(false);
@@ -32,16 +34,37 @@ export default function Navbar() {
             isShowNav && styles.expanded
           } `}
         >
-          <Link className={styles.link} href="/#features">
+          <ScrollLink
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            to="services"
+          >
             Features
-          </Link>
-          <Link className={styles.link} href="/#pricing">
+          </ScrollLink>
+          <ScrollLink
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            to="pricing"
+          >
             Pricing
-          </Link>
-          <Link className={styles.link} href="/#contact">
+          </ScrollLink>
+          <ScrollLink
+            className={styles.link}
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            to="contact"
+          >
             Contact
-          </Link>
-        
+          </ScrollLink>
+
           <Link className={styles.link} href="/Login">
             Login
           </Link>

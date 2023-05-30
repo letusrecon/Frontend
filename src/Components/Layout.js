@@ -3,7 +3,7 @@ import styles from "./Layout.module.css";
 import Footer from "./Dashboard/Footer";
 
 import Nav from "./Dashboard/Nav";
-import { useState, PropsWithChildren } from "react";
+import { useState } from "react";
 
 export default function Layout(props) {
   const [isOpen, setOpen] = useState(false);

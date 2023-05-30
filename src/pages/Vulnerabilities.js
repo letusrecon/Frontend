@@ -82,7 +82,9 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <Filter/>
+        <Filter>
+          Total Issues Found: 0
+        </Filter>
 
        
 
