@@ -10,7 +10,7 @@ import {FaTools} from 'react-icons/fa'
 
 export default function Services() {
   return (
-    <div className={styles.service_main_wrap}>
+    <div id="features" className={styles.service_main_wrap}>
       <div className={styles.service_overview_wrap}>
         <h2 className={styles.service_overview_title}>
           The Ultimate Reconnaissance Solution

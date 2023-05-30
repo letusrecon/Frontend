@@ -2,7 +2,7 @@ import styles from "./Pricing.module.css";
 
 export default function Pricing() {
   return (
-    <div className={styles.pricing_main_container}>
+    <div id="pricing" className={styles.pricing_main_container}>
       <div className={styles.pricing_heading_wrap}>
         <h1 className={styles.pricing_heading}>
           Affordable Pricing for Everyone

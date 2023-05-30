@@ -13,7 +13,7 @@ export default function Contact() {
 
 
   return (
-    <div className={styles.contact_main_wrap}>
+    <div id="contact" className={styles.contact_main_wrap}>
       <div className={styles.contact_overview_wrap}>
         <h1 className={styles.contact_main_heading}>Contact Us</h1>
         <p className={styles.contact_main_desc}>

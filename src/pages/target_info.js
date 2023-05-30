@@ -294,7 +294,7 @@ export default function target_info() {
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="bg-[#17291A] rounded-t-xl text-white text-center p-1">
-              <b>WHO IS INFO</b>
+              <b>WHOIS INFO</b>
             </div>
 
             <div className="text-white mx-5 my-3">

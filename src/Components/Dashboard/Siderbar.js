@@ -12,7 +12,11 @@ import {AiOutlineLogout} from 'react-icons/ai'
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-export default function Sidebar() {
+
+export default function Sidebar(props) {
+
+  console.log(props);
+
 
   const router = useRouter()
   return (

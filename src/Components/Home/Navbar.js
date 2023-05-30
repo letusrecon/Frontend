@@ -32,18 +32,16 @@ export default function Navbar() {
             isShowNav && styles.expanded
           } `}
         >
-          <Link className={styles.link} href="/">
-            Docs
-          </Link>
-          <Link className={styles.link} href="/Docs">
+          <Link className={styles.link} href="/#features">
             Features
           </Link>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/#pricing">
             Pricing
           </Link>
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/#contact">
             Contact
           </Link>
+        
           <Link className={styles.link} href="/Login">
             Login
           </Link>
