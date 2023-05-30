@@ -15,8 +15,9 @@ export default function Layout(props) {
   return (
     <div className=" md:grid md:min-h-screen md:grid-rows-header ">
       <div>
-        <Nav
-          onClickHandler={onClickHandler}
+        <Nav         
+        isShowSideBar={isOpen}
+        onClickHandler={onClickHandler}
         />
       </div>
       <div className=" md:grid md:grid-cols-sidebar">
