@@ -13,14 +13,17 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 
-export default function Sidebar(props) {
+export default function Sidebar({ isShowSideBar, onClickHandler }) {
+  
 
-  console.log(props);
 
-
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <div className="hidden bg-[#232223] sm:hidden md:block lg:block  w-[284px] h-14 md:h-screen fixed top-0 bottom-0">
+    <div
+      className={` ${
+        isShowSideBar ? "w-full -ms-0 bg-[#5BA2B2] h-screen z-10 relative" : ""
+      } bg-[#232223] -ms-80 lg:-ms-0  lg:w-[284px] lg:top-0  lg:h-screen md:h-screen fixed  `}
+    >
       <div
         className="
         
@@ -34,7 +37,7 @@ export default function Sidebar(props) {
             width="150"
             height="130"
             alt="LetUsRecon"
-            className="h-23"
+            className="hidden sm:hidden md:block lg:block h-23"
           />
           <ul className={styles.sidebar_ul}>
             <li className="  mb-4">
@@ -144,7 +147,7 @@ export default function Sidebar(props) {
           </ul>
 
           <div className="">
-            <div className=" cursor-pointer hover:bg-[#3D3E3D] px-3 py-2 rounded-md flex bottom-4  fixed ">
+            <div className=" cursor-pointer hover:bg-[#3D3E3D] px-3 py-2 rounded-md flex bottom-4 relative md:fixed lg:fixed ">
               <AiOutlineLogout className="text-xl   mt-1 mr-5 text-slate-100 " />
               <h3 className="text-slate-100 text-xl font-semibold"> LOGOUT</h3>
             </div>
