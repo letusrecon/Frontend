@@ -31,7 +31,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
         
       "
       >
-        <nav className={`${styles["sidebar_nav"]}`}>
+        <nav className={`  px-3 sm:px-3 py-5 md:py-7  md:px-5 lg:px-5 :py-10`}>
           <Image
             src="/assets/logo-removebg-preview.png"
             width="150"
@@ -39,7 +39,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             alt="LetUsRecon"
             className="hidden sm:hidden md:block lg:block h-23"
           />
-          <ul className={styles.sidebar_ul}>
+          <ul className={`styles['sidebar_ul'] py-1 sm:px-0 px-0 sm:py-2`}>
             <li className="  mb-4">
               <Link
                 className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
@@ -147,8 +147,8 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
           </ul>
 
           <div className="">
-            <div className=" cursor-pointer hover:bg-[#3D3E3D] px-3 py-2 rounded-md flex bottom-4 relative md:fixed lg:fixed ">
-              <AiOutlineLogout className="text-xl   mt-1 mr-5 text-slate-100 " />
+            <div className=" cursor-pointer hover:bg-[rgb(61,62,61)] px-6 sm:px-6 lg:px-3  md:px-3 sm:mt-8 lg:mt-0 md:mt-0 mt-8 py-2 rounded-md flex bottom-4 relative md:fixed lg:fixed ">
+              <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-5 text-slate-100 " />
               <h3 className="text-slate-100 text-xl font-semibold"> LOGOUT</h3>
             </div>
           </div>
