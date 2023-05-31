@@ -81,7 +81,7 @@ export default function target_info() {
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="card_title bg-[#17291A] rounded-t-xl text-center text-white p-1">
-              <b>Targeted GEOLOCATION</b>
+              <b>TARGET GEOLOCATION</b>
             </div>
 
             <div className="grid grid-cols-12 text-white m-2">

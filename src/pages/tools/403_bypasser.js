@@ -22,9 +22,9 @@ export default function bypasser() {
       <div className="px-5 md:px-8 sm:py-5 py-5  lg:px-10">
         <ToolsHeader />
 
-        <ToolsSearchInput>Subdomains bypass</ToolsSearchInput>
+        <ToolsSearchInput>403 bypass</ToolsSearchInput>
 
-        <ToolsFilterBox>Subdomains bypass: 10</ToolsFilterBox>
+        <ToolsFilterBox>403 bypass attempts: 10</ToolsFilterBox>
         <ToolsDataTable columns={columns} data={BYPASS_DATA} />
       </div>
     </Layout>
