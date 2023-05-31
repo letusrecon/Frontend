@@ -27,7 +27,7 @@ export default function subs_by_ssl() {
           sortable: true,
           selector: (row) => row.server,
         },
-        { name: "Loaction", sortable: true, selector: (row) => row.location },
+        { name: "Location", sortable: true, selector: (row) => row.location },
       ];
   return (
     <Layout>
