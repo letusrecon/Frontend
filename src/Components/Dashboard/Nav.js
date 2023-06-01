@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 export default function Nav({ onClickHandler, isShowSideBar }) {
   return (
-    <nav className="bg-[#232223] md:hidden lg:hidden  py-0 px-6 flex justify-between">
+    <nav className="bg-[#232223] md:hidden lg:hidden  py-0 px-7 flex justify-between">
       <Image
         src="/assets/logo-removebg-preview.png"
         width="100"

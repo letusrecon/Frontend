@@ -217,11 +217,10 @@ export default function target_info() {
             <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
               <b className="grid grid-cols-1">#</b>
               <p className="text-center col-start-2 col-span-11">
-                <b>IP Blocks</b>
+                <b>IP BLOCKS</b>
               </p>
             </div>
-
-            <div className="grid grid-cols-12 text-white m-2">
+                        <div className="grid grid-cols-12 text-white m-2">
               <h3 className="grid grid-cols-1">1</h3>
               <p className="text-center col-start-2 col-span-11">
                 102.132.100.0/24
@@ -326,7 +325,7 @@ export default function target_info() {
             <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
               <b className="grid grid-cols-1">#</b>
               <p className="text-center col-start-2 col-span-11">
-                <b>Name Servers</b>
+                <b>NAME SERVERS</b>
               </p>
             </div>
 
@@ -400,7 +399,7 @@ export default function target_info() {
           </div>
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="card_title bg-[#17291A] rounded-t-xl text-center text-white p-1">
-              <b>Status of Robots.txt and Sitemap.xml</b>
+              <b>STATUS OF ROBOTS.TXT AND SITEMAP.XML</b>
             </div>
 
             <div className="m-5 text-white">
@@ -410,7 +409,7 @@ export default function target_info() {
           </div>
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="card_title bg-[#17291A] rounded-t-xl text-center text-white p-1">
-              <b>Common Exposed Ports</b>
+              <b>COMMON EXPOSED PORTS</b>
             </div>
 
             <div className="text-center m-5 text-white">
