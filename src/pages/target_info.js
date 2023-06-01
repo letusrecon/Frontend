@@ -293,33 +293,46 @@ export default function target_info() {
 
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245]">
             <div className="bg-[#17291A] rounded-t-xl text-white text-center p-1">
-              <b>WHOIS INFO</b>
+              <b>WHO IS INFO</b>
+            </div>
+            <div className="">
+
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">Domain&nbsp;Name:</h3>
+              <p className="text-right col-start-2 col-span-11">
+              facebook.com
+              </p>
             </div>
 
-            <div className="text-white mx-5 my-3">
-              <div>
-                <h3>Domain Name: facebook.com</h3>
-              </div>
-              <div>
-                <h3>Registrant Name: Domain Admin</h3>
-              </div>
-
-              <div>
-                <h3>Resgistrant Organization: Meta Platforms, Inc.</h3>
-              </div>
-
-              <div>
-                <h3>Registrant Email: doamin@fb.com</h3>
-              </div>
-
-              <div>
-                <h3>ASN Number: AS32934</h3>
-              </div>
-
-              <div>
-                <h3>Domain Age: 26Years 0Months</h3>
-              </div>
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">Registrant&nbsp;Name:</h3>
+              <p className="text-right col-start-2 col-span-11">
+              Domain Admin
+              </p>
             </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">Resgistrant&nbsp;Organization:</h3>
+              <p className="text-right col-start-2 col-span-11"> Meta Platforms, Inc.</p>
+            </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">Registrant&nbsp;Email: </h3>
+              <p className="text-right col-start-2 col-span-11">doamin@fb.com</p>
+            </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">ASN&nbsp;Number:</h3>
+              <p className="text-right col-start-2 col-span-11">
+              AS32934
+              </p>
+            </div>
+
+            <div className="grid grid-cols-12 text-white m-2">
+              <h3 className="grid grid-cols-1">Domain&nbsp;Age:</h3>
+              <p className="text-right col-start-2 col-span-11"> 26Years 0Months</p>
+            </div>
+          </div>
           </div>
           <div className="bg-[#141C1D] rounded-xl border border-[#3A4245] mb-6 sm:mb-2 lg:mb-0 md:mb-0">
             <div className="grid grid-cols-12 justify-around card_title bg-[#17291A] rounded-t-xl text-white p-1">
