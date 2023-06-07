@@ -2,6 +2,7 @@ import React from "react";
 import { MdArrowDropDown } from "react-icons/md";
 
 export default function Filter(props) {
+
   return (
     <div className="">
       <div className="flex flex-col py-6 px-5 rounded-lg bg-[#273030] shadow-md lg:flex-row lg:justify-between mt-8 lg:items-center">
@@ -12,6 +13,7 @@ export default function Filter(props) {
         <div className="flex flex-col sm:flex-col lg:flex-row">
           <form action="" className="mr-0 flex  lg:mr-3 mb-4 lg:mb-0 ">
             <input
+             onChange={props.onSearchFilter}
               type="text"
               placeholder="Filter Query"
               className=" w-4/5 sm:w-4/5 md:w-4/3  focus:outline-0 sm:focus:outline-0  lg:outline-0  -mr-1  rounded-s-xl border py-1 px-5 rounded-e-0  lg:w-72  bg-[#344C51] text-slate-200"

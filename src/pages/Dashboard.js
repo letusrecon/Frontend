@@ -2,7 +2,7 @@ import Layout from "@/Components/Layout";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import { SCAN_HISTORY_DATA } from "@/Data/Data";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 import { RiQrScanLine } from "react-icons/ri";
 import { GiTargeting } from "react-icons/gi";
 import { TbWorld } from "react-icons/tb";
@@ -10,12 +10,22 @@ import { TbClockHour3 } from "react-icons/tb";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import Filter from "@/Components/Dashboard/UI/Filter";
 
-export default function Dashboard() {
+export default function Dashboard(props) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [data, setData] = useState(SCAN_HISTORY_DATA);
+
+  const filteredDataHandler = (e) => {
+    const filteredData = SCAN_HISTORY_DATA.filter((item) => {
+      return item.Target.toLowerCase().includes(
+        e.target.value.toLowerCase()
+      );
+    });
+    setData(filteredData);
+  }
 
   useEffect(() => {
     setIsLoaded(true);
-  }, []); 
+  }, []);
 
   const columns = [
     { name: "Target name", sortable: true, selector: (row) => row.Target },
@@ -116,14 +126,11 @@ export default function Dashboard() {
               </h2>
             </div>
           </div>
-          <Filter>
-            Scan History
-          </Filter>
+          <Filter onSearchFilter={filteredDataHandler}>Scan History</Filter>
 
-         
           {isLoaded && (
             <div className="mt-4 ">
-              <Table columns={columns} data={SCAN_HISTORY_DATA} />
+              <Table columns={columns} data={data} />
             </div>
           )}
         </div>

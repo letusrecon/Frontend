@@ -3,7 +3,6 @@ import styles from "./Sidebar.module.css";
 import { MdOutlineDashboard, MdOutlineManageSearch } from "react-icons/md";
 import { TbTargetArrow } from "react-icons/tb";
 import { AiOutlineScan } from "react-icons/ai";
-import { GrVulnerability } from "react-icons/gr";
 import { AiOutlineLink } from "react-icons/ai";
 import {GiCyberEye} from 'react-icons/gi'
 import { BsTools } from "react-icons/bs";
