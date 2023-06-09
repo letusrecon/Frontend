@@ -8,20 +8,19 @@ import { GiTargeting } from "react-icons/gi";
 import { TbWorld } from "react-icons/tb";
 import { TbClockHour3 } from "react-icons/tb";
 import Table from "@/Components/Dashboard/DataTable/Table";
-import Filter from "@/Components/Dashboard/UI/Filter";
+import Filter from "@/Components/Dashboard/Filter";
 
 export default function Dashboard(props) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(SCAN_HISTORY_DATA);
+  const [showPayloadValue, setPayloadvalue] = useState(false)
 
   const filteredDataHandler = (e) => {
     const filteredData = SCAN_HISTORY_DATA.filter((item) => {
-      return item.Target.toLowerCase().includes(
-        e.target.value.toLowerCase()
-      );
+      return item.Target.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setData(filteredData);
-  }
+  };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -36,6 +35,10 @@ export default function Dashboard(props) {
     { name: "Result", sortable: true, selector: (row) => row.Result },
     { name: "Action", sortable: true, selector: (row) => row.Action },
   ];
+
+  const showPayloadHandler = () => {
+    setPayloadvalue(!showPayloadValue)
+  };
   return (
     <>
       <Layout>
@@ -126,7 +129,10 @@ export default function Dashboard(props) {
               </h2>
             </div>
           </div>
-          <Filter onSearchFilter={filteredDataHandler}>Scan History</Filter>
+          <Filter onTogglepayload={showPayloadHandler} onSearchFilter={filteredDataHandler}>
+            Scan History
+          </Filter>
+          {showPayloadValue && <p>working</p> }
 
           {isLoaded && (
             <div className="mt-4 ">

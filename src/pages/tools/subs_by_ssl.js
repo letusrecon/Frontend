@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Layout from '@/Components/Layout';
 import ToolsHeader from '@/Components/Dashboard/Tools/ToolsHeader';
 import ToolsSearchInput from "@/Components/Dashboard/Tools/ToolsSearchInput";
@@ -7,6 +7,7 @@ import { SUBDOMAINS_DATA } from '@/Data/ToolsData';
 import ToolsFilterBox from '@/Components/Dashboard/Tools/ToolsFilterBox';
 
 export default function subs_by_ssl() {
+      const [data, setData] = useState(SUBDOMAINS_DATA);
       const columns = [
         { name: "URL", sortable: true, selector: (row) => row.Url },
         { name: "Page Title", sortable: true, selector: (row) => row.title },
@@ -29,6 +30,16 @@ export default function subs_by_ssl() {
         },
         { name: "Location", sortable: true, selector: (row) => row.location },
       ];
+
+      const toolsSearchFilterHandler = (e) => {
+        const newAnsData = SUBDOMAINS_DATA.filter((item) => {
+          return item.Url
+            .toLowerCase()
+            .includes(e.target.value.toLowerCase());
+        });
+
+        setData(newAnsData);
+      };
   return (
     <Layout>
       <div className="px-5 md:px-8 sm:py-5 py-5  lg:px-10">
@@ -36,10 +47,12 @@ export default function subs_by_ssl() {
         <ToolsSearchInput>
           Subdomains From SSL Configurations: 0
         </ToolsSearchInput>
-        <ToolsFilterBox>Subdomains From SSL Configurations: 10</ToolsFilterBox>
+        <ToolsFilterBox onSearchToolsFilter={toolsSearchFilterHandler}>
+          Subdomains From SSL Configurations: 10
+        </ToolsFilterBox>
         <ToolsDataTable
           columns={columns}
-          data={SUBDOMAINS_DATA}
+          data={data}
         ></ToolsDataTable>
       </div>
     </Layout>

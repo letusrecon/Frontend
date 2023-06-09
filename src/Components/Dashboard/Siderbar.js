@@ -43,7 +43,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
           <ul className={`styles['sidebar_ul'] py-1 sm:px-0 px-0 sm:py-2`}>
             <li className="  mb-4">
               <Link
-                className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex   rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/Dashboard" ? styles["active"] : ""
                 }  `}
                 href="/Dashboard"
@@ -57,7 +57,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             <li className=" mb-4">
               <Link
                 href="/target_info"
-                className={`flex  rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex  rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/target_info" ? styles["active"] : ""
                 }  `}
               >
@@ -69,7 +69,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className=" mb-4">
               <Link
-                className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex   rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/subdomain_scan" ? styles["active"] : ""
                 }  `}
                 href="/subdomain_scan"
@@ -82,7 +82,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className=" mb-4">
               <Link
-                className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex   rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/port_discovery" ? styles["active"] : ""
                 }  `}
                 href="/port_discovery"
@@ -95,7 +95,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className=" mb-4">
               <Link
-                className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex   rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/Vulnerabilities" ? styles["active"] : ""
                 }  `}
                 href="/Vulnerabilities"
@@ -108,7 +108,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className="mb-4">
               <Link
-                className={`flex   rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex   rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/Urls" ? styles["active"] : ""
                 }  `}
                 href="/Urls"
@@ -121,7 +121,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className=" mb-4">
               <Link
-                className={`flex  rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex  rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/Tools" ? styles["active"] : ""
                 }  `}
                 href="/Tools"
@@ -134,7 +134,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             </li>
             <li className="mb-4">
               <Link
-                className={`flex  rounded-md  py-1 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
+                className={`flex  rounded-md  py-2 px-4  text-slate-200 hover:bg-[#63c0d2]  ${
                   router.pathname == "/support_ticket" ? styles["active"] : ""
                 }  `}
                 href="/support_ticket"

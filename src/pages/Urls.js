@@ -1,7 +1,7 @@
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
-import Filter from "@/Components/Dashboard/UI/Filter";
+import Filter from "@/Components/Dashboard/Filter";
 
 export default function Urls() {
   return (
@@ -31,10 +31,8 @@ export default function Urls() {
             </div>
           </div>
         </div>
-        
-        <Filter>
-          Result
-        </Filter>
+
+        <Filter>Result</Filter>
 
         <div className="grid lg:grid-cols-5 m-5 sm:grid-cols-1 gap-6 text-center">
           {/* card start here */}

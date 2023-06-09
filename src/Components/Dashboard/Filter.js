@@ -18,7 +18,7 @@ export default function Filter(props) {
               placeholder="Filter Query"
               className=" w-4/5 sm:w-4/5 md:w-4/3  focus:outline-0 sm:focus:outline-0  lg:outline-0  -mr-1  rounded-s-xl border py-1 px-5 rounded-e-0  lg:w-72  bg-[#344C51] text-slate-200"
             />
-            <button className="border border-slate-100    rounded-e-xl rounded-s-0  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
+            <button type="button" onClick={props.onTogglepayload} className="border border-slate-100    rounded-e-xl rounded-s-0  px-3 py-1 bg-[#344C51] text-slate-200 flex ">
               Payload{" "}
               <span className="ml-4">
                 <MdArrowDropDown className=" text-xl " />

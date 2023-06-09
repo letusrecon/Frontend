@@ -5,11 +5,11 @@ import Link from "next/link";
 import { SCANNED_DATA } from "@/Data/Data";
 import { useState, useEffect } from "react";
 import Table from "@/Components/Dashboard/DataTable/Table";
-import Filter from "@/Components/Dashboard/UI/Filter";
+import Filter from "@/Components/Dashboard/Filter";
 
-
-export default function Subdomain_scan() {
+export default function Subdomain_scan(props) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [data, setData] = useState(SCANNED_DATA);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -29,6 +29,14 @@ export default function Subdomain_scan() {
     { name: "Server Software", sortable: true, selector: (row) => row.server },
     { name: "Location", sortable: true, selector: (row) => row.location },
   ];
+
+  const searchHandler = (e) => {
+    const filteredData = SCANNED_DATA.filter((item) => {
+      return item.Url.toLowerCase().includes(e.target.value);
+    });
+
+    setData(filteredData);
+  };
   return (
     <Layout>
       <div className="px-4 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
@@ -57,14 +65,13 @@ export default function Subdomain_scan() {
           </div>
         </div>
 
-       <Filter>
-      Total Alive subdomains Found: 0
-        
-       </Filter>
+        <Filter onSearchFilter={searchHandler}>
+          Total Alive subdomains Found: 0
+        </Filter>
 
         {isLoaded && (
           <div className=" mt-3 sm:mt-2 lg:mt-4 ">
-            <Table columns={columns} allowOverflow={true} data={SCANNED_DATA} />
+            <Table columns={columns} allowOverflow={true} data={data} />
           </div>
         )}
       </div>

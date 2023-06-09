@@ -6,10 +6,12 @@ import Link from "next/link";
 import { DISCOVERY_PORT_DATA } from "@/Data/Data";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useState, useEffect } from "react";
-import Filter from "@/Components/Dashboard/UI/Filter";
+import Filter from "@/Components/Dashboard/Filter";
+import { useTime } from "framer-motion";
 
 export default function Port_discovvery() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [currentData, setCurrentdata] = useState(DISCOVERY_PORT_DATA);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -28,6 +30,14 @@ export default function Port_discovvery() {
     { name: "Web Server ", sortable: true, selector: (row) => row.server },
     { name: "Location", sortable: true, selector: (row) => row.location },
   ];
+
+  const filterSearchHandler = (e) => {
+    const filteredData = DISCOVERY_PORT_DATA.filter((item) => {
+      return item.url.toLowerCase().includes(e.target.value.toLowerCase());
+    });
+
+    setCurrentdata(filteredData);
+  };
   return (
     <Layout>
       <div className="py-7 px-5 sm:py-4 md:py-4 lg:py-5 lg:px-10">
@@ -58,14 +68,13 @@ export default function Port_discovvery() {
           </div>
         </div>
 
-        <Filter>
+        <Filter onSearchFilter={filterSearchHandler}>
           Additional Attack Surface: 100
-
         </Filter>
 
         {isLoaded && (
           <div className="mt-4">
-            <Table columns={columns} allowOverflow data={DISCOVERY_PORT_DATA} />
+            <Table columns={columns} data={currentData} />
           </div>
         )}
       </div>

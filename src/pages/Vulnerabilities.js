@@ -5,8 +5,7 @@ import { VULNERABILITIES } from "@/Data/Data";
 import { createTheme } from "react-data-table-component";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useEffect, useState } from "react";
-import Filter from "@/Components/Dashboard/UI/Filter";
-
+import Filter from "@/Components/Dashboard/Filter";
 
 createTheme("custombackground", {
   background: {
@@ -23,6 +22,7 @@ createTheme("custombackground", {
 
 export default function Vulnerabilities() {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [data, setData] = useState(VULNERABILITIES);
 
   useEffect(() => {
     setIsLoaded(true);
@@ -54,6 +54,14 @@ export default function Vulnerabilities() {
     },
   ];
 
+  const SearchFilterHandler = (e) => {
+    const filteredData = VULNERABILITIES.filter((item) => {
+      return item.url.toLowerCase().includes(e.target.value.toLowerCase());
+    });
+
+    setData(filteredData);
+  };
+
   return (
     <Layout>
       <div className=" px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
@@ -82,16 +90,12 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <Filter>
+        <Filter onSearchFilter={SearchFilterHandler}>
           Total Issues Found: 0
         </Filter>
 
-       
-
         <div className=" mt-4">
-          {isLoaded && (
-            <Table columns={columns} allowOverflow data={VULNERABILITIES} />
-          )}
+          {isLoaded && <Table columns={columns} allowOverflow data={data} />}
         </div>
       </div>
     </Layout>
