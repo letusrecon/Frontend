@@ -1,9 +1,31 @@
+import { useState } from "react";
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
-import Filter from "@/Components/Dashboard/Filter";
+import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+import { MdArrowDropDown } from "react-icons/md";
+
+const filterOptions = [
+  { label: "Target Name", value: "target name" },
+  { label: "Scan Type", value: "scan type" },
+];
+
 
 export default function Urls() {
+
+  //  const [options, setOptions] = useState("");
+
+  //  const optionsHandler = (e) => {
+  //    setOptions(e.target.value);
+  //    console.log(options);
+  //  };
+
+
+  // const searchHandler = (e) => {
+  //   const filteredData = SCANNED_DATA.filter((item) => {
+  //     return item.Url.toLowerCase().includes(e.target.value);
+  //   });
+
   return (
     <Layout>
       <div className="px-5 py-8 md:px-8 md:py-5 lg:py-5 lg:px-10">
@@ -32,7 +54,44 @@ export default function Urls() {
           </div>
         </div>
 
-        <Filter>Result</Filter>
+        <FilterWrapper>
+          <h3 className="text-slate-100 text-lg md:text-sm">Result</h3>
+
+          <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
+            <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
+              <form action="">
+                <input
+                  // onChange={filterSearchHandler}
+                  type="text"
+                  placeholder="filter Query"
+                  className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                />
+              </form>
+              <select
+                value="GDDJ"
+                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                // onChange={optionsHandler}
+              >
+                {filterOptions.map((option) => (
+                  <option
+                    value={option.value}
+                    key={option.value}
+                    className="mt-10"
+                  >
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <button className="border flex px-5 text-slate-100 rounded-md py-1">
+                Export
+                <MdArrowDropDown className="ml-2 mt-1" />
+              </button>
+            </div>
+          </div>
+        </FilterWrapper>
 
         <div className="grid lg:grid-cols-5 m-5 sm:grid-cols-1 gap-6 text-center">
           {/* card start here */}

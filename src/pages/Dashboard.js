@@ -7,13 +7,29 @@ import { RiQrScanLine } from "react-icons/ri";
 import { GiTargeting } from "react-icons/gi";
 import { TbWorld } from "react-icons/tb";
 import { TbClockHour3 } from "react-icons/tb";
+import {MdArrowDropDown} from 'react-icons/md'
 import Table from "@/Components/Dashboard/DataTable/Table";
-import Filter from "@/Components/Dashboard/Filter";
+import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+
+const filterOptions = [
+  { label: "Target Name", value: "target name" },
+  { label: "Scan Type", value: "scan type" },
+  { label: "Last Scanned", value: "last scanned" },
+  { label: "HTTPS status code", value: "https status code" },
+  { label: "Result", value: "result" },
+];
 
 export default function Dashboard(props) {
+
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(SCAN_HISTORY_DATA);
-  const [showPayloadValue, setPayloadvalue] = useState(false)
+  const [options, setOptions] = useState('')
+
+
+  const optionsHandler = (e)=>{
+    setOptions(e.target.value)
+    console.log(options);
+  }
 
   const filteredDataHandler = (e) => {
     const filteredData = SCAN_HISTORY_DATA.filter((item) => {
@@ -36,9 +52,9 @@ export default function Dashboard(props) {
     { name: "Action", sortable: true, selector: (row) => row.Action },
   ];
 
-  const showPayloadHandler = () => {
-    setPayloadvalue(!showPayloadValue)
-  };
+  // const showPayloadHandler = () => {
+  //   setPayloadvalue(!showPayloadValue)
+  // };
   return (
     <>
       <Layout>
@@ -70,7 +86,7 @@ export default function Dashboard(props) {
           </div>
 
           <div className="mt-7 sm:mt-5 md:mt-15 lg:mt-15">
-            <h3 className="text-slate-100 text-3xl">Today</h3>
+            <h3 className="text-slate-100 mb-5 text-3xl">Today</h3>
             <div className="flex flex-col sm:justify-center sm:flex-col md:flex-col  lg:flex-row mt-10">
               <div className="w-full mb-5  sm:mb-5  sm:w-full  md:mb-5    lg:mb-0  lg:w-8/12  border  border-[#3A4245]  bg-[#141C1D] py-4 px-16 rounded-xl lg:mr-6">
                 <div className="flex justify-center">
@@ -129,10 +145,38 @@ export default function Dashboard(props) {
               </h2>
             </div>
           </div>
-          <Filter onTogglepayload={showPayloadHandler} onSearchFilter={filteredDataHandler}>
-            Scan History
-          </Filter>
-          {showPayloadValue && <p>working</p> }
+          <FilterWrapper>
+            <h2 className="text-slate-200 mb-3 sm:mb-2 lg:mb-0 md:mb-0">Subdomains scans</h2>
+
+            <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
+              <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
+                <form action="">
+                  <input
+                    onChange={filteredDataHandler}
+                    type="text"
+                    placeholder="filter Query"
+                    className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                  />
+                </form>
+                <select
+                  value={options}
+                  className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                  onChange={optionsHandler}
+                >
+                  {filterOptions.map((option) => (
+                    <option value={option.value} key={option.value} className="mt-10">{option.label}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <button className="border flex px-5 text-slate-100 rounded-md py-1">
+                  Export
+                  <MdArrowDropDown className="ml-2 mt-1" />
+                </button>
+              </div>
+            </div>
+          </FilterWrapper>
 
           {isLoaded && (
             <div className="mt-4 ">

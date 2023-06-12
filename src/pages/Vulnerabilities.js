@@ -5,7 +5,22 @@ import { VULNERABILITIES } from "@/Data/Data";
 import { createTheme } from "react-data-table-component";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useEffect, useState } from "react";
-import Filter from "@/Components/Dashboard/Filter";
+import { MdArrowDropDown } from "react-icons/md";
+
+import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+
+
+const filterOptions = [
+  { label: "Url", value: "url" },
+  { label: "Issue Raised", value: "issue raised" },
+  { label: "Issue related", value: "issue related" },
+  { label: "Severity", value: "severity" },
+  { label: "Notes", value: "notes" },
+  
+];
+
+
+// theme
 
 createTheme("custombackground", {
   background: {
@@ -20,9 +35,16 @@ createTheme("custombackground", {
   },
 });
 
+
 export default function Vulnerabilities() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(VULNERABILITIES);
+    const [options, setOptions] = useState("");
+
+    const optionsHandler = (e) => {
+      setOptions(e.target.value);
+      console.log(options);
+    };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -90,9 +112,46 @@ export default function Vulnerabilities() {
           </div>
         </div>
 
-        <Filter onSearchFilter={SearchFilterHandler}>
-          Total Issues Found: 0
-        </Filter>
+        <FilterWrapper>
+          <div className="text-slate-100 text-lg md:text-sm">
+            Total Issues Found: 0
+          </div>
+
+          <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
+            <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
+              <form action="">
+                <input
+                  onChange={SearchFilterHandler}
+                  type="text"
+                  placeholder="filter Query"
+                  className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border border-slate-50 rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                />
+              </form>
+              <select
+                value={options}
+                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                onChange={optionsHandler}
+              >
+                {filterOptions.map((option) => (
+                  <option
+                    value={option.value}
+                    key={option.value}
+                    className="mt-10"
+                  >
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <button className="border flex px-5 text-slate-100 rounded-md py-1">
+                Export
+                <MdArrowDropDown className="ml-2 mt-1" />
+              </button>
+            </div>
+          </div>
+        </FilterWrapper>
 
         <div className=" mt-4">
           {isLoaded && <Table columns={columns} allowOverflow data={data} />}

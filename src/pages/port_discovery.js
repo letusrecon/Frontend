@@ -6,12 +6,29 @@ import Link from "next/link";
 import { DISCOVERY_PORT_DATA } from "@/Data/Data";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useState, useEffect } from "react";
-import Filter from "@/Components/Dashboard/Filter";
-import { useTime } from "framer-motion";
+import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+import { MdArrowDropDown } from "react-icons/md";
+
+const filterOptions = [
+  { label: "Url", value: "url" },
+  { label: "Page title", value: "page title" },
+  { label: "Http status code", value: "http status code" },
+  { label: "Technologies", value: "technologies" },
+  { label: "Web server", value: "web server" },
+  { label: "Location", value: "location" },
+];
+
+
 
 export default function Port_discovvery() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [currentData, setCurrentdata] = useState(DISCOVERY_PORT_DATA);
+    const [options, setOptions] = useState("");
+
+    const optionsHandler = (e) => {
+      setOptions(e.target.value);
+      console.log(options);
+    };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -68,9 +85,47 @@ export default function Port_discovvery() {
           </div>
         </div>
 
-        <Filter onSearchFilter={filterSearchHandler}>
-          Additional Attack Surface: 100
-        </Filter>
+        <FilterWrapper>
+          <h3 className="text-slate-200 mb-3 sm:mb-2 lg:mb-0 md:mb-0">
+            {" "}
+            Additional Attack Surface: 100
+          </h3>
+
+          <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
+            <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
+              <form action="">
+                <input
+                  onChange={filterSearchHandler}
+                  type="text"
+                  placeholder="filter Query"
+                  className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                />
+              </form>
+              <select
+                value={options}
+                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                onChange={optionsHandler}
+              >
+                {filterOptions.map((option) => (
+                  <option
+                    value={option.value}
+                    key={option.value}
+                    className="mt-10"
+                  >
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <button className="border flex px-5 text-slate-100 rounded-md py-1">
+                Export
+                <MdArrowDropDown className="ml-2 mt-1" />
+              </button>
+            </div>
+          </div>
+        </FilterWrapper>
 
         {isLoaded && (
           <div className="mt-4">
