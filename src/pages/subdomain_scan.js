@@ -101,7 +101,7 @@ export default function Subdomain_scan(props) {
               </form>
               <select
                 value={options}
-                className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 w-[120px] sm:w-[120px] md:w-[150px] lg:w-[170px] bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 w-[125px] sm:w-[125px] md:w-[150px] lg:w-[170px] bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
                 onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (

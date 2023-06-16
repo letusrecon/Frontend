@@ -52,7 +52,7 @@ export default function Swagger_endpoints() {
         <ToolsSearchInput>Swagger.json Endpoint Extraction</ToolsSearchInput>
         <FilterWrapper>
           <h2 className='text-slate-100 text-lg md:text-sm"'>
-            Swagger.json Endpoint Extraction: 10 
+            Swagger.json Endpoint Extraction: 10
           </h2>
 
           <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
@@ -67,7 +67,7 @@ export default function Swagger_endpoints() {
               </form>
               <select
                 value={options}
-                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border  w-[125px] sm:w-[125px] md:w-[150px] lg:w-[170px] text-slate-100 rounded-e-xl"
                 onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (
