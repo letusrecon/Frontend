@@ -55,7 +55,9 @@ export default function Urls() {
         </div>
 
         <FilterWrapper>
-          <h3 className="text-slate-100 text-lg md:text-sm">Result</h3>
+          <h3 className="text-slate-200 mb-4 text-lg sm:mb-2 lg:mb-0 md:mb-0">
+            Result
+          </h3>
 
           <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
             <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">

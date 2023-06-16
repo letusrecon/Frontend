@@ -146,7 +146,7 @@ export default function Dashboard(props) {
             </div>
           </div>
           <FilterWrapper>
-            <h2 className="text-slate-200 text-xl mb-3 sm:mb-2 lg:mb-0 md:mb-0">
+            <h2 className="text-slate-200 text-xl mb-4 sm:mb-2 lg:mb-0 md:mb-0">
               Subdomains scans
             </h2>
 

@@ -46,7 +46,7 @@ export default function Directory_bruteforce() {
         <ToolsHeader />
         <ToolsSearchInput>Directory Bruceforce</ToolsSearchInput>
         <FilterWrapper>
-          <h2 className="text-slate-100 text-lg md:text-sm">
+          <h2 className="text-slate-200 mb-4 text-lg sm:mb-2 lg:mb-0 md:mb-0">
             Directory Bruceforce: 10
           </h2>
 

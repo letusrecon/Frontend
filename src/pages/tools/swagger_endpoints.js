@@ -51,7 +51,7 @@ export default function Swagger_endpoints() {
         <ToolsHeader />
         <ToolsSearchInput>Swagger.json Endpoint Extraction</ToolsSearchInput>
         <FilterWrapper>
-          <h2 className='text-slate-100 text-lg md:text-sm"'>
+          <h2 className="text-slate-200 mb-4 text-xl sm:mb-2 lg:mb-0 md:mb-0">
             Swagger.json Endpoint Extraction: 10
           </h2>
 

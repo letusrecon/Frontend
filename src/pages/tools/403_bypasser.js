@@ -52,7 +52,7 @@ export default function Bypasser() {
         <ToolsSearchInput>403 bypass</ToolsSearchInput>
 
         <FilterWrapper>
-          <h2 className="text-slate-100 text-lg md:text-sm">
+          <h2 className="text-slate-200 mb-4 text-lg sm:mb-2 lg:mb-0 md:mb-0">
             403 bypass attempts: 10
           </h2>
 
