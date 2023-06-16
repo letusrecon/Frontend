@@ -86,7 +86,7 @@ export default function Port_discovvery() {
         </div>
 
         <FilterWrapper>
-          <h3 className="text-slate-200 mb-3 sm:mb-2 lg:mb-0 md:mb-0">
+          <h3 className="text-slate-200 mb-3 text-xl sm:mb-2 lg:mb-0 md:mb-0">
             {" "}
             Additional Attack Surface: 100
           </h3>
