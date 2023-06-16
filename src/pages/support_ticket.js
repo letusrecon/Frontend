@@ -11,7 +11,7 @@ export default function support() {
           <div className="mb-4 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="">
               <h1 className="text-slate-100 text-xl"><b>Create Ticket</b></h1>
-           
+
             </div>
           </div>
 

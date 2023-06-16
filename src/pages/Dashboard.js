@@ -146,25 +146,33 @@ export default function Dashboard(props) {
             </div>
           </div>
           <FilterWrapper>
-            <h2 className="text-slate-200 mb-3 sm:mb-2 lg:mb-0 md:mb-0">Subdomains scans</h2>
+            <h2 className="text-slate-200 text-xl mb-3 sm:mb-2 lg:mb-0 md:mb-0">
+              Subdomains scans
+            </h2>
 
             <div className="flex md:items-center lg:items-center flex-col sm:flex-col md:flex-row lg:flex-row ">
-              <div className="flex mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
+              <div className="flex mr-0 mb-3 sm:mb-2 lg:mb-0 md:mr-5 lg:mr-5">
                 <form action="">
                   <input
                     onChange={filteredDataHandler}
                     type="text"
                     placeholder="filter Query"
-                    className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                    className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl  bg-[#354C50]  outline-none text-slate-100  px-5 py-1"
                   />
                 </form>
                 <select
                   value={options}
-                  className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                  className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
                   onChange={optionsHandler}
                 >
                   {filterOptions.map((option) => (
-                    <option value={option.value} key={option.value} className="mt-10">{option.label}</option>
+                    <option
+                      value={option.value}
+                      key={option.value}
+                      className="mt-10 px-4 bg-black"
+                    >
+                      {option.label}
+                    </option>
                   ))}
                 </select>
               </div>

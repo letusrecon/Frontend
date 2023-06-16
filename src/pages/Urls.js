@@ -69,7 +69,7 @@ export default function Urls() {
               </form>
               <select
                 value="GDDJ"
-                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 sm:px-0 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
                 // onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (

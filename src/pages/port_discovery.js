@@ -103,7 +103,7 @@ export default function Port_discovvery() {
               </form>
               <select
                 value={options}
-                className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
                 onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (
