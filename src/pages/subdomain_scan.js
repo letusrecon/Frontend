@@ -96,12 +96,12 @@ export default function Subdomain_scan(props) {
                   onChange={searchHandler}
                   type="text"
                   placeholder="filter Query"
-                  className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                  className="bg-transparent w-[170px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
                 />
               </form>
               <select
                 value={options}
-                className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 w-[120px] sm:w-[120px] md:w-[150px] lg:w-[170px] bg-[#354C50]  outline-none border text-slate-100 rounded-e-xl"
                 onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (

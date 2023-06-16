@@ -64,12 +64,12 @@ export default function Urls() {
                   // onChange={filterSearchHandler}
                   type="text"
                   placeholder="filter Query"
-                  className="bg-transparent w-[150px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
+                  className="bg-transparent w-[170px] sm:w-[100px] lg:w-[300px] border rounded-s-xl focus:bg-[#354C50] outline-none text-slate-100  px-5 py-1"
                 />
               </form>
               <select
                 value="GDDJ"
-                className=" py-1 sm:px-0 md:px-5 lg:px-5 bg-transparent outline-none border text-slate-100 rounded-e-xl"
+                className=" py-1 sm:px-0 md:px-5 lg:px-5 bg-transparent w-[120px] sm:w-[120px] md:w-[150px] lg:w-[170px] outline-none border text-slate-100 rounded-e-xl"
                 // onChange={optionsHandler}
               >
                 {filterOptions.map((option) => (
