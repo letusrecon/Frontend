@@ -8,12 +8,11 @@ import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
 import { MdArrowDropDown } from "react-icons/md";
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
-  { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
-];
+  { label: "Domain", value: "domain" },
+  { label: "Issue", value: "issue" },
+  { label: "Severity", value: "severity" },
+  { label: "Reference", value: "reference" },
+]
 
 
 export default function Subs_takeover() {

@@ -8,11 +8,9 @@ import {MdArrowDropDown} from 'react-icons/md'
 import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
-  { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+  { label: "Payload", value: "payload" },
+  { label: "Status", value: "status" },
+  { label: "Length", value: "length" },
 ];
 
 

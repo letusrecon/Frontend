@@ -1,30 +1,26 @@
-import React,{useState} from 'react'
-import Layout from '@/Components/Layout';
-import ToolsHeader from '@/Components/Dashboard/Tools/ToolsHeader';
+import React, { useState } from "react";
+import Layout from "@/Components/Layout";
+import ToolsHeader from "@/Components/Dashboard/Tools/ToolsHeader";
 import ToolsSearchInput from "@/Components/Dashboard/Tools/ToolsSearchInput";
-import ToolsDataTable from '@/Components/Dashboard/DataTable/ToolsDataTable';
-import { SWAGGER_ENDPOINTS_DATA } from '@/Data/ToolsData';
-import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
+import ToolsDataTable from "@/Components/Dashboard/DataTable/ToolsDataTable";
+import { SWAGGER_ENDPOINTS_DATA } from "@/Data/ToolsData";
+import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 import { MdArrowDropDown } from "react-icons/md";
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
-  { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+
+  { label: "Swagger endpoints", value: "swagger endpoints" },
+  
 ];
 
-
 export default function Swagger_endpoints() {
-   const [data, setData] = useState(SWAGGER_ENDPOINTS_DATA);
-   const [options, setOptions] = useState("");
+  const [data, setData] = useState(SWAGGER_ENDPOINTS_DATA);
+  const [options, setOptions] = useState("");
 
-   const optionsHandler = (e) => {
-     setOptions(e.target.value);
-     console.log(options);
-   };
-
+  const optionsHandler = (e) => {
+    setOptions(e.target.value);
+    console.log(options);
+  };
 
   const columns = [
     { name: "#", sortable: true, selector: (row) => row.number },
@@ -39,7 +35,9 @@ export default function Swagger_endpoints() {
 
   const toolsSearchFilterHandler = (e) => {
     const newAnsData = SWAGGER_ENDPOINTS_DATA.filter((item) => {
-      return item.endpoints.toLowerCase().includes(e.target.value.toLowerCase());
+      return item.endpoints
+        .toLowerCase()
+        .includes(e.target.value.toLowerCase());
     });
 
     setData(newAnsData);
@@ -69,7 +67,7 @@ export default function Swagger_endpoints() {
                 value={options}
                 className=" py-1 px-2 sm:px-2 md:px-5 lg:px-5 bg-transparent outline-none border  w-[125px] sm:w-[125px] md:w-[150px] lg:w-[170px] text-slate-100 rounded-e-xl"
                 onChange={optionsHandler}
-              >
+              > 
                 {filterOptions.map((option) => (
                   <option
                     value={option.value}

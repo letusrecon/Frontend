@@ -9,11 +9,15 @@ import { MdArrowDropDown } from "react-icons/md";
 import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
+
+  { label: "Url", value: "url" },
+  { label: "Page title", value: "page title" },
   { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+  { label: "Content length", value: "content length" },
+  { label: "Technologies", value: "technologies" },
+  { label: "IP", value: "ip" },
+  { label: "Server Software", value: "server Software" },
+  { label: "Location", value: "location" },
 ];
 
 export default function Subs_by_ssl() {
@@ -34,7 +38,7 @@ export default function Subs_by_ssl() {
           sortable: true,
           selector: (row) => row.http,
         },
-        { name: "Content Lenth", sortable: true, selector: (row) => row.lenth },
+        { name: "Content Length", sortable: true, selector: (row) => row.lenth },
         {
           name: "Technologies",
           sortable: true,

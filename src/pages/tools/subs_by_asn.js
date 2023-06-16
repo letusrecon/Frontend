@@ -9,11 +9,14 @@ import { MdArrowDropDown } from "react-icons/md";
 
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
+  { label: "Url", value: "url" },
+  { label: "Page title", value: "page title" },
   { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+  { label: "Content length", value: "content length" },
+  { label: "Technologies", value: "technologies" },
+  { label: "IP", value: "ip" },
+  { label: "Server Software", value: "server Software" },
+  { label: "Location", value: "location" },
 ];
 
 export default function Subs_by_asn() {

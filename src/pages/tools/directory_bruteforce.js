@@ -8,11 +8,9 @@ import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
 import { MdArrowDropDown } from "react-icons/md";
 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
-  { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+  { label: "Directory Path", value: "directory path" },
+  { label: "Status code", value: "status code" },
+  { label: "Length", value: "length" },
 ];
 
 export default function Directory_bruteforce() {

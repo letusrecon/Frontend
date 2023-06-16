@@ -9,11 +9,9 @@ import { MdArrowDropDown } from "react-icons/md";
 
 // 
 const filterOptions = [
-  { label: "Target Name", value: "target name" },
-  { label: "Scan Type", value: "scan type" },
-  { label: "Last Scanned", value: "last scanned" },
+  { label: "Title", value: "title" },
   { label: "HTTPS status code", value: "https status code" },
-  { label: "Result", value: "result" },
+  { label: "Content length", value: "content length" },
 ];
 
 export default function Interesting_json() {
