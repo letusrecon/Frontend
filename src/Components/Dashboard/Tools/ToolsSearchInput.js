@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ToolsSearchInput(props) {
-  console.log(ToolsSearchInput);
+  
   return (
     <div className="">
       <div className="flex flex-col lg:flex-row  mt-7 lg:justify-between lg:items-center">

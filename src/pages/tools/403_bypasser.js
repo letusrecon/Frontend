@@ -22,6 +22,7 @@ export default function Bypasser() {
    const optionsHandler = (e) => {
      setOptions(e.target.value);
      console.log(options);
+    
    };
 
   // Fields

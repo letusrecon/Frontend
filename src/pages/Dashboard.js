@@ -10,6 +10,8 @@ import { TbClockHour3 } from "react-icons/tb";
 import {MdArrowDropDown} from 'react-icons/md'
 import Table from "@/Components/Dashboard/DataTable/Table";
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+import LineChart from "@/Components/Dashboard/Charts/LineChart";
+import PieChart from "@/Components/Dashboard/Charts/PieChart";
 
 const filterOptions = [
   { label: "Target Name", value: "target name" },
@@ -27,8 +29,8 @@ export default function Dashboard(props) {
 
 
   const optionsHandler = (e)=>{
-    setOptions(e.target.value)
-    console.log(options);
+   setOptions(e.target.value)
+   console.log(options);
   }
 
   const filteredDataHandler = (e) => {
@@ -131,18 +133,20 @@ export default function Dashboard(props) {
             </div>
           </div>
 
-          <div className="flex justify-center s  flex-col sm:flex-col lg:flex-row lg:justify-between mt-14">
+          <div className="flex justify-center px-5 flex-col sm:flex-col lg:flex-row lg:justify-between mb-20 mt-20">
             <div className="  mb-8 sm:mb-4 lg:mb-0">
-              <h2 className="text-slate-100 text-lg md:text-sm ">
-                {" "}
-                This week (300 scans)
+              <h2 className="text-slate-100 text-xl md:text-sm mb-5 text-center  ">
+                Weekly scan
               </h2>
+
+              <LineChart />
             </div>
 
             <div className="">
-              <h2 className="text-slate-100 text-lg md:text-sm">
-                Subdomains Details
+              <h2 className="text-slate-100 text-xl md:text-sm mb-5 text-center  ">
+                Subdomains details
               </h2>
+              <PieChart />
             </div>
           </div>
           <FilterWrapper>
