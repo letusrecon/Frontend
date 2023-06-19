@@ -5,7 +5,7 @@ import { SUBDOMAIN_DETAILS } from '@/Data/ChartData'
 
 export default function PieChart() {
   return (
-    <div style={{ width: 400 }}>
+    <div >
       <Pie
         data={{
           labels: SUBDOMAIN_DETAILS.map((item) => item.domain),

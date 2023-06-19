@@ -133,17 +133,17 @@ export default function Dashboard(props) {
             </div>
           </div>
 
-          <div className="flex justify-center px-5 flex-col sm:flex-col lg:flex-row lg:justify-between mb-20 mt-20">
-            <div className="  mb-8 sm:mb-4 lg:mb-0">
-              <h2 className="text-slate-100 text-xl md:text-sm mb-5 text-center  ">
+          <div className="flex justify-center flex-col sm:flex-col md:flex-col lg:flex-row lg:justify-between mb-20 mt-20">
+            <div className=" w-full sm:w-full md:w-3/5 lg:w-3/5 lg:mr-5 md:mr-5 mb-8 sm:mb-4 lg:mb-0 border  border-[#3A4245]  bg-[#141C1D]  p-8 rounded-lg">
+              <h2 className="text-slate-100 text-center sm:text-center md:text-left lg:text-left lg:text-xl md:text-sm mb-8  ">
                 Weekly scan
               </h2>
 
               <LineChart />
             </div>
 
-            <div className="">
-              <h2 className="text-slate-100 text-xl md:text-sm mb-5 text-center  ">
+            <div className="border w-full sm:w-full  md:w-2/5 lg:w-2/5  border-[#3A4245]  bg-[#141C1D]  p-8 rounded-lg">
+              <h2 className="text-slate-100 lg:text-xl md:text-sm mb-5 text-center  ">
                 Subdomains details
               </h2>
               <PieChart />

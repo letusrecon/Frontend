@@ -5,7 +5,7 @@ import {Chart as ChartJS } from 'chart.js/auto'
 
 export default function LineChart() {
   return (
-    <div style={{ width: 650 }}>
+    <div>
       <Line
         data={{
           labels: WEEKLY_SCANS.map((data) => data.Day),
@@ -13,6 +13,7 @@ export default function LineChart() {
 
           datasets: [
             {
+              fill: true,
               label: "This week scans",
               data: WEEKLY_SCANS.map((item) => item.Scan),
               backgroundColor: ["#63C0D2"],
