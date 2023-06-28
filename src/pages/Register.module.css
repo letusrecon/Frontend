@@ -11,9 +11,10 @@
 
 .register_form {
   padding: 2% 3%;
-  box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px;
+  /* box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px; */
   background-color: #141d1e;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  border: 1px solid rgba(245, 245, 245, 0.17);
 }
 
 .register_logo_wrap {
@@ -26,7 +27,8 @@
 }
 .register_heading {
   font-family: var(--text-font);
-  font-size: 25px;
+  font-size: 27px;
+  font-weight: 700;
   margin-bottom: 2%;
   color: var(--btn-color);
   text-align: center;
@@ -64,23 +66,24 @@
   font-size: 18px;
   color: #ccc;
   font-family: var(--text-font);
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .register_input {
   width: 470px;
-  padding: 3px 10px;
-  background: none;
-  border: 1px solid #7a7f7d;
+  padding: 6px 10px;
+background-color: #344c51;
+  border: 1px solid #939996;
   outline-color: var(--btn-color);
-  border-radius:10px;
+  border-radius:2px;
   color: whitesmoke;
 }
 
 .register_input:focus{
-  background-color: #344c51;
-  outline: #909593;
+  background-color: rgba(245, 245, 245, 0.843);
+  outline: #1e1f1f65;
   border: 1px solid #939996;
+  color: black;
 }
 
 .register_error_msg {
@@ -151,7 +154,8 @@
   }
 
   .register_heading {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 600;
     margin-bottom: 4%;
   }
 

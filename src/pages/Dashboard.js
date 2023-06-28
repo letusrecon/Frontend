@@ -12,6 +12,9 @@ import Table from "@/Components/Dashboard/DataTable/Table";
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 import LineChart from "@/Components/Dashboard/Charts/LineChart";
 import PieChart from "@/Components/Dashboard/Charts/PieChart";
+import { CSVLink} from "react-csv";
+
+
 
 const filterOptions = [
   { label: "Target Name", value: "target name" },
@@ -21,11 +24,14 @@ const filterOptions = [
   { label: "Result", value: "result" },
 ];
 
+
 export default function Dashboard(props) {
 
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(SCAN_HISTORY_DATA);
   const [options, setOptions] = useState('')
+  const [isDataExportOptions, setDataExportOptions] = useState(false)
+
 
 
   const optionsHandler = (e)=>{
@@ -39,6 +45,10 @@ export default function Dashboard(props) {
     });
     setData(filteredData);
   };
+
+  const dataExportOptionsHandler = ()=>{
+    setDataExportOptions(!isDataExportOptions)
+  }
 
   useEffect(() => {
     setIsLoaded(true);
@@ -161,12 +171,12 @@ export default function Dashboard(props) {
                     onChange={filteredDataHandler}
                     type="text"
                     placeholder="filter Query"
-                    className=" w-[170px] sm:w-[100px] lg:w-[300px] border rounded-s-xl  bg-[#354C50]  outline-none text-slate-100  px-5 py-1"
+                    className=" w-[170px] sm:w-[100px] lg:w-[300px] border rounded-sm  bg-[#354C50]  outline-none text-slate-100  px-5 py-1"
                   />
                 </form>
                 <select
                   value={options}
-                  className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-3 bg-[#354C50]  w-[125px] sm:w-[125px] md:w-[150px] lg:w-[170px] outline-none border text-slate-100 rounded-e-xl"
+                  className=" py-1 -ml-0 sm:-ml-0 px-0 sm:px-0 md:px-4 lg:px-4 bg-[#354C50]  w-[125px] sm:w-[125px] md:w-[150px] lg:w-[170px] outline-none border text-slate-100 rounded-e-xl"
                   onChange={optionsHandler}
                 >
                   {filterOptions.map((option) => (
@@ -182,13 +192,50 @@ export default function Dashboard(props) {
               </div>
 
               <div>
-                <button className="border flex px-5 text-slate-100 rounded-md py-1">
+                <button
+                  onClick={dataExportOptionsHandler}
+                  className="border flex px-5 text-slate-100 rounded-md py-1"
+                >
                   Export
                   <MdArrowDropDown className="ml-2 mt-1" />
                 </button>
+
+                {/* <select value={isExptOption}>
+                  {exportOptions.map( (item)=> (
+
+                    <option key={item.value} value={item.value}>{item.value}</option>
+
+                  )
+                  )}
+                </select> */}
               </div>
             </div>
           </FilterWrapper>
+          {isDataExportOptions && (
+            <ul className="absolute z-10  md:right-9 lg:right-10  mt-0 shadow-md flex flex-col bg-[#364b4f] border border-slate-500 w-[145px] rounded-xl px-0 py-3">
+              <li className="w-full h-8 px-2 hover:bg-[#446268]">
+                <CSVLink
+                  className="text-white "
+                  filename={"Subdomains.csv"}
+              
+                  data={SCAN_HISTORY_DATA}
+                >
+                  {" "}
+                  As csv
+                </CSVLink>
+              </li>
+
+              <li className="w-full h-8 px-2 hover:bg-[#446268]">
+                <CSVLink
+                  className="text-white hover:bg-[#446268] mt-2 "
+                  data={SCAN_HISTORY_DATA}
+                >
+                  {" "}
+                  As txt
+                </CSVLink>
+              </li>
+            </ul>
+          )}
 
           {isLoaded && (
             <div className="mt-4 ">

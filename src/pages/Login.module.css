@@ -18,7 +18,9 @@
     padding: 3% 4%;
      box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px;
         background-color: #141d1e;
-        border-radius: 10px;
+        /* border-radius: 10px; */
+          border: 1px solid rgba(245, 245, 245, 0.17);
+
 }
 
 /* .login_logo_wrap{
@@ -48,23 +50,24 @@
   font-size: 18px;
   color: #ccc;
   font-family: var(--text-font);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .login_input {
   width: 470px;
-  padding: 4px 10px;
+  padding: 6px 10px;
 background: none;
   border: 1px solid #7e7a7a95;
   outline-color: var(--btn-color);
-  border-radius: 10px;
+  border-radius: 2px;
   color: whitesmoke;
 }
 
 .login_input:focus{
-    background-color: #344c51;
-  outline: #909593;
+ background-color: rgba(245, 245, 245, 0.843);
+  outline: #1e1f1f65;
   border: 1px solid #939996;
+  color: black;
 }
 .login_error_msg{
   color: red;
