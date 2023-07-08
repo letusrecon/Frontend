@@ -10,9 +10,15 @@ import { IoTicketOutline } from "react-icons/io5";
 import {AiOutlineLogout} from 'react-icons/ai'
 import Image from "next/image";
 import { useRouter } from "next/router";
+import {  signOut } from "next-auth/react";
 
 
 export default function Sidebar({ isShowSideBar, onClickHandler }) {
+
+  const handleSignOut = ()=>{
+    signOut()
+  }
+
   
 
 
@@ -150,7 +156,7 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
           <div className="">
             <div className=" cursor-pointer hover:bg-[rgb(61,62,61)] px-6 sm:px-6 lg:px-3  md:px-3 sm:mt-8 lg:mt-0 md:mt-0 mt-8 py-2 rounded-md flex bottom-4 relative md:fixed lg:fixed ">
               <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-5 text-slate-100 " />
-              <h3 className="text-slate-100 text-xl font-semibold"> LOGOUT</h3>
+              <button onClick={handleSignOut} className="text-slate-100 text-xl font-semibold"> LOGOUT</button>
             </div>
           </div>
         </nav>

@@ -1,54 +1,39 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Login.module.css";
-import { useState } from "react";
+import { useFormik } from "formik";
+import login_validate from "@/lib/Validate";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/router";
 
 export default function Login() {
-  const [enteredEmail, setEnteredEmail] = useState("");
-  const [isEmailTouched, setEmailTouched] = useState("");
-  const [enteredPassword, setEnteredPassword] = useState("");
-  const [isPasswordTouched, setPasswordTouched] = useState(false);
+  const router = useRouter();
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validate: login_validate,
+    onSubmit,
+  });
 
-  // Email
+  async function onSubmit(values) {
+    const status = await signIn("credentials", {
+      redirect: false,
+      email: values.email,
+      password: values.password,
+      callbackUrl: "/Dashboard",
+    });
 
-  const emailInputIsValid = enteredEmail.trim() !== "";
-  const emailInputIsInValid = !emailInputIsValid && isEmailTouched;
-
-  const onBlurEmailHandler = () => {
-    setEmailTouched(true);
-  };
-
-  // Paasword
-
-  const passwordInputIsValid = enteredPassword.trim() !== "";
-  const passwordInputIsInValid = !passwordInputIsValid && isPasswordTouched;
-
-  const onBlurPasswordHandler = () => {
-    setPasswordTouched(true);
-  };
-
-  // Login submission
-  const loginSubmitHandler = (e) => {
-
-   e.preventDefault()
-    setEmailTouched(true);
-    setPasswordTouched(true);
-
-    if(!emailInputIsValid && !passwordInputIsValid){
-      return
+    if (status.ok) {
+      router.push(status.url);
     }
-
-    console.log(enteredEmail, enteredPassword);
-  };
+  }
 
   return (
     <div className={styles.main_login_container}>
       <div className={styles.login_form_col}>
-        <form
-          onSubmit={loginSubmitHandler}
-          className={styles.login_form}
-          action=""
-        >
+        <form onSubmit={formik.handleSubmit} className={styles.login_form}>
           <div className={styles.login_logo_wrap}>
             <Link href="/">
               <Image
@@ -57,8 +42,6 @@ export default function Login() {
                 height="150"
                 className={styles.login_logo}
                 alt="letusrecon"
-
-                
               />
             </Link>
           </div>
@@ -71,37 +54,35 @@ export default function Login() {
             <input
               name="email"
               className={styles.login_input}
-              onChange={(e) => {
-                setEnteredEmail(e.target.value);
-              }}
-              onBlur={onBlurEmailHandler}
+              onChange={formik.handleChange}
               type="text"
+              value={formik.values.email}
             />
-            {emailInputIsInValid && (
-              <p className={styles.login_error_msg}>
-                Email Address is required
-              </p>
-            )}
           </div>
+          {formik.errors.email && formik.touched.email ? (
+            <p className="text-red-600 mb-3">{formik.errors.email}</p>
+          ) : (
+            ""
+          )}
 
           <div className={styles.login_input_wrap}>
             <label className={styles.login_label} htmlFor="password">
               Password
             </label>
             <input
+              onChange={formik.handleChange}
               name="password"
               className={styles.login_input}
               type="password"
-              onBlur={onBlurPasswordHandler}
-              onChange={(e) => {
-                setEnteredPassword(e.target.value);
-              }}
+              value={formik.values.password}
             />
-
-            {passwordInputIsInValid && (
-              <p className={styles.login_error_msg}>Password is required </p>
-            )}
           </div>
+
+          {formik.errors.password && formik.touched.password ? (
+            <p className="text-red-600 ">{formik.errors.password}</p>
+          ) : (
+            ""
+          )}
 
           <div className={styles.login_help_links_wrap}>
             <p className={styles.forgot_pass_text}>
