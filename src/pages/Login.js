@@ -25,8 +25,13 @@ export default function Login() {
       callbackUrl: "/Dashboard",
     });
 
+    if (status.error) {
+      console.log(error);
+    }
+
     if (status.ok) {
-      router.push(status.url);
+      console.log('sucessful');
+      // router.push(status.url);
     }
   }
 

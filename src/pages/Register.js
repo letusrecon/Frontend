@@ -5,6 +5,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useFormik } from "formik";
 import register_validate from "@/lib/Validate";
 import { useRouter } from "next/router";
+import { toast } from "react-hot-toast";
+
 
 export default function Register() {
   const router = useRouter();
@@ -29,11 +31,15 @@ export default function Register() {
     };
 
    const res = await fetch("https://dev-api.letusrecon.com/v1/auth/user/register", option)
-     const user = await res.json()
-      
+    
+   const user = res.json()
+
+   
      if(user){
-      router.push('/Login')
+      toast.success("User sucessfully created")
+       router.push("/Login");
      }
+     
 
      
 

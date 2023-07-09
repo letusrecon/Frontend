@@ -1,11 +1,11 @@
 .main_register_container {
-  padding: 6% 7%;
+  padding: 5% 7%;
   
 }
 
 .form_col {
   display: flex;
-  padding: 6% 0%;
+  padding: 3% 0%;
   justify-content: center; 
   
 }
@@ -14,7 +14,7 @@
   padding: 3% 3%;
   /* box-shadow: rgba(159, 156, 156, 0.189) 1px 1px 1px; */
   background-color: #141d1e;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(245, 245, 245, 0.17);
 
 }
@@ -74,18 +74,19 @@
 .register_input {
   width: 470px;
   padding: 6px 10px;
-background-color: #344c51;
-  border: 1px solid #939996;
-  outline-color: var(--btn-color);
-  border-radius:2px;
+
+background-color: transparent;
+border: 1px solid #cccccca1;
+ 
+  border-radius:5px;
   color: whitesmoke;
 }
 
 .register_input:focus{
-  background-color: rgba(245, 245, 245, 0.843);
-  outline: #1e1f1f65;
-  border: 1px solid #939996;
-  color: black;
+  outline: var(--btn-color);
+  border: 1px solid var(--btn-color);
+ color: whitesmoke;
+
 }
 
  .register_input.err {
@@ -146,7 +147,7 @@ background-color: #344c51;
   }
 
   .register_form {
-    padding: 8% 7%;
+    padding: 6% 7%;
   }
 
   .register_logo {
