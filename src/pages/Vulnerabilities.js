@@ -6,6 +6,7 @@ import { createTheme } from "react-data-table-component";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import { useEffect, useState } from "react";
 import { MdArrowDropDown } from "react-icons/md";
+import { getSession } from "next-auth/react";
 
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 
@@ -159,4 +160,21 @@ export default function Vulnerabilities() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

@@ -6,6 +6,7 @@ import { ADMIN_PATH_FINDER } from "@/Data/ToolsData";
 import ToolsDataTable from "@/Components/Dashboard/DataTable/ToolsDataTable";
 import { MdArrowDropDown } from "react-icons/md";
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
+import { getSession } from "next-auth/react";
 
 const filterOptions = [
   { label: "Pontential Admin Path", value: "pontential Admin Path" },
@@ -87,4 +88,21 @@ export default function Admin_panel_finder() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

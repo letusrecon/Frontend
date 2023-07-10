@@ -58,17 +58,25 @@
   width: 467px;
   padding: 6px 10px;
 
-background-color: transparent;
-border: 1px solid #cccccca1;
-  border-radius: 5px;
-  color: whitesmoke;
+outline-color: var(--btn-color) ;
+    font-family: var(--text-font);
+ 
+  border-radius:px;
 }
 
 .login_input:focus{
  
-outline: var(--btn-color);
-  border: 1px solid var(--btn-color);
-  color: whitesmoke;
+  color: black;
+}
+
+
+.login_input.invalid{
+
+ outline: red;
+    background-color: rgba(255, 0, 0, 0.117);
+    border: 1px solid red;
+    color: whitesmoke;
+
 }
 
 
@@ -109,7 +117,7 @@ outline: var(--btn-color);
   width: 470px;
   margin: 19px 0px;
   border: 0;
-  border-radius: 10px;
+  border-radius:5px;
   font-size: 18px;
   margin-bottom: 7%;
   background-color: var(--btn-color);
@@ -184,7 +192,7 @@ outline: var(--btn-color);
   }
 
   .login_form {
-    padding: 5% 7%;
+    padding: 7% 7%;
     
   }
   .login_heading {

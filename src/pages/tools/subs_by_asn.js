@@ -6,6 +6,7 @@ import ToolsDataTable from '@/Components/Dashboard/DataTable/ToolsDataTable';
 import { SUBDOMAINS_DATA } from '@/Data/ToolsData';
 import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
 import { MdArrowDropDown } from "react-icons/md";
+import { getSession } from 'next-auth/react';
 
 
 const filterOptions = [
@@ -107,4 +108,21 @@ export default function Subs_by_asn() {
      </div>
    </Layout>
  );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

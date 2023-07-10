@@ -2,7 +2,7 @@ import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import styles from "./Tools.module.css";
-
+import { getSession } from "next-auth/react";
 
 export default function Tools() {
   return (
@@ -227,4 +227,21 @@ export default function Tools() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

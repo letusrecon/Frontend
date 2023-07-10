@@ -60,3 +60,56 @@ export function register_validate (values){
 
 
 }
+
+// Email Verification form input validation
+
+
+export function email_verfication_validate(values){
+  const errors = {}
+
+  if (!values.email) {
+    errors.email = "Email is required!";
+  } 
+
+    if (!values.code) {
+      errors.code = "Verification code is required!";
+    } 
+
+
+  return errors
+
+
+}
+
+
+// Password reset validation
+
+export function reset_password_validation(values){
+    const errors = {};
+
+    if (!values.email) {
+      errors.email = "Email is required!";
+    }
+
+
+    return errors;
+
+}
+
+
+
+// Confirm reset password validation
+export function confirm_reset_password_validation(values){
+    const errors = {};
+
+    if (!values.email) {
+      errors.email = "Email is required!";
+    }
+
+    if (!values.code) {
+      errors.code = "Verification code is required!";
+    }
+
+    return errors;
+  
+}

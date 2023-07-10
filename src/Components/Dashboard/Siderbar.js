@@ -154,9 +154,14 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
           </ul>
 
           <div className="">
-            <div className=" cursor-pointer hover:bg-[rgb(61,62,61)] px-6 sm:px-6 lg:px-3  md:px-3 sm:mt-8 lg:mt-0 md:mt-0 mt-8 py-2 rounded-md flex bottom-4 relative md:fixed lg:fixed ">
-              <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-5 text-slate-100 " />
-              <button onClick={handleSignOut} className="text-slate-100 text-xl font-semibold"> LOGOUT</button>
+            <div className="  sm:mt-8 lg:mt-0 md:mt-0 mt-8  bottom-4 relative md:fixed lg:fixed ">
+              <button
+                onClick={handleSignOut}
+                className="text-slate-100  cursor-pointer  py-2 md:px-3 px-6 sm:px-6 lg:px-3   rounded-md flex hover:bg-[rgb(61,62,61)] text-xl font-semibold"
+              >
+                <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-5 text-slate-100 " />
+                LOGOUT
+              </button>
             </div>
           </div>
         </nav>

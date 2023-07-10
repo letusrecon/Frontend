@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import login_validate from "@/lib/Validate";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
+import { toast } from "react-hot-toast";
 
 export default function Login() {
   const router = useRouter();
@@ -18,6 +19,11 @@ export default function Login() {
   });
 
   async function onSubmit(values) {
+    
+
+ 
+
+
     const status = await signIn("credentials", {
       redirect: false,
       email: values.email,
@@ -25,13 +31,12 @@ export default function Login() {
       callbackUrl: "/Dashboard",
     });
 
-    if (status.error) {
-      console.log(error);
-    }
+    if (!status.ok) {
+      toast.error(status.error);
 
-    if (status.ok) {
-      console.log('sucessful');
-      // router.push(status.url);
+      
+    }else{
+      router.push(status.url);
     }
   }
 
@@ -58,17 +63,21 @@ export default function Login() {
             </label>
             <input
               name="email"
-              className={styles.login_input}
+              className={`${styles["login_input"]} ${
+                formik.errors.email && formik.touched.email
+                  ? styles.invalid
+                  : ""
+              }`}
               onChange={formik.handleChange}
               type="text"
               value={formik.values.email}
             />
           </div>
-          {formik.errors.email && formik.touched.email ? (
+          {/* {formik.errors.email && formik.touched.email ? (
             <p className="text-red-600 mb-3">{formik.errors.email}</p>
           ) : (
             ""
-          )}
+          )} */}
 
           <div className={styles.login_input_wrap}>
             <label className={styles.login_label} htmlFor="password">
@@ -77,17 +86,21 @@ export default function Login() {
             <input
               onChange={formik.handleChange}
               name="password"
-              className={styles.login_input}
+              className={`${styles["login_input"]} ${
+                formik.errors.password && formik.touched.password
+                  ? styles.invalid
+                  : ""
+              }`}
               type="password"
               value={formik.values.password}
             />
           </div>
 
-          {formik.errors.password && formik.touched.password ? (
+          {/* {formik.errors.password && formik.touched.password ? (
             <p className="text-red-600 ">{formik.errors.password}</p>
           ) : (
             ""
-          )}
+          )} */}
 
           <div className={styles.login_help_links_wrap}>
             <p className={styles.forgot_pass_text}>

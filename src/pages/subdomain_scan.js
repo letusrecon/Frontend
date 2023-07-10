@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Table from "@/Components/Dashboard/DataTable/Table";
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 import { MdArrowDropDown } from "react-icons/md";
+import { getSession } from "next-auth/react";
 
 const filterOptions = [
   { label: "Url", value: "url" },
@@ -133,4 +134,21 @@ export default function Subdomain_scan(props) {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

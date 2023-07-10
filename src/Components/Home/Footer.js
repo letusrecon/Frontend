@@ -4,6 +4,7 @@ import styles from "./Footer.module.css"
 import { FaTwitter, FaInstagram, FaDiscord } from "react-icons/fa";
 
 export default function Footer (){
+  
  const cuurentDate = ()=>{
     return new Date().getFullYear();
     

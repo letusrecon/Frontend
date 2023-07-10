@@ -1,6 +1,7 @@
 import Layout from "@/Components/Layout";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
+import { getSession } from "next-auth/react";
 
 export default function target_info() {
   return (
@@ -434,4 +435,21 @@ export default function target_info() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

@@ -13,9 +13,13 @@ import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 import LineChart from "@/Components/Dashboard/Charts/LineChart";
 import PieChart from "@/Components/Dashboard/Charts/PieChart";
 import { CSVLink} from "react-csv";
+import { getSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 
 
 
+
+// Option value data
 
 const filterOptions = [
   { label: "Target Name", value: "target name" },
@@ -31,7 +35,12 @@ export default function Dashboard(props) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [data, setData] = useState(SCAN_HISTORY_DATA);
   const [options, setOptions] = useState('')
-  const [isDataExportOptions, setDataExportOptions] = useState(false)
+  const [isExportOpen, setIsExportOpen] = useState(false)
+
+
+  const {data: session} = useSession()
+
+  console.log(session)
 
 
 
@@ -48,7 +57,7 @@ export default function Dashboard(props) {
   };
 
   const dataExportOptionsHandler = ()=>{
-    setDataExportOptions(!isDataExportOptions)
+    setIsExportOpen(!isExportOpen)
   }
 
   useEffect(() => {
@@ -76,7 +85,7 @@ export default function Dashboard(props) {
             <div className="flex items-center mb-4 sm:mb-4 lg:items-center">
               <CgProfile className=" text-7xl text-slate-100 mr-3" />
               <div className="">
-                <h2 className="text-slate-100">Hello Ismail,</h2>
+                <h2 className="text-slate-100">{session.user.email}</h2>
                 <h2 className="text-slate-100">Welcome Back</h2>
               </div>
             </div>
@@ -212,13 +221,12 @@ export default function Dashboard(props) {
               </div>
             </div>
           </FilterWrapper>
-          {isDataExportOptions && (
+          {isExportOpen && (
             <ul className="absolute z-10  md:right-9 lg:right-10  mt-0 shadow-md flex flex-col bg-[#364b4f] border border-slate-500 w-[145px] rounded-xl px-0 py-3">
               <li className="w-full h-8 px-2 hover:bg-[#446268]">
                 <CSVLink
                   className="text-white "
                   filename={"Subdomains.csv"}
-              
                   data={SCAN_HISTORY_DATA}
                 >
                   {" "}
@@ -247,4 +255,22 @@ export default function Dashboard(props) {
       </Layout>
     </>
   );
+}
+
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

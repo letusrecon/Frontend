@@ -4,6 +4,8 @@ import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
 import FilterWrapper from "@/Components/Dashboard/UI/FilterWrapper";
 import { MdArrowDropDown } from "react-icons/md";
+import { getSession } from "next-auth/react";
+
 
 const filterOptions = [
   { label: "Target Name", value: "target name" },
@@ -252,4 +254,21 @@ export default function Urls() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

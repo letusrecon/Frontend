@@ -7,6 +7,7 @@ import { SUBDOMAINS_DATA } from '@/Data/ToolsData';
 import { MdArrowDropDown } from "react-icons/md";
 
 import FilterWrapper from '@/Components/Dashboard/UI/FilterWrapper';
+import { getSession } from 'next-auth/react';
 
 const filterOptions = [
 
@@ -113,4 +114,21 @@ export default function Subs_by_ssl() {
       </div>
     </Layout>
   );
+}
+
+
+export async function getServerSideProps({ req }) {
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/Login",
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
 }

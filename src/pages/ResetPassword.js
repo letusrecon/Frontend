@@ -1,26 +1,47 @@
 import styles from "./ResetPassword.module.css";
-import { useState } from "react";
 import Image from "next/image";
-
+import axios from "axios";
+import { useFormik } from "formik";
+import { toast } from "react-hot-toast";
+import { useRouter } from "next/router";
+import { reset_password_validation } from "@/lib/Validate";
 
 export default function ResetPassword() {
 
-    const [enteredResetEmail, setEnteredResetEmail] = useState('')
+  const router = useRouter()
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validate: reset_password_validation,
+    onSubmit,
+  });
 
-    const resetPasswordSubmitHandler =(e)=>{
-        e.preventDefault()
+  async function onSubmit(values) {
+    await axios
+      .post("https://dev-api.letusrecon.com/v1/auth/user/recover-password", {
+        email: values.email,
+      })
 
-        if(enteredResetEmail === ''){
-            return
+      .then((res) => {
+        if (res) {
+          toast.success("Code successfully sent");
+          router.push('/confirm_password_reset')
         }
+      })
 
-    }
+      .catch((error) => {
+        if (error) {
+          toast.error("Email not found!");
+        }
+      });
+  }
+
   return (
     <div className={styles.reset_password_main_container}>
       <form
         className={styles.reset_password_form}
-        onSubmit={resetPasswordSubmitHandler}
-        action=""
+        onSubmit={formik.handleSubmit}
       >
         <div className={styles.reset_passw_logo_wrap}>
           <Image
@@ -34,17 +55,20 @@ export default function ResetPassword() {
 
         <h5 className={styles.reset_password_heading}>Reset Password</h5>
         <p className={styles.reset_password_text}>
-          Input the Email Address associated to your account below, we will send
-          a link to the email to create a new password for your account.
+          Provide the Email Address associated with your account below, we will
+          send a code to the email to verify this action.
         </p>
         <input
-          type="email"
+          type="text"
           placeholder="Input Your email Address
         "
-          className={styles.reset_password_input}
-          onChange={(e) => {
-            setEnteredResetEmail(e.target.value);
-          }}
+          id="email"
+          name="email"
+          value={formik.values.email}
+          className={`${styles["reset_password_input"]} ${
+            formik.errors.email && formik.touched.email ? styles.invalid : ""
+          }`}
+          onChange={formik.handleChange}
         />
 
         <div>
