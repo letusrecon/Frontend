@@ -11,7 +11,7 @@ import { toast } from "react-hot-toast";
 import { email_verfication_validate } from "@/lib/Validate";
 import { useRouter } from "next/router";
 
-export default function email_verification() {
+export default function   Email_verification() {
 
   const router = useRouter()
   const formik = useFormik({

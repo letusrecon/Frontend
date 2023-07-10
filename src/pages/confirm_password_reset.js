@@ -7,7 +7,7 @@ import { confirm_reset_password_validation } from '@/lib/Validate';
 import { toast } from 'react-hot-toast';
 
 
-export default function confirm_password_reset() {
+export default function Confirm_password_reset() {
 
     const formik = useFormik({
         initialValues:{
