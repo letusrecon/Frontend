@@ -39,6 +39,8 @@ export default NextAuth({
     }),
   ],
 
+  secret:process.env.NEXT_PUBLIC_SECRET,
+
   session: {
     jwt: true,
   },
