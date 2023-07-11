@@ -31,7 +31,13 @@ export default function Login() {
       callbackUrl: "/Dashboard",
     }).then((status) => {
       if (status.ok) {
+    
         router.push(status.url);
+          //  const toastId = toast.loading("Login successful!", {
+          //    duration: 5000,
+          //  });
+       
+           
       } else {
         toast.error(status.error);
       }
@@ -72,6 +78,7 @@ export default function Login() {
               }`}
               onChange={formik.handleChange}
               type="text"
+              onBlur={formik.handleBlur}
               value={formik.values.email}
             />
           </div>
@@ -88,6 +95,7 @@ export default function Login() {
             <input
               onChange={formik.handleChange}
               name="password"
+              onBlur={formik.handleBlur}
               className={`${styles["login_input"]} ${
                 formik.errors.password && formik.touched.password
                   ? styles.invalid

@@ -72,17 +72,27 @@
 
 .register_input {
   width: 470px;
-  padding: 6px 10px;
-outline-color: var(--btn-color) ;
-    font-family: var(--text-font);
+  padding: 7px 10px;
  
-  border-radius:3px;
+
+  outline-color: 0 ;
+    font-family: var(--text-font);
+    background: transparent;
+    border: 1px solid rgba(215, 215, 215, 0.307);
+ 
+  border-radius: 5px;
+  color: whitesmoke;
 
 }
 
 
 .register_input:focus{
- color: black;
+ 
+  color:whitesmoke;
+  border: 2px solid var(--btn-color) ;
+  background-color: rgba(215, 215, 215, 0.089);
+  outline: 0;
+ 
 
 }
 
@@ -174,7 +184,7 @@ outline-color: var(--btn-color) ;
   .register_input {
     width: 300px;
 
-    padding: 6px 10px;
+    padding: 7px 10px;
   }
 
   /* .register_action_btn_wrap{

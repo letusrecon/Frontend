@@ -58,15 +58,22 @@
   width: 467px;
   padding: 6px 10px;
 
-outline-color: var(--btn-color) ;
+outline-color: 0 ;
     font-family: var(--text-font);
+    background: transparent;
+    border: 1px solid rgba(215, 215, 215, 0.307);
  
-  border-radius: 3px;
+  border-radius: 5px;
+  color: whitesmoke;
 }
 
 .login_input:focus{
  
-  color: black;
+  color:whitesmoke;
+  border: 2px solid var(--btn-color) ;
+  background-color: rgba(215, 215, 215, 0.089);
+  outline: 0;
+ 
 }
 
 
@@ -212,7 +219,7 @@ height: 80vh;
 
   .login_input {
     max-width: 300px;
-    padding: 6px 10px;
+    padding: 7px 10px;
 
 
   }

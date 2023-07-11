@@ -8,6 +8,7 @@ import { toast } from "react-hot-toast";
 import { email_verfication_validate } from "@/lib/Validate";
 import { useRouter } from "next/router";
 import Loader from "@/lib/Loader";
+import { color } from "framer-motion";
 
 export default function   Email_verification() {
 
@@ -43,7 +44,9 @@ setIsLoading(true);
     
     .then((data)=> {
        if (data) {
-         toast.success("Email Successfully Verified!")
+         toast.success("Email Successfully Verified!", {
+           
+         });
          router.push('/Login')
        }
     })
@@ -52,7 +55,9 @@ setIsLoading(true);
 
 
       if(error){
-         toast.error("Invalid Verification Code or Email");
+         toast.error("Invalid Verification Code or Email", {
+           
+         });
       }
     })
 setIsLoading(null)
