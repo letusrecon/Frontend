@@ -76,7 +76,7 @@
 outline-color: var(--btn-color) ;
     font-family: var(--text-font);
  
-  border-radius:px;
+  border-radius:3px;
 
 }
 
@@ -174,7 +174,7 @@ outline-color: var(--btn-color) ;
   .register_input {
     width: 300px;
 
-    padding: 4px 10px;
+    padding: 6px 10px;
   }
 
   /* .register_action_btn_wrap{
