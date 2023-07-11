@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 import {  signOut } from "next-auth/react";
 
 
-export default function Sidebar({ isShowSideBar, onClickHandler }) {
+export default function Sidebar({ isShowSideBar }) {
 
   const handleSignOut = ()=>{
     signOut()
@@ -157,9 +157,9 @@ export default function Sidebar({ isShowSideBar, onClickHandler }) {
             <div className="  sm:mt-8 lg:mt-0 md:mt-0 mt-8  bottom-4 relative md:fixed lg:fixed ">
               <button
                 onClick={handleSignOut}
-                className="text-slate-100  cursor-pointer  py-2 md:px-3 px-6 sm:px-6 lg:px-3   rounded-md flex hover:bg-[rgb(61,62,61)] text-xl font-semibold"
+                className="text-slate-100  cursor-pointer w-[230px]  py-2 md:px-3 px-6 sm:px-6 lg:px-3   rounded-md flex hover:bg-[rgb(61,62,61)] text-xl font-semibold"
               >
-                <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-5 text-slate-100 " />
+                <AiOutlineLogout className=" text-xl mr-2  sm:mr-2 md:mr-4 mt-1 lg:mr-3 text-slate-100 font-semibold" />
                 LOGOUT
               </button>
             </div>
