@@ -7,8 +7,13 @@ import register_validate from "@/lib/Validate";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
 
+import { useState } from "react";
+import Loader from "@/lib/Loader";
+
 
 export default function Register() {
+
+  const [isLoading, setIsLoading] = useState(null)
   const router = useRouter();
 
   const formik = useFormik({
@@ -22,6 +27,9 @@ export default function Register() {
   });
 
   async function onSubmit(values) {
+
+  
+
     const option = {
       method: "POST",
       headers: {
@@ -29,11 +37,17 @@ export default function Register() {
       },
       body: JSON.stringify(values),
     };
+      setIsLoading(true);
+  
 
    const res = await fetch("https://dev-api.letusrecon.com/v1/auth/user/register", option)
 
+  
+
     
    const user = await res.json()
+
+   setIsLoading(null);
 
    
      if(res.ok && user){
@@ -43,12 +57,18 @@ export default function Register() {
       toast.error("An error occured, check your credentials!")
      }
      
+     
+     
  
      
   }
 
   return (
     <div className={styles.main_register_container}>
+
+      {isLoading &&
+      <Loader />
+}
       <div className={styles.form_col}>
         <form onSubmit={formik.handleSubmit} className={styles.register_form}>
           <div className={styles.register_logo_wrap}>
@@ -137,7 +157,6 @@ export default function Register() {
                   ? styles.invalid
                   : ""
               }`}
-             
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
               value={formik.values.confirmPassword}

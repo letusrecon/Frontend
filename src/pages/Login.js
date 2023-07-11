@@ -6,8 +6,11 @@ import login_validate from "@/lib/Validate";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import { toast } from "react-hot-toast";
+import { useState } from "react";
+import Loader from "@/lib/Loader";
 
 export default function Login() {
+  const [isLoading, setIsLoading] = useState(null);
   const router = useRouter();
   const formik = useFormik({
     initialValues: {
@@ -19,29 +22,28 @@ export default function Login() {
   });
 
   async function onSubmit(values) {
-    
+    setIsLoading(true);
 
- 
-
-
-    const status = await signIn("credentials", {
+    await signIn("credentials", {
       redirect: false,
       email: values.email,
       password: values.password,
       callbackUrl: "/Dashboard",
+    }).then((status) => {
+      if (status.ok) {
+        router.push(status.url);
+      } else {
+        toast.error(status.error);
+      }
     });
 
-    if (!status.ok) {
-      toast.error(status.error);
-
-      
-    }else{
-      router.push(status.url);
-    }
+    setIsLoading(null);
   }
 
   return (
     <div className={styles.main_login_container}>
+      {isLoading && <Loader />}
+
       <div className={styles.login_form_col}>
         <form onSubmit={formik.handleSubmit} className={styles.login_form}>
           <div className={styles.login_logo_wrap}>

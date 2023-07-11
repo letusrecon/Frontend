@@ -1,13 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useFormik } from 'formik';
 import Image from "next/image";
 import styles from "./confirm_password_reset.module.css";
 import axios from 'axios';
 import { confirm_reset_password_validation } from '@/lib/Validate';
 import { toast } from 'react-hot-toast';
+import Loader from '@/lib/Loader';
 
 
 export default function Confirm_password_reset() {
+
+   const [isLoading, setIsLoading] = useState(null);
 
     const formik = useFormik({
         initialValues:{
@@ -24,6 +27,8 @@ export default function Confirm_password_reset() {
 
 
     async function onSubmit(values){
+
+      setIsLoading(true)
 
      await axios
        .post(
@@ -45,12 +50,17 @@ export default function Confirm_password_reset() {
         }
        });
 
+       setIsLoading(null);
+
     }
+
+    
 
 
 
  return (
    <div className={styles.reset_password_main_container}>
+     {isLoading && <Loader />}
      <form
        className={styles.reset_password_form}
        onSubmit={formik.handleSubmit}
@@ -67,7 +77,8 @@ export default function Confirm_password_reset() {
 
        <h5 className={styles.reset_password_heading}>Confirm password Reset</h5>
        <p className={styles.reset_password_text}>
-         To confirm your password reset, provide your email and the recovery code sent to your inbox.
+         To confirm your password reset, provide your email and the recovery
+         code sent to your inbox.
        </p>
 
        <div>

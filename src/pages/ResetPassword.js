@@ -5,8 +5,12 @@ import { useFormik } from "formik";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/router";
 import { reset_password_validation } from "@/lib/Validate";
+import Loader from "@/lib/Loader";
+import { useState } from "react";
 
 export default function ResetPassword() {
+
+   const [isLoading, setIsLoading] = useState(null);
 
   const router = useRouter()
   const formik = useFormik({
@@ -18,6 +22,8 @@ export default function ResetPassword() {
   });
 
   async function onSubmit(values) {
+
+    setIsLoading(true)
     await axios
       .post("https://dev-api.letusrecon.com/v1/auth/user/recover-password", {
         email: values.email,
@@ -35,10 +41,13 @@ export default function ResetPassword() {
           toast.error("Email not found!");
         }
       });
+
+      setIsLoading(null)
   }
 
   return (
     <div className={styles.reset_password_main_container}>
+      {isLoading && <Loader />}
       <form
         className={styles.reset_password_form}
         onSubmit={formik.handleSubmit}

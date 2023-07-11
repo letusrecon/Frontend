@@ -50,7 +50,7 @@
 .reset_password_input{
     width: 450px;
     padding: 9px 10px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
     font-size: 16px;
     outline-color: var(--btn-color) ;
     font-family: var(--text-font);

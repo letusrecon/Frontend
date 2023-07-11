@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 import { useState } from "react";
 import { useFormik } from "formik";
@@ -10,8 +7,11 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import { email_verfication_validate } from "@/lib/Validate";
 import { useRouter } from "next/router";
+import Loader from "@/lib/Loader";
 
 export default function   Email_verification() {
+
+  const [isLoading, setIsLoading] = useState(null)
 
   const router = useRouter()
   const formik = useFormik({
@@ -28,19 +28,36 @@ export default function   Email_verification() {
   async function onSubmit (values){
 
 
-    const res = axios.post(
+setIsLoading(true);
+
+    await axios.post(
       "https://dev-api.letusrecon.com/v1/auth/user/verify-email",
       { email:values.email,
         code: values.code
      }
-    ).then((data)=> {
+
+    )
+
+  
+   
+    
+    .then((data)=> {
        if (data) {
          toast.success("Email Successfully Verified!")
          router.push('/Login')
-       }else{
-        toast.error('Invalid Verification Code or Email')
        }
     })
+
+    .catch((error) => {
+
+
+      if(error){
+         toast.error("Invalid Verification Code or Email");
+      }
+    })
+setIsLoading(null)
+    
+
   
 
 
@@ -52,6 +69,7 @@ export default function   Email_verification() {
 
   return (
     <div className={styles.reset_password_main_container}>
+      {isLoading && <Loader/>}
       <form
         className={styles.reset_password_form}
         onSubmit={formik.handleSubmit}

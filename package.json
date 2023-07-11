@@ -29,6 +29,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.8.0",
+    "react-loader-spinner": "^5.3.4",
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
